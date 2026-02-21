@@ -135,10 +135,17 @@ st.markdown("""
         color: #2C2C2C !important;
     }
 
-    /* Dataframe */
+    /* Dataframe - light theme */
     [data-testid="stDataFrame"] {
         border: 1px solid #D9D3CC !important;
         border-radius: 8px !important;
+        background-color: #F5F0EB !important;
+    }
+
+    /* Force dataframe text to be dark */
+    [data-testid="stDataFrame"] * {
+        color: #2C2C2C !important;
+        background-color: #F5F0EB !important;
     }
 
     /* Success / Warning */
@@ -184,7 +191,7 @@ CSV_PATH = os.path.join(os.path.dirname(__file__), "cosmetic_p.csv")
 HISTORY_PATH = os.path.join(os.path.dirname(__file__), "user_history.csv")
 FUZZY_THRESHOLD = 60
 CHART_COLOR = "#8A7D6E"
-CHART_SCALE = ["#EDE8E3", "#C9BFB5", "#A89A8C", "#8A7D6E", "#6B6056", "#4A4038", "#2C2C2C"]
+CHART_SCALE = ["#C9BFB5", "#A89A8C", "#8A7D6E", "#6B6056", "#4A4038", "#2C2C2C", "#1A1A1A"]
 
 RED_FLAGS = [
     "fragrance", "alcohol denat", "sodium lauryl sulfate",
@@ -292,16 +299,16 @@ def show_product(df, vectorizer, tfidf_matrix, product):
                 color="TF-IDF Score", color_continuous_scale=CHART_SCALE,
             )
             fig.update_layout(
-                paper_bgcolor="rgba(0,0,0,0)",
-                plot_bgcolor="rgba(0,0,0,0)",
+                paper_bgcolor="#F5F0EB",
+                plot_bgcolor="#F5F0EB",
                 yaxis=dict(autorange="reversed"),
                 showlegend=False,
-                margin=dict(l=0, r=0, t=10, b=0),
-                font=dict(color="#2C2C2C", size=12),
+                margin=dict(l=10, r=10, t=20, b=10),
+                font=dict(color="#2C2C2C", size=12, family="Inter"),
                 coloraxis_showscale=False,
             )
-            fig.update_xaxes(showgrid=False, zeroline=False)
-            fig.update_yaxes(showgrid=False)
+            fig.update_xaxes(showgrid=False, zeroline=False, tickfont=dict(color="#2C2C2C"))
+            fig.update_yaxes(showgrid=False, tickfont=dict(color="#2C2C2C"))
             st.plotly_chart(fig, use_container_width=True)
 
     with right2:
@@ -426,13 +433,15 @@ elif page == "Data Explorer":
 
     def style_chart(fig):
         fig.update_layout(
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
-            font=dict(color="#2C2C2C", size=12),
-            margin=dict(l=0, r=0, t=40, b=0),
+            paper_bgcolor="#F5F0EB",
+            plot_bgcolor="#F5F0EB",
+            font=dict(color="#2C2C2C", size=13, family="Inter"),
+            title_font=dict(color="#2C2C2C", size=14, family="Inter"),
+            margin=dict(l=10, r=10, t=50, b=10),
+            legend=dict(font=dict(color="#2C2C2C")),
         )
-        fig.update_xaxes(showgrid=False, zeroline=False)
-        fig.update_yaxes(showgrid=True, gridcolor="#E8E3DE", zeroline=False)
+        fig.update_xaxes(showgrid=False, zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
+        fig.update_yaxes(showgrid=True, gridcolor="#D9D3CC", zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
         return fig
 
     col1, col2 = st.columns(2)
@@ -485,10 +494,16 @@ elif page == "User History":
         st.markdown("<br>", unsafe_allow_html=True)
 
         def style_chart(fig):
-            fig.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-                              font=dict(color="#2C2C2C", size=12), margin=dict(l=0, r=0, t=40, b=0))
-            fig.update_xaxes(showgrid=False, zeroline=False)
-            fig.update_yaxes(showgrid=True, gridcolor="#E8E3DE", zeroline=False)
+            fig.update_layout(
+                paper_bgcolor="#F5F0EB",
+                plot_bgcolor="#F5F0EB",
+                font=dict(color="#2C2C2C", size=13, family="Inter"),
+                title_font=dict(color="#2C2C2C", size=14, family="Inter"),
+                margin=dict(l=10, r=10, t=50, b=10),
+                legend=dict(font=dict(color="#2C2C2C")),
+            )
+            fig.update_xaxes(showgrid=False, zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
+            fig.update_yaxes(showgrid=True, gridcolor="#D9D3CC", zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
             return fig
 
         col1, col2 = st.columns(2)
@@ -499,7 +514,7 @@ elif page == "User History":
         with col2:
             concern_over_time = history_df.groupby("timestep")[["dryness", "acne", "sensitivity", "oiliness"]].mean().reset_index()
             fig2 = px.line(concern_over_time, x="timestep", y=["dryness", "acne", "sensitivity", "oiliness"],
-                           title="Avg Skin Concerns Over Time", color_discrete_sequence=CHART_SCALE[2:])
+                           title="Avg Skin Concerns Over Time", color_discrete_sequence=["#A89A8C", "#8A7D6E", "#6B6056", "#4A4038"])
             fig2.update_layout(legend_title="Concern")
             st.plotly_chart(style_chart(fig2), use_container_width=True)
 
