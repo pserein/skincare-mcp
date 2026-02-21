@@ -22,53 +22,32 @@ st.set_page_config(
 # ── Rhode-inspired styling ─────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    /* Import font */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-
-    /* Global */
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
         color: #2C2C2C !important;
     }
-
-    /* Kill all white text everywhere */
-    * {
-        color: inherit;
-    }
-
-    p, span, label, div, h1, h2, h3, h4, h5, li, td, th {
-        color: #2C2C2C !important;
-    }
-
-    /* Background */
     .stApp {
         background-color: #F5F0EB;
         color: #2C2C2C;
     }
-
-    /* Sidebar */
     [data-testid="stSidebar"] {
         background-color: #EDE8E3;
         border-right: 1px solid #D9D3CC;
     }
-
-    /* Sidebar text */
-    [data-testid="stSidebar"] .stMarkdown p {
-        color: #4A4038;
-        font-size: 13px;
-        letter-spacing: 0.03em;
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] div {
+        color: #4A4038 !important;
     }
-
-    /* Sidebar title */
     [data-testid="stSidebar"] h1 {
-        color: #2C2C2C;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+        color: #2C2C2C !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
     }
-
-    /* Page titles */
     h1 {
         color: #2C2C2C !important;
         font-weight: 400 !important;
@@ -77,50 +56,36 @@ st.markdown("""
         font-size: 28px !important;
         margin-bottom: 4px !important;
     }
-
     h2, h3, h4 {
         color: #2C2C2C !important;
         font-weight: 500 !important;
         letter-spacing: 0.03em !important;
     }
-
-    /* Metric cards */
     [data-testid="metric-container"] {
         background-color: #EDE8E3;
         border: 1px solid #D9D3CC;
         border-radius: 8px;
         padding: 16px !important;
     }
-
     [data-testid="metric-container"] label {
         color: #8A8480 !important;
         font-size: 11px !important;
         letter-spacing: 0.08em !important;
         text-transform: uppercase !important;
     }
-
     [data-testid="metric-container"] [data-testid="stMetricValue"] {
         color: #2C2C2C !important;
         font-size: 16px !important;
         font-weight: 500 !important;
     }
-
-    /* Input */
-    .stTextInput input {
+    [data-baseweb="input"] input {
         background-color: #EDE8E3 !important;
+        color: #2C2C2C !important;
+    }
+    [data-baseweb="base-input"] {
         border: 1px solid #C9C3BC !important;
         border-radius: 6px !important;
-        color: #2C2C2C !important;
-        font-size: 14px !important;
-        padding: 12px 16px !important;
     }
-
-    .stTextInput input:focus {
-        border-color: #8A8480 !important;
-        box-shadow: none !important;
-    }
-
-    /* Buttons */
     .stButton button {
         background-color: #2C2C2C !important;
         color: #F5F0EB !important;
@@ -132,79 +97,44 @@ st.markdown("""
         padding: 12px 20px !important;
         font-weight: 500 !important;
     }
-
     .stButton button p, .stButton button span {
         color: #F5F0EB !important;
     }
-
     .stButton button:hover {
         background-color: #444 !important;
     }
-
-    /* Selectbox */
-    .stSelectbox select, [data-testid="stSelectbox"] {
+    [data-baseweb="select"] div {
         background-color: #EDE8E3 !important;
-        border: 1px solid #C9C3BC !important;
-        border-radius: 6px !important;
         color: #2C2C2C !important;
     }
-
-    /* Dataframe - light theme */
-    [data-testid="stDataFrame"] {
-        border: 1px solid #D9D3CC !important;
-        border-radius: 8px !important;
-        background-color: #F5F0EB !important;
-    }
-
-    /* Force dataframe text to be dark */
-    [data-testid="stDataFrame"] * {
-        color: #2C2C2C !important;
-        background-color: #F5F0EB !important;
-    }
-
-    /* Success / Warning */
     .stSuccess {
         background-color: #E8F0E8 !important;
         border: 1px solid #B8D4B8 !important;
         border-radius: 6px !important;
         color: #2C4A2C !important;
     }
-
     .stWarning {
         background-color: #F5EDDF !important;
         border: 1px solid #E0CEAA !important;
         border-radius: 6px !important;
         color: #5C4A2A !important;
     }
-
-    /* Remove default padding */
     .block-container {
         padding-top: 2rem !important;
         padding-left: 3rem !important;
         padding-right: 3rem !important;
         max-width: 1200px !important;
     }
-
-    /* Divider */
     hr {
         border-color: #D9D3CC !important;
         margin: 1.5rem 0 !important;
     }
-
-    /* Radio buttons */
-    .stRadio label, .stRadio span, [data-testid="stRadio"] label,
-    [data-testid="stRadio"] p, [data-testid="stRadio"] span {
+    [data-testid="stRadio"] label,
+    [data-testid="stRadio"] p,
+    [data-testid="stRadio"] span {
         color: #2C2C2C !important;
         font-size: 13px !important;
         letter-spacing: 0.03em !important;
-    }
-
-    /* All sidebar text force dark */
-    [data-testid="stSidebar"] p,
-    [data-testid="stSidebar"] span,
-    [data-testid="stSidebar"] label,
-    [data-testid="stSidebar"] div {
-        color: #2C2C2C !important;
     }
 </style>
 """, unsafe_allow_html=True)
