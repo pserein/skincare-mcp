@@ -24,7 +24,7 @@ import random
 import numpy as np
 import pandas as pd
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# ── config ────────────────────────────────────────────────────────────────────
 NUM_USERS = 200
 TIMESTEPS_PER_USER = 10
 RANDOM_SEED = 42
@@ -32,22 +32,22 @@ RANDOM_SEED = 42
 CSV_PATH = os.path.join(os.path.dirname(__file__), "cosmetic_p.csv")
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "user_history.csv")
 
-# Skin concern dimensions (State space)
+# skin concern dimensions (State space)
 SKIN_CONCERNS = ["dryness", "acne", "sensitivity", "oiliness"]
 
-# Irritants that hurt sensitive users
+# irritants that hurt sensitive users
 IRRITANTS = ["fragrance", "alcohol denat", "sodium lauryl sulfate", "methylparaben"]
 
 random.seed(RANDOM_SEED)
 np.random.seed(RANDOM_SEED)
 
 
-# ── Load data ─────────────────────────────────────────────────────────────────
+# ── load data ─────────────────────────────────────────────────────────────────
 df = pd.read_csv(CSV_PATH, encoding="utf-8-sig")
 df["ingredients"] = df["ingredients"].fillna("")
 df["rank"] = pd.to_numeric(df["rank"], errors="coerce").fillna(0)
 
-# Map skin concern columns to dataset columns
+# map skin concern columns 
 SKIN_TYPE_COLS = {
     "dryness": "Dry",
     "acne": "Oily",       # oily skin is acne-prone
@@ -56,7 +56,7 @@ SKIN_TYPE_COLS = {
 }
 
 
-# ── Helper functions ──────────────────────────────────────────────────────────
+
 def random_skin_state() -> dict:
     """Generate a random initial skin state for a user."""
     return {concern: round(random.uniform(0.0, 1.0), 2) for concern in SKIN_CONCERNS}
@@ -74,15 +74,15 @@ def compute_reward(product: pd.Series, state: dict) -> float:
     2. Bonus if product matches the user's dominant skin type
     3. Penalty if product has irritants and user has high sensitivity
     """
-    # Base reward: product rating normalized to 0-1 range (ratings are 0-5)
+    # base reward: product rating normalized to 0-1 range (ratings are 0-5)
     base = product["rank"] / 5.0
 
-    # Skin type match bonus
+    # skin type match bonus
     dominant = dominant_concern(state)
     skin_col = SKIN_TYPE_COLS.get(dominant, "Normal")
     match_bonus = 0.2 if product.get(skin_col, 0) == 1 else 0.0
 
-    # Irritant penalty for sensitive users
+    # irritant penalty for sensitive users
     irritant_penalty = 0.0
     if state["sensitivity"] > 0.6:
         ingredients_lower = product["ingredients"].lower()
@@ -91,7 +91,7 @@ def compute_reward(product: pd.Series, state: dict) -> float:
 
     reward = base + match_bonus + irritant_penalty
 
-    # Add small noise to simulate real-world variability
+    # add small noise to simulate real-world variability
     reward += np.random.normal(0, 0.05)
 
     return round(float(np.clip(reward, -1.0, 1.0)), 3)
@@ -111,14 +111,14 @@ def update_state(state: dict, product: pd.Series, reward: float) -> dict:
     return new_state
 
 
-# ── Generate dataset ──────────────────────────────────────────────────────────
+# ── generate dataset ──────────────────────────────────────────────────────────
 records = []
 
 for user_id in range(NUM_USERS):
     state = random_skin_state()
 
     for t in range(TIMESTEPS_PER_USER):
-        # Pick a product — bias toward products matching dominant concern
+        # pick a product with bias toward products matching dominant concern
         dominant = dominant_concern(state)
         skin_col = SKIN_TYPE_COLS.get(dominant, "Normal")
 
@@ -132,10 +132,10 @@ for user_id in range(NUM_USERS):
 
         product = pool.sample(1).iloc[0]
 
-        # Compute reward
+        # compute reward
         reward = compute_reward(product, state)
 
-        # Record this interaction
+        # record this 
         records.append({
             "user_id": user_id,
             "timestep": t,
@@ -150,7 +150,7 @@ for user_id in range(NUM_USERS):
             "reward": reward,
         })
 
-        # Update state for next timestep
+        # update state for next timestep
         state = update_state(state, product, reward)
 
 
