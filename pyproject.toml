@@ -9,4 +9,6 @@ dependencies = [
     "mcp>=1.26.0",
     "pandas>=3.0.1",
     "python-dotenv>=1.2.1",
+    "python-levenshtein>=0.27.3",
+    "thefuzz>=0.22.1",
 ]

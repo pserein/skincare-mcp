@@ -5,8 +5,12 @@ Handles all data loading and cleaning.
 
 import os
 import pandas as pd
+from thefuzz import process
 
 CSV_PATH = os.path.join(os.path.dirname(__file__), "cosmetic_p.csv")
+
+# Minimum fuzzy match score (0-100) to accept a result
+FUZZY_THRESHOLD = 60
 
 # Known irritants for sensitive skin
 RED_FLAGS = [
@@ -54,19 +58,32 @@ def parse_ingredients(ingredients_str: str) -> set:
 
 def find_product(df: pd.DataFrame, product_name: str) -> pd.Series | None:
     """
-    Look up a product by name. Tries exact match first, then partial match.
+    Look up a product by name using a three-step strategy:
+    1. Exact match (fastest)
+    2. Partial string match
+    3. Fuzzy match via thefuzz (handles typos and accent variations)
+
     Returns the first matching row as a Series, or None if not found.
     """
     name_lower = product_name.lower()
 
-    # Exact match
+    # Step 1: Exact match
     match = df[df["name"].str.lower() == name_lower]
     if not match.empty:
         return match.iloc[0]
 
-    # Partial match
+    # Step 2: Partial match
     match = df[df["name"].str.lower().str.contains(name_lower, na=False)]
     if not match.empty:
         return match.iloc[0]
+
+    # Step 3: Fuzzy match — handles typos, missing accents, etc.
+    all_names = df["name"].tolist()
+    result = process.extractOne(product_name, all_names, score_cutoff=FUZZY_THRESHOLD)
+    if result:
+        best_match_name, score = result[0], result[1]
+        match = df[df["name"] == best_match_name]
+        if not match.empty:
+            return match.iloc[0]
 
     return None
