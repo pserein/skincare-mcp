@@ -1,13 +1,9 @@
 """
 app.py
 Streamlit dashboard for the Skincare MCP recommendation engine.
-
-Run with:
-    streamlit run app.py
 """
 
 import os
-import random
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -19,14 +15,176 @@ from thefuzz import process
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Skincare Ingredient Engine",
-    page_icon="🧴",
     layout="wide",
+    initial_sidebar_state="expanded",
 )
+
+# ── Rhode-inspired styling ─────────────────────────────────────────────────────
+st.markdown("""
+<style>
+    /* Import font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+    /* Global */
+    html, body, [class*="css"] {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Background */
+    .stApp {
+        background-color: #F5F0EB;
+        color: #2C2C2C;
+    }
+
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #EDE8E3;
+        border-right: 1px solid #D9D3CC;
+    }
+
+    /* Sidebar text */
+    [data-testid="stSidebar"] .stMarkdown p {
+        color: #6B6560;
+        font-size: 13px;
+        letter-spacing: 0.03em;
+    }
+
+    /* Sidebar title */
+    [data-testid="stSidebar"] h1 {
+        color: #2C2C2C;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    /* Page titles */
+    h1 {
+        color: #2C2C2C !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.05em !important;
+        text-transform: uppercase !important;
+        font-size: 28px !important;
+        margin-bottom: 4px !important;
+    }
+
+    h2, h3, h4 {
+        color: #2C2C2C !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.03em !important;
+    }
+
+    /* Metric cards */
+    [data-testid="metric-container"] {
+        background-color: #EDE8E3;
+        border: 1px solid #D9D3CC;
+        border-radius: 8px;
+        padding: 16px !important;
+    }
+
+    [data-testid="metric-container"] label {
+        color: #8A8480 !important;
+        font-size: 11px !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+    }
+
+    [data-testid="metric-container"] [data-testid="stMetricValue"] {
+        color: #2C2C2C !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+
+    /* Input */
+    .stTextInput input {
+        background-color: #EDE8E3 !important;
+        border: 1px solid #C9C3BC !important;
+        border-radius: 6px !important;
+        color: #2C2C2C !important;
+        font-size: 14px !important;
+        padding: 12px 16px !important;
+    }
+
+    .stTextInput input:focus {
+        border-color: #8A8480 !important;
+        box-shadow: none !important;
+    }
+
+    /* Buttons */
+    .stButton button {
+        background-color: #2C2C2C !important;
+        color: #F5F0EB !important;
+        border: none !important;
+        border-radius: 6px !important;
+        font-size: 12px !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+        padding: 12px 20px !important;
+        font-weight: 500 !important;
+    }
+
+    .stButton button:hover {
+        background-color: #444 !important;
+    }
+
+    /* Selectbox */
+    .stSelectbox select, [data-testid="stSelectbox"] {
+        background-color: #EDE8E3 !important;
+        border: 1px solid #C9C3BC !important;
+        border-radius: 6px !important;
+        color: #2C2C2C !important;
+    }
+
+    /* Dataframe */
+    [data-testid="stDataFrame"] {
+        border: 1px solid #D9D3CC !important;
+        border-radius: 8px !important;
+    }
+
+    /* Success / Warning */
+    .stSuccess {
+        background-color: #E8F0E8 !important;
+        border: 1px solid #B8D4B8 !important;
+        border-radius: 6px !important;
+        color: #2C4A2C !important;
+    }
+
+    .stWarning {
+        background-color: #F5EDDF !important;
+        border: 1px solid #E0CEAA !important;
+        border-radius: 6px !important;
+        color: #5C4A2A !important;
+    }
+
+    /* Remove default padding */
+    .block-container {
+        padding-top: 2rem !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        max-width: 1200px !important;
+    }
+
+    /* Divider */
+    hr {
+        border-color: #D9D3CC !important;
+        margin: 1.5rem 0 !important;
+    }
+
+    /* Radio buttons */
+    .stRadio label {
+        color: #2C2C2C !important;
+        font-size: 13px !important;
+        letter-spacing: 0.03em !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 CSV_PATH = os.path.join(os.path.dirname(__file__), "cosmetic_p.csv")
 HISTORY_PATH = os.path.join(os.path.dirname(__file__), "user_history.csv")
 FUZZY_THRESHOLD = 60
+CHART_COLOR = "#8A7D6E"
+CHART_SCALE = ["#EDE8E3", "#C9BFB5", "#A89A8C", "#8A7D6E", "#6B6056", "#4A4038", "#2C2C2C"]
 
 RED_FLAGS = [
     "fragrance", "alcohol denat", "sodium lauryl sulfate",
@@ -34,7 +192,6 @@ RED_FLAGS = [
     "butylparaben", "ethylparaben", "formaldehyde", "phthalate",
     "oxybenzone", "triclosan",
 ]
-
 SKIN_TYPE_COLS = ["Combination", "Dry", "Normal", "Oily", "Sensitive"]
 
 # ── Data loading ──────────────────────────────────────────────────────────────
@@ -79,77 +236,98 @@ def find_product(df, product_name):
             return match.iloc[0]
     return None
 
+def star_rating(score):
+    full = int(score)
+    return "★" * full + "☆" * (5 - full)
+
 def show_product(df, vectorizer, tfidf_matrix, product):
-    """Render full product detail — used by both search and browse."""
     st.markdown("---")
-    col1, col2, col3 = st.columns(3)
+
+    # Header row
+    col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("Product", product["name"])
     col2.metric("Brand", product["brand"])
-    col3.metric("Rating", f"{product['rank']} / 5.0")
+    col3.metric("Category", product["Label"])
+    col4.metric("Price", f"${product['price']}")
+    col5.metric("Rating", f"{star_rating(product['rank'])}  {product['rank']}")
 
-    col4, col5 = st.columns(2)
-    col4.metric("Category", product["Label"])
-    col5.metric("Price", f"${product['price']}")
+    st.markdown("<br>", unsafe_allow_html=True)
 
-    # Skin type compatibility
-    st.markdown("#### Skin Type Compatibility")
-    skin_cols = st.columns(5)
-    for i, skin in enumerate(SKIN_TYPE_COLS):
-        val = int(product.get(skin, 0))
-        skin_cols[i].metric(skin, "✓" if val == 1 else "✗")
+    # Two column layout for skin type + irritant check
+    left, right = st.columns(2)
 
-    # Red flag check
-    st.markdown("#### Irritant Check")
-    ingredients_lower = product["ingredients"].lower()
-    found_flags = [f.title() for f in RED_FLAGS if f in ingredients_lower]
-    if found_flags:
-        st.warning(f"**Potential irritants found:** {', '.join(found_flags)}")
-    else:
-        st.success("No common irritants found. Suitable for sensitive skin.")
+    with left:
+        st.markdown("#### Skin Type Compatibility")
+        cols = st.columns(5)
+        for i, skin in enumerate(SKIN_TYPE_COLS):
+            val = int(product.get(skin, 0))
+            cols[i].metric(skin, "✓" if val == 1 else "—")
 
-    # Top ingredients chart
-    st.markdown("#### Top Ingredients by TF-IDF Weight")
-    idx = df[df["name"] == product["name"]].index[0]
-    feature_names = vectorizer.get_feature_names_out()
-    tfidf_scores = tfidf_matrix[idx].toarray().flatten()
-    top_idx = np.argsort(tfidf_scores)[::-1][:15]
-    top_ingredients = [(feature_names[i], tfidf_scores[i]) for i in top_idx if tfidf_scores[i] > 0]
+    with right:
+        st.markdown("#### Irritant Check")
+        ingredients_lower = product["ingredients"].lower()
+        found_flags = [f.title() for f in RED_FLAGS if f in ingredients_lower]
+        if found_flags:
+            st.warning(f"**Potential irritants:** {', '.join(found_flags)}")
+        else:
+            st.success("No common irritants found — suitable for sensitive skin.")
 
-    if top_ingredients:
-        ing_df = pd.DataFrame(top_ingredients, columns=["Ingredient", "TF-IDF Score"])
-        fig = px.bar(
-            ing_df, x="TF-IDF Score", y="Ingredient", orientation="h",
-            color="TF-IDF Score", color_continuous_scale="Blues",
-            title="Most Distinctive Ingredients (higher = more unique to this product)",
-        )
-        fig.update_layout(yaxis=dict(autorange="reversed"), showlegend=False)
-        st.plotly_chart(fig, use_container_width=True)
+    st.markdown("<br>", unsafe_allow_html=True)
 
-    # Similar products
-    st.markdown("#### Similar Products")
-    scores = cosine_similarity(tfidf_matrix[idx], tfidf_matrix).flatten()
-    top_indices = np.argsort(scores)[::-1]
-    results = []
-    for i in top_indices:
-        if df.iloc[i]["name"] == product["name"]:
-            continue
-        score = scores[i]
-        if score < 0.1 or len(results) == 8:
-            break
-        row = df.iloc[i]
-        results.append({
-            "Product": row["name"],
-            "Brand": row["brand"],
-            "Category": row["Label"],
-            "Price": f"${row['price']}",
-            "Rating": row["rank"],
-            "Similarity": f"{round(score * 100, 1)}%",
-        })
+    # Ingredient chart + similar products side by side
+    left2, right2 = st.columns(2)
 
-    if results:
-        st.dataframe(pd.DataFrame(results), use_container_width=True, hide_index=True)
-    else:
-        st.info("No similar products found.")
+    with left2:
+        st.markdown("#### Top Ingredients by TF-IDF Weight")
+        idx = df[df["name"] == product["name"]].index[0]
+        feature_names = vectorizer.get_feature_names_out()
+        tfidf_scores = tfidf_matrix[idx].toarray().flatten()
+        top_idx = np.argsort(tfidf_scores)[::-1][:12]
+        top_ingredients = [(feature_names[i], round(float(tfidf_scores[i]), 4)) for i in top_idx if tfidf_scores[i] > 0]
+
+        if top_ingredients:
+            ing_df = pd.DataFrame(top_ingredients, columns=["Ingredient", "TF-IDF Score"])
+            fig = px.bar(
+                ing_df, x="TF-IDF Score", y="Ingredient", orientation="h",
+                color="TF-IDF Score", color_continuous_scale=CHART_SCALE,
+            )
+            fig.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)",
+                yaxis=dict(autorange="reversed"),
+                showlegend=False,
+                margin=dict(l=0, r=0, t=10, b=0),
+                font=dict(color="#2C2C2C", size=12),
+                coloraxis_showscale=False,
+            )
+            fig.update_xaxes(showgrid=False, zeroline=False)
+            fig.update_yaxes(showgrid=False)
+            st.plotly_chart(fig, use_container_width=True)
+
+    with right2:
+        st.markdown("#### Similar Products")
+        idx = df[df["name"] == product["name"]].index[0]
+        scores = cosine_similarity(tfidf_matrix[idx], tfidf_matrix).flatten()
+        top_indices = np.argsort(scores)[::-1]
+        results = []
+        for i in top_indices:
+            if df.iloc[i]["name"] == product["name"]:
+                continue
+            score = scores[i]
+            if score < 0.1 or len(results) == 6:
+                break
+            row = df.iloc[i]
+            results.append({
+                "Product": row["name"],
+                "Brand": row["brand"],
+                "Price": f"${row['price']}",
+                "Rating": star_rating(row["rank"]),
+                "Match": f"{round(score * 100, 1)}%",
+            })
+        if results:
+            st.dataframe(pd.DataFrame(results), use_container_width=True, hide_index=True, height=280)
+        else:
+            st.info("No similar products found.")
 
 # ── Load everything ───────────────────────────────────────────────────────────
 df = load_data()
@@ -157,38 +335,41 @@ history_df = load_history()
 vectorizer, tfidf_matrix = build_tfidf(df)
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
-st.sidebar.title("Skincare Ingredient Engine")
-st.sidebar.markdown("Built with TF-IDF, cosine similarity, and MCP.")
+st.sidebar.title("Skincare Engine")
+st.sidebar.markdown("TF-IDF · Cosine Similarity · MCP")
 st.sidebar.markdown("---")
-page = st.sidebar.radio("Navigate", ["Product Search", "Browse Products", "Data Explorer", "User History"])
+page = st.sidebar.radio("", ["Product Search", "Browse Products", "Data Explorer", "User History"])
+st.sidebar.markdown("---")
+st.sidebar.markdown(f"**{len(df):,}** products · **{df['brand'].nunique()}** brands")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 1: Product Search
 # ══════════════════════════════════════════════════════════════════════════════
 if page == "Product Search":
     st.title("Product Search")
-    st.markdown("Search any product to find similar alternatives and check for irritants.")
+    st.markdown("Search any product to find ingredient-based alternatives and check for irritants.")
+    st.markdown("<br>", unsafe_allow_html=True)
 
     col_input, col_btn = st.columns([5, 1])
     with col_input:
-        query = st.text_input("Enter a product name", placeholder="e.g. Crème de la Mer")
+        query = st.text_input("", placeholder="e.g. Crème de la Mer, Vitamin C serum, moisturizer...", label_visibility="collapsed")
     with col_btn:
-        st.markdown("<br>", unsafe_allow_html=True)
         if st.button("Random"):
             query = df["name"].sample(1).iloc[0]
+            st.session_state["query"] = query
+
+    if "query" in st.session_state and not query:
+        query = st.session_state["query"]
 
     if query:
         product = find_product(df, query)
         if product is None:
-            st.error(f"No product found matching '{query}'. Try browsing the product list.")
-            st.markdown("**Try one of these:**")
-            st.dataframe(
-                df[["name", "brand", "Label"]].sample(10).rename(
-                    columns={"name": "Product", "brand": "Brand", "Label": "Category"}
-                ),
-                use_container_width=True,
-                hide_index=True,
+            st.error(f"No product found matching '{query}'.")
+            st.markdown("**Try one of these popular products:**")
+            suggestions = df[df["rank"] >= 4.5][["name", "brand", "Label", "rank"]].sample(8).rename(
+                columns={"name": "Product", "brand": "Brand", "Label": "Category", "rank": "Rating"}
             )
+            st.dataframe(suggestions, use_container_width=True, hide_index=True)
         else:
             show_product(df, vectorizer, tfidf_matrix, product)
 
@@ -197,20 +378,19 @@ if page == "Product Search":
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "Browse Products":
     st.title("Browse Products")
-    st.markdown(f"Explore all **{len(df):,}** products in the dataset.")
+    st.markdown(f"Filter and explore all **{len(df):,}** products.")
+    st.markdown("<br>", unsafe_allow_html=True)
 
-    # Filters
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
-        categories = ["All"] + sorted(df["Label"].unique().tolist())
-        selected_cat = st.selectbox("Category", categories)
+        selected_cat = st.selectbox("Category", ["All"] + sorted(df["Label"].unique().tolist()))
     with col2:
-        brands = ["All"] + sorted(df["brand"].unique().tolist())
-        selected_brand = st.selectbox("Brand", brands)
+        selected_brand = st.selectbox("Brand", ["All"] + sorted(df["brand"].unique().tolist()))
     with col3:
         skin_filter = st.selectbox("Skin Type", ["All"] + SKIN_TYPE_COLS)
+    with col4:
+        min_rating = st.selectbox("Min Rating", [0, 3.0, 3.5, 4.0, 4.5], index=0)
 
-    # Apply filters
     filtered = df.copy()
     if selected_cat != "All":
         filtered = filtered[filtered["Label"] == selected_cat]
@@ -218,86 +398,116 @@ elif page == "Browse Products":
         filtered = filtered[filtered["brand"] == selected_brand]
     if skin_filter != "All":
         filtered = filtered[filtered[skin_filter] == 1]
+    if min_rating:
+        filtered = filtered[filtered["rank"] >= min_rating]
 
     st.markdown(f"**{len(filtered):,} products match your filters.**")
 
-    # Show table
     display_df = filtered[["name", "brand", "Label", "price", "rank"]].rename(
         columns={"name": "Product", "brand": "Brand", "Label": "Category", "price": "Price ($)", "rank": "Rating"}
     ).sort_values("Rating", ascending=False)
+    st.dataframe(display_df, use_container_width=True, hide_index=True, height=400)
 
-    st.dataframe(display_df, use_container_width=True, hide_index=True)
-
-    # Click to inspect
     st.markdown("---")
     st.markdown("#### Inspect a Product")
-    selected_name = st.selectbox("Select a product to view details", filtered["name"].tolist())
-    if selected_name:
-        product = df[df["name"] == selected_name].iloc[0]
-        show_product(df, vectorizer, tfidf_matrix, product)
+    if not filtered.empty:
+        selected_name = st.selectbox("Select a product", filtered["name"].tolist())
+        if selected_name:
+            product = df[df["name"] == selected_name].iloc[0]
+            show_product(df, vectorizer, tfidf_matrix, product)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 3: Data Explorer
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "Data Explorer":
     st.title("Data Explorer")
-    st.markdown(f"Exploring **{len(df):,}** products across **{df['Label'].nunique()}** categories.")
+    st.markdown(f"**{len(df):,}** products · **{df['brand'].nunique()}** brands · **{df['Label'].nunique()}** categories")
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    def style_chart(fig):
+        fig.update_layout(
+            paper_bgcolor="rgba(0,0,0,0)",
+            plot_bgcolor="rgba(0,0,0,0)",
+            font=dict(color="#2C2C2C", size=12),
+            margin=dict(l=0, r=0, t=40, b=0),
+        )
+        fig.update_xaxes(showgrid=False, zeroline=False)
+        fig.update_yaxes(showgrid=True, gridcolor="#E8E3DE", zeroline=False)
+        return fig
 
     col1, col2 = st.columns(2)
     with col1:
         cat_counts = df["Label"].value_counts().reset_index()
         cat_counts.columns = ["Category", "Count"]
-        fig1 = px.bar(cat_counts, x="Category", y="Count", title="Products by Category", color="Count", color_continuous_scale="Blues")
-        st.plotly_chart(fig1, use_container_width=True)
+        fig1 = px.bar(cat_counts, x="Category", y="Count", title="Products by Category", color="Count", color_continuous_scale=CHART_SCALE)
+        st.plotly_chart(style_chart(fig1), use_container_width=True)
     with col2:
-        fig2 = px.histogram(df[df["rank"] > 0], x="rank", nbins=20, title="Product Rating Distribution", color_discrete_sequence=["#4A90D9"])
+        fig2 = px.histogram(df[df["rank"] > 0], x="rank", nbins=20, title="Rating Distribution", color_discrete_sequence=[CHART_COLOR])
         fig2.update_layout(xaxis_title="Rating", yaxis_title="Count")
-        st.plotly_chart(fig2, use_container_width=True)
+        st.plotly_chart(style_chart(fig2), use_container_width=True)
 
     col3, col4 = st.columns(2)
     with col3:
-        fig3 = px.box(df[df["price"] > 0], x="Label", y="price", title="Price Distribution by Category", color="Label")
-        fig3.update_layout(showlegend=False, xaxis_title="Category", yaxis_title="Price ($)")
-        st.plotly_chart(fig3, use_container_width=True)
+        fig3 = px.box(df[df["price"] > 0], x="Label", y="price", title="Price by Category", color="Label",
+                      color_discrete_sequence=CHART_SCALE)
+        fig3.update_layout(showlegend=False, xaxis_title="", yaxis_title="Price ($)")
+        st.plotly_chart(style_chart(fig3), use_container_width=True)
     with col4:
         top_brands = df["brand"].value_counts().head(15).reset_index()
         top_brands.columns = ["Brand", "Count"]
-        fig4 = px.bar(top_brands, x="Count", y="Brand", orientation="h", title="Top 15 Brands by Product Count", color="Count", color_continuous_scale="Blues")
+        fig4 = px.bar(top_brands, x="Count", y="Brand", orientation="h", title="Top 15 Brands",
+                      color="Count", color_continuous_scale=CHART_SCALE)
         fig4.update_layout(yaxis=dict(autorange="reversed"))
-        st.plotly_chart(fig4, use_container_width=True)
+        st.plotly_chart(style_chart(fig4), use_container_width=True)
 
-    st.markdown("#### Skin Type Coverage Across Dataset")
     skin_counts = {col: int(df[col].sum()) for col in SKIN_TYPE_COLS}
-    fig5 = px.pie(values=list(skin_counts.values()), names=list(skin_counts.keys()), title="Products Suitable Per Skin Type")
+    fig5 = px.pie(values=list(skin_counts.values()), names=list(skin_counts.keys()),
+                  title="Products Per Skin Type", color_discrete_sequence=CHART_SCALE)
+    fig5.update_layout(paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#2C2C2C"))
     st.plotly_chart(fig5, use_container_width=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
-# PAGE 4: User History (RL Dataset)
+# PAGE 4: User History
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "User History":
-    st.title("User History — Offline RL Dataset")
-    st.markdown("Synthetic interaction logs generated for Offline Reinforcement Learning (State → Action → Reward).")
+    st.title("User History")
+    st.markdown("Synthetic interaction logs for Offline Reinforcement Learning — State → Action → Reward.")
+    st.markdown("<br>", unsafe_allow_html=True)
 
     if history_df is None:
         st.warning("user_history.csv not found. Run `python generate_user_history.py` first.")
     else:
-        st.markdown(f"**{len(history_df):,} interaction records** across **{history_df['user_id'].nunique()}** simulated users.")
+        c1, c2, c3 = st.columns(3)
+        c1.metric("Total Records", f"{len(history_df):,}")
+        c2.metric("Simulated Users", history_df["user_id"].nunique())
+        c3.metric("Avg Reward", round(history_df["reward"].mean(), 3))
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        def style_chart(fig):
+            fig.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                              font=dict(color="#2C2C2C", size=12), margin=dict(l=0, r=0, t=40, b=0))
+            fig.update_xaxes(showgrid=False, zeroline=False)
+            fig.update_yaxes(showgrid=True, gridcolor="#E8E3DE", zeroline=False)
+            return fig
 
         col1, col2 = st.columns(2)
         with col1:
-            fig1 = px.histogram(history_df, x="reward", nbins=30, title="Reward Distribution", color_discrete_sequence=["#4A90D9"])
-            fig1.update_layout(xaxis_title="Reward", yaxis_title="Count")
-            st.plotly_chart(fig1, use_container_width=True)
+            fig1 = px.histogram(history_df, x="reward", nbins=30, title="Reward Distribution",
+                                color_discrete_sequence=[CHART_COLOR])
+            st.plotly_chart(style_chart(fig1), use_container_width=True)
         with col2:
             concern_over_time = history_df.groupby("timestep")[["dryness", "acne", "sensitivity", "oiliness"]].mean().reset_index()
-            fig2 = px.line(concern_over_time, x="timestep", y=["dryness", "acne", "sensitivity", "oiliness"], title="Average Skin Concerns Over Time")
-            fig2.update_layout(xaxis_title="Timestep", yaxis_title="Concern Level (0-1)", legend_title="Concern")
-            st.plotly_chart(fig2, use_container_width=True)
+            fig2 = px.line(concern_over_time, x="timestep", y=["dryness", "acne", "sensitivity", "oiliness"],
+                           title="Avg Skin Concerns Over Time", color_discrete_sequence=CHART_SCALE[2:])
+            fig2.update_layout(legend_title="Concern")
+            st.plotly_chart(style_chart(fig2), use_container_width=True)
 
         avg_reward = history_df.groupby("label")["reward"].mean().sort_values(ascending=False).reset_index()
         avg_reward.columns = ["Category", "Avg Reward"]
-        fig3 = px.bar(avg_reward, x="Category", y="Avg Reward", title="Average Reward by Product Category", color="Avg Reward", color_continuous_scale="RdYlGn")
-        st.plotly_chart(fig3, use_container_width=True)
+        fig3 = px.bar(avg_reward, x="Category", y="Avg Reward", title="Avg Reward by Product Category",
+                      color="Avg Reward", color_continuous_scale=CHART_SCALE)
+        st.plotly_chart(style_chart(fig3), use_container_width=True)
 
         st.markdown("#### Sample Interaction Log")
         st.dataframe(history_df.head(20), use_container_width=True, hide_index=True)
