@@ -28,6 +28,16 @@ st.markdown("""
     /* Global */
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
+        color: #2C2C2C !important;
+    }
+
+    /* Kill all white text everywhere */
+    * {
+        color: inherit;
+    }
+
+    p, span, label, div, h1, h2, h3, h4, h5, li, td, th {
+        color: #2C2C2C !important;
     }
 
     /* Background */
@@ -44,7 +54,7 @@ st.markdown("""
 
     /* Sidebar text */
     [data-testid="stSidebar"] .stMarkdown p {
-        color: #6B6560;
+        color: #4A4038;
         font-size: 13px;
         letter-spacing: 0.03em;
     }
@@ -178,10 +188,19 @@ st.markdown("""
     }
 
     /* Radio buttons */
-    .stRadio label {
+    .stRadio label, .stRadio span, [data-testid="stRadio"] label,
+    [data-testid="stRadio"] p, [data-testid="stRadio"] span {
         color: #2C2C2C !important;
         font-size: 13px !important;
         letter-spacing: 0.03em !important;
+    }
+
+    /* All sidebar text force dark */
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] div {
+        color: #2C2C2C !important;
     }
 </style>
 """, unsafe_allow_html=True)
