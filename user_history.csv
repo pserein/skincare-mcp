@@ -1,0 +1,2001 @@
+user_id,timestep,dryness,acne,sensitivity,oiliness,product_name,brand,label,product_rating,reward
+0,0,0.64,0.03,0.28,0.22,Overnight Miracle Mask,SK-II,Face Mask,3.8,1.0
+0,1,0.58,0.0,0.24,0.16,Sunless Tan Anti-Aging Face Serum,COOLA,Treatment,4.3,1.0
+0,2,0.52,0.0,0.2,0.1,Micro Polish Cleanser,REN CLEAN SKINCARE,Cleanser,4.5,0.846
+0,3,0.49,0.0,0.15,0.02,Micellar Cleansing Water & Milk - Pomegranate,SEPHORA COLLECTION,Cleanser,4.2,1.0
+0,4,0.44,0.0,0.1,0.0,Glycol Lactic Radiance Renewal Mask,REN CLEAN SKINCARE,Face Mask,4.4,1.0
+0,5,0.38,0.0,0.06,0.0,Rénergie Lift Multi-Action Sunscreen Broad Spectrum SPF 15 For All Skin Types,LANCÔME,Moisturizer,3.9,1.0
+0,6,0.32,0.0,0.0,0.0,Even Better Clinical Dark Spot Corrector & Optimizer,CLINIQUE,Treatment,3.1,0.791
+0,7,0.26,0.0,0.0,0.0,Advanced Night Repair Concentrated Recovery Eye Mask,ESTÉE LAUDER,Face Mask,3.3,0.815
+0,8,0.21,0.0,0.0,0.0,Renewed Hope in A Jar Overnight Recharging & Refining Moisturizer,PHILOSOPHY,Moisturizer,4.4,1.0
+0,9,0.15,0.0,0.0,0.0,Capture Totale Dreamskin 1-Minute Mask,DIOR,Face Mask,3.8,0.951
+1,0,0.65,0.54,0.22,0.59,Perfecting Day Cream Broad Spectrum SPF 30 PA+++,MURAD,Sun protect,4.2,0.858
+1,1,0.61,0.52,0.19,0.55,Protein Booster Skin Serum,JACK BLACK,Treatment,4.7,1.0
+1,2,0.57,0.48,0.17,0.52,Smart Broad Spectrum SPF 15 Custom-Repair Moisturizer for Very Dry to Dry Skin,CLINIQUE,Sun protect,4.4,0.841
+1,3,0.52,0.46,0.13,0.49,Advanced Night Repair Eye Serum Synchronized Complex II,ESTÉE LAUDER,Eye cream,3.5,0.964
+1,4,0.47,0.4,0.11,0.41,Modern Friction™ Cleansing Oil with Radiance-Boosting White & Purple Rice,ORIGINS,Cleanser,4.5,1.0
+1,5,0.4,0.38,0.05,0.37,BB Tinted Treatment 12-Hour Primer Broad Spectrum SPF 30 Sunscreen,TARTE,Moisturizer,4.3,1.0
+1,6,0.36,0.36,0.01,0.32,Super Fluid Daily UV Defense Sunscreen Broad Spectrum SPF 50+,KIEHL'S SINCE 1851,Sun protect,4.4,1.0
+1,7,0.3,0.31,0.0,0.28,T.L.C. Framboos™ Glycolic Night Serum,DRUNK ELEPHANT,Cleanser,4.3,1.0
+1,8,0.27,0.27,0.0,0.24,MOISTURE BOUND Refreshing Hydra-Gel Oil-Free,AMOREPACIFIC,Moisturizer,4.2,1.0
+1,9,0.19,0.19,0.0,0.17,Classic Face Sport SPF 50 - White Tea,COOLA,Sun protect,3.9,0.987
+2,0,0.85,0.6,0.81,0.73,Squalane + Vitamin C Rose Oil,BIOSSANCE,Moisturizer,4.4,1.0
+2,1,0.79,0.53,0.75,0.67,Mineral Crème Broad Spectrum SPF 50 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,4.3,1.0
+2,2,0.69,0.47,0.68,0.61,Acne Solutions Clarifying Lotion,CLINIQUE,Cleanser,4.4,0.803
+2,3,0.66,0.45,0.65,0.58,PRE:EMPT SERIES™ Exfoliating Pore Refiner,PERRICONE MD,Cleanser,4.5,0.779
+2,4,0.62,0.42,0.62,0.56,Midnight Recovery Concentrate,KIEHL'S SINCE 1851,Moisturizer,4.4,1.0
+2,5,0.55,0.38,0.54,0.51,BUBBLESHEET™ Oxygenating Deep Cleanse Mask,GLAMGLOW,Cleanser,4.3,1.0
+2,6,0.46,0.31,0.51,0.47,Photo Finish Primer Water,SMASHBOX,Moisturizer,4.1,1.0
+2,7,0.38,0.3,0.48,0.39,Hungarian Thermal Water Mineral-Rich Atomic Heat Mask,PETER THOMAS ROTH,Face Mask,4.0,0.946
+2,8,0.34,0.24,0.43,0.36,Foundation Primer Protect Broad Spectrum SPF 30 Sunscreen PA+++,LAURA MERCIER,Sun protect,4.1,0.852
+2,9,0.29,0.24,0.39,0.31,Water Replenishment Cotton Sheet Mask,DR. JART+,Face Mask,4.6,1.0
+3,0,0.23,0.29,0.08,0.23,Pore Corrector Anti-Aging Primer,ALGENIST,Treatment,4.4,1.0
+3,1,0.17,0.21,0.06,0.17,Whipped Argan Oil Face Butter,JOSIE MARAN,Moisturizer,4.1,1.0
+3,2,0.11,0.19,0.02,0.12,CoQ-10 Toner,INDIE LEE,Cleanser,4.4,1.0
+3,3,0.07,0.14,0.0,0.06,Vintage Single Extract Essence,AMOREPACIFIC,Moisturizer,4.5,1.0
+3,4,0.02,0.05,0.0,0.05,Luminous Deep Hydration Lifting Mask,TATCHA,Face Mask,4.5,1.0
+3,5,0.0,0.0,0.0,0.0,Honey Savior All-in-One Skin Repair Salve with Echinacea GreenEnvy™ Honey,FARMACY,Moisturizer,4.5,1.0
+3,6,0.0,0.0,0.0,0.0,Ready Steady Glow Daily AHA Tonic,REN CLEAN SKINCARE,Cleanser,4.4,1.0
+3,7,0.0,0.0,0.0,0.0,Treatment Lotion Hydrating Mask,LA MER,Face Mask,4.1,0.984
+3,8,0.0,0.0,0.0,0.0,Pumpkin Sleeping Pack,TOO COOL FOR SCHOOL,Face Mask,4.3,0.968
+3,9,0.0,0.0,0.0,0.0,Quick Dry Body Spray With SolSci-X™ Broad Spectrum SPF 40 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,3.9,1.0
+4,0,0.17,0.73,0.16,0.38,Invisiblur™ Perfecting Shield Broad Spectrum SPF 30 PA+++,MURAD,Treatment,3.9,0.97
+4,1,0.13,0.67,0.11,0.34,Advanced Génifique Yeux Light-Pearl™ Eye Illuminator Youth Activating Concentrate,LANCÔME,Eye cream,3.6,0.877
+4,2,0.09,0.6,0.11,0.28,Capture Youth Age-Delay Advanced Crème,DIOR,Moisturizer,3.9,1.0
+4,3,0.05,0.53,0.06,0.2,White Lucent MicroTargeting Spot Corrector,SHISEIDO,Treatment,3.4,0.929
+4,4,0.0,0.49,0.0,0.15,#GLITTERMASK GRAVITYMUD™ Firming Treatment,GLAMGLOW,Face Mask,4.3,1.0
+4,5,0.0,0.44,0.0,0.1,City Skin Age Defense Broad Spectrum SPF 50 PA++++,MURAD,Sun protect,4.7,0.926
+4,6,0.0,0.41,0.0,0.05,Zero Baggage Anti-Dark Circle Eye Cream,NATURALLY SERIOUS,Eye cream,3.3,0.775
+4,7,0.0,0.33,0.0,0.01,pores no more® multi-performance stick,DR. BRANDT SKINCARE,Sun protect,3.6,0.891
+4,8,0.0,0.28,0.0,0.0,Micellar Cleansing Water & Milk - Pomegranate,SEPHORA COLLECTION,Cleanser,4.2,1.0
+4,9,0.0,0.22,0.0,0.0,Day Cream Broad Spectrum Sunscreen SPF 30,ANTHONY,Sun protect,4.0,1.0
+5,0,0.21,0.94,0.88,0.31,Clear Improvement® Active Charcoal Mask to Clear Pores,ORIGINS,Face Mask,4.3,1.0
+5,1,0.17,0.91,0.85,0.28,Superfood Peptide Eye Cream,YOUTH TO THE PEOPLE,Eye cream,4.0,0.724
+5,2,0.15,0.85,0.75,0.29,Purity Made Simple One-Step Facial Cleansing Cloths,PHILOSOPHY,Cleanser,3.9,0.853
+5,3,0.12,0.77,0.69,0.24,Hydro Biotic™ Recovery Sleeping Mask,DR. BRANDT SKINCARE,Face Mask,4.6,1.0
+5,4,0.05,0.74,0.65,0.2,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Soothing Treatment Lotion,ORIGINS,Moisturizer,4.4,1.0
+5,5,0.0,0.69,0.6,0.18,Turmeric & Cranberry Seed Energizing Radiance Mask,KIEHL'S SINCE 1851,Face Mask,4.5,1.0
+5,6,0.0,0.66,0.55,0.16,Time Freeze Sleeping Mask,LANEIGE,Face Mask,4.3,1.0
+5,7,0.0,0.62,0.47,0.08,Clear Skin Lover Rubber Mask,DR. JART+,Face Mask,4.2,1.0
+5,8,0.0,0.57,0.4,0.02,GLAMGLOW x MY LITTLE PONY® #GLITTERMASK GRAVITYMUD™ Firming Treatment,GLAMGLOW,Face Mask,3.9,1.0
+5,9,0.0,0.54,0.34,0.0,Hello FAB Kona Eye Stick,FIRST AID BEAUTY,Eye cream,3.7,0.907
+6,0,0.4,0.22,1.0,0.51,Bye Bye Makeup™ 3-in-1 Makeup Melting Cleansing Balm,IT COSMETICS,Cleanser,4.5,0.863
+6,1,0.35,0.19,0.94,0.46,Advanced Anti-Aging Eye Cream Broad Spectrum Sunscreen SPF 37,SUPERGOOP!,Eye cream,3.8,0.993
+6,2,0.29,0.16,0.89,0.4,Mask-Imum Revival Hydra-Plumping Mask,NATURALLY SERIOUS,Face Mask,4.5,0.733
+6,3,0.26,0.13,0.82,0.38,Make-Up Removing Cleansing Oil,CAUDALIE,Cleanser,4.4,0.755
+6,4,0.21,0.11,0.78,0.4,Pro Light Self Tan Bronzing Mist,ST. TROPEZ TANNING ESSENTIALS,Sun protect,1.0,-0.088
+6,5,0.22,0.13,0.78,0.39,Sport Continuous Spray SPF 50 - Guava Mango,COOLA,Sun protect,4.1,1.0
+6,6,0.15,0.11,0.73,0.35,Detoxifying Black Charcoal Cleanser,BOSCIA,Cleanser,4.3,1.0
+6,7,0.08,0.06,0.66,0.28,Treatment Enzyme Peel,AMOREPACIFIC,Cleanser,4.7,0.768
+6,8,0.04,0.02,0.59,0.23,The Moisturizing Soft Cream,LA MER,Moisturizer,3.8,0.934
+6,9,0.0,0.0,0.55,0.18,Cilantro & Orange Extract Pollutant Defending Mask,KIEHL'S SINCE 1851,Face Mask,4.1,1.0
+7,0,0.97,0.86,0.01,0.72,Exfoliating Peel Gel,BOSCIA,Cleanser,4.1,0.983
+7,1,0.92,0.85,0.0,0.66,Water Sleeping Mask,LANEIGE,Moisturizer,4.4,1.0
+7,2,0.85,0.82,0.0,0.58,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Advanced Face Serum,ORIGINS,Treatment,4.1,0.978
+7,3,0.8,0.73,0.0,0.54,Black Jelly Pack,J.ONE,Face Mask,4.8,1.0
+7,4,0.73,0.67,0.0,0.49,Water Bank Moisture Cream,LANEIGE,Moisturizer,4.4,1.0
+7,5,0.7,0.6,0.0,0.44,Dragon Fruit Brightening Superfruit Mask,ORIGINS,Face Mask,3.8,0.925
+7,6,0.67,0.54,0.0,0.41,Defense Refresh Setting Mist Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,3.3,0.802
+7,7,0.62,0.5,0.0,0.4,MOISTURE BOUND Rejuvenating Serum,AMOREPACIFIC,Treatment,4.4,1.0
+7,8,0.58,0.49,0.0,0.39,Make-Up Removing Cleansing Oil,CAUDALIE,Cleanser,4.4,1.0
+7,9,0.51,0.46,0.0,0.37,Ibuki Refining Moisturizer Enriched,SHISEIDO,Moisturizer,4.4,1.0
+8,0,0.5,0.18,0.91,0.87,Water Pocket Sheet Mask Sleeping Mask (Replenishing),LANEIGE,Face Mask,4.8,0.961
+8,1,0.45,0.11,0.87,0.8,Advanced Génifique Eye Cream,LANCÔME,Eye cream,4.1,0.682
+8,2,0.41,0.09,0.86,0.77,Face the Truth™ Gel Cleanser,OLEHENRIKSEN,Cleanser,4.5,0.756
+8,3,0.33,0.02,0.8,0.73,Acne-Clear Invisible Dots,PETER THOMAS ROTH,Treatment,3.6,0.684
+8,4,0.3,0.0,0.76,0.69,Exfoliating Wipes - Charcoal - Detoxifying,SEPHORA COLLECTION,Cleanser,4.2,0.82
+8,5,0.28,0.0,0.7,0.67,DermalQuench Liquid Lift™ Advanced Wrinkle Treatment,KATE SOMERVILLE,Treatment,3.7,0.868
+8,6,0.24,0.0,0.65,0.64,Witch Hazel Herbal Extract Toner,BELIF,Cleanser,4.6,0.553
+8,7,0.18,0.0,0.64,0.63,So Nurturing™ Cleansing Cloths,OLEHENRIKSEN,Cleanser,4.0,0.721
+8,8,0.11,0.0,0.61,0.58,Facial Treatment Essence,SK-II,Moisturizer,4.1,0.677
+8,9,0.1,0.0,0.55,0.58,Nutrient-Charged Water Gel,MURAD,Moisturizer,4.6,1.0
+9,0,0.02,0.93,0.88,0.83,Clear Complexion Tonic,BOSCIA,Cleanser,4.3,1.0
+9,1,0.0,0.85,0.84,0.8,Fresh Pressed 7-day System with Pure Vitamin C,CLINIQUE,Cleanser,4.1,1.0
+9,2,0.0,0.8,0.78,0.77,Classic Face SPF 30 - Cucumber,COOLA,Sun protect,4.4,0.867
+9,3,0.0,0.75,0.73,0.7,Shaping Facial Lift Total V Contouring Serum,CLARINS,Treatment,3.7,0.587
+9,4,0.0,0.7,0.71,0.68,Daily Moisturizer Broad Spectrum SPF 35,SKIN LAUNDRY,Sun protect,4.1,1.0
+9,5,0.0,0.65,0.67,0.62,Skin Rescue Deep Cleanser With Red Clay,FIRST AID BEAUTY,Cleanser,4.3,1.0
+9,6,0.0,0.59,0.63,0.57,MOISTURE BOUND Rejuvenating Crème,AMOREPACIFIC,Moisturizer,4.1,0.661
+9,7,0.0,0.56,0.58,0.54,Advanced Night Repair Concentrated Recovery Eye Mask,ESTÉE LAUDER,Face Mask,3.3,0.591
+9,8,0.0,0.52,0.55,0.5,Un-Wrinkle® Turbo Face Serum,PETER THOMAS ROTH,Treatment,3.7,0.749
+9,9,0.0,0.47,0.54,0.46,Prismatic Luminizing Shield SPF 50,VOLITION BEAUTY,Sun protect,4.2,0.987
+10,0,0.48,0.55,0.27,0.87,Multi-Task Eye Serum Mask,ERNO LASZLO,Eye cream,4.5,1.0
+10,1,0.45,0.5,0.2,0.77,Fresh Pressed Renewing Powder Cleanser with Pure Vitamin C,CLINIQUE,Cleanser,4.9,1.0
+10,2,0.41,0.42,0.16,0.73,Kakadu C™ Intensive Vitamin C Peel Pads with Ferulic Acid & Vitamin E,DERMADOCTOR,Treatment,4.8,1.0
+10,3,0.39,0.36,0.11,0.67,Sun Lotion 30 SPF,MOROCCANOIL,Sun protect,4.4,1.0
+10,4,0.34,0.33,0.03,0.61,Deep Cleansing Exfoliator,CAUDALIE,Cleanser,4.6,1.0
+10,5,0.32,0.3,0.0,0.56,Extra Eye Repair Cream,BOBBI BROWN,Eye cream,4.2,0.968
+10,6,0.26,0.25,0.0,0.53,Luminous Dewy Skin Night Concentrate,TATCHA,Moisturizer,4.5,0.919
+10,7,0.21,0.17,0.0,0.47,Pure Truth™ Youth Activating Oil,OLEHENRIKSEN,Treatment,4.0,1.0
+10,8,0.14,0.15,0.0,0.42,Extra Eye Repair Cream,BOBBI BROWN,Eye cream,4.2,1.0
+10,9,0.1,0.1,0.0,0.36,Virgin Marula Luxury Facial Oil Mini,DRUNK ELEPHANT,Moisturizer,4.5,1.0
+11,0,0.12,0.22,0.34,0.59,Squalane + Mineral SPF 45,BIOSSANCE,Sun protect,3.7,0.822
+11,1,0.12,0.2,0.3,0.57,High Potency Classics: Face Finishing & Firming Moisturizer Tint SPF 30,PERRICONE MD,Sun protect,4.3,1.0
+11,2,0.09,0.15,0.23,0.53,Water Drop Hydrating Moisturizer,DR. JART+,Moisturizer,4.1,0.974
+11,3,0.03,0.11,0.15,0.5,The Moisturizing Matte Lotion,LA MER,Moisturizer,3.9,1.0
+11,4,0.0,0.02,0.11,0.45,Acne Solutions BB Cream Broad Spectrum SPF 40,CLINIQUE,Moisturizer,4.1,0.997
+11,5,0.0,0.0,0.05,0.41,White Lucent Brightening Cleansing Foam,SHISEIDO,Cleanser,4.5,0.884
+11,6,0.0,0.0,0.0,0.39,Advanced Génifique Eye Cream,LANCÔME,Eye cream,4.1,1.0
+11,7,0.0,0.0,0.0,0.35,All About Eyes™ Rich,CLINIQUE,Eye cream,4.2,1.0
+11,8,0.0,0.0,0.0,0.32,Glow Addict Mask,FOREO,Face Mask,0.0,0.156
+11,9,0.0,0.02,0.0,0.3,Cicapair™ Tiger Grass Cream,DR. JART+,Moisturizer,4.3,1.0
+12,0,0.21,0.13,0.94,0.57,BB Crème au Ginseng,ERBORIAN,Moisturizer,4.4,0.786
+12,1,0.21,0.11,0.89,0.54,Red Jelly Pack,J.ONE,Treatment,3.9,0.624
+12,2,0.17,0.08,0.86,0.5,Ceramic Slip Cleanser,SUNDAY RILEY,Cleanser,4.3,0.769
+12,3,0.18,0.02,0.82,0.44,Ultra Facial Cream SPF 30,KIEHL'S SINCE 1851,Moisturizer,4.2,1.0
+12,4,0.09,0.0,0.77,0.41,Wild Rose 15% Vitamin C Spotless Serum,KORRES,Treatment,3.9,1.0
+12,5,0.06,0.0,0.74,0.39,Black Tea Firming and De-Puffing Eye Cream,FRESH,Eye cream,4.0,0.729
+12,6,0.03,0.0,0.71,0.33,Black Jelly Pack,J.ONE,Face Mask,4.8,1.0
+12,7,0.0,0.0,0.68,0.3,Clear Complexion Cleanser,BOSCIA,Cleanser,4.4,1.0
+12,8,0.0,0.0,0.66,0.23,Essential-C Eye Cream SPF 15 PA++,MURAD,Eye cream,4.0,0.744
+12,9,0.0,0.0,0.63,0.16,Hyaluronic Marine Oil-Free Moisture Cushion,DR. DENNIS GROSS SKINCARE,Moisturizer,4.2,0.729
+13,0,0.98,0.1,0.4,0.34,Bio Performance Glow Revival Eye Treatment,SHISEIDO,Eye cream,4.0,0.776
+13,1,0.93,0.05,0.38,0.33,Crème de la Mer,LA MER,Moisturizer,4.1,1.0
+13,2,0.89,0.0,0.33,0.26,Renewed Hope in a Jar Skin Tint,PHILOSOPHY,Sun protect,4.1,0.923
+13,3,0.84,0.0,0.27,0.19,Yoghurt Nourishing Fluid Veil Face Sunscreen Broad Spectrum SPF 30,KORRES,Sun protect,3.9,0.968
+13,4,0.79,0.0,0.23,0.13,Charcoal Pore-Minimizing Bio-Cellulose Mask,BOSCIA,Face Mask,4.2,0.954
+13,5,0.72,0.0,0.18,0.09,Tsubaki Oil Deep Hydrating Bio-Cellulose Mask,BOSCIA,Face Mask,4.1,0.956
+13,6,0.68,0.0,0.09,0.05,Call It A Night Revitalizing & Nourishing UFO™ Activated Mask,FOREO,Face Mask,4.7,1.0
+13,7,0.66,0.0,0.05,0.0,Photo Finish Primerizer,SMASHBOX,Moisturizer,4.1,1.0
+13,8,0.61,0.0,0.0,0.0,Flower Fusion™ Violet Nourishing Sheet Mask,ORIGINS,Face Mask,3.6,0.904
+13,9,0.56,0.0,0.0,0.0,Premier Cru Rich Cream,CAUDALIE,Moisturizer,4.5,1.0
+14,0,0.55,0.05,1.0,0.84,ELEVATE Advanced Lift Contouring Cream,ALGENIST,Treatment,4.3,0.802
+14,1,0.51,0.0,0.96,0.78,Repairwear Laser Focus,CLINIQUE,Treatment,4.1,0.712
+14,2,0.46,0.0,0.9,0.74,Super City Block Oil-Free Daily Face Protector Broad Spectrum 40 SPF,CLINIQUE,Sun protect,4.2,0.821
+14,3,0.41,0.0,0.87,0.68,The Moisturizing Soft Cream,LA MER,Moisturizer,3.8,0.676
+14,4,0.37,0.0,0.85,0.62,Advanced Anti-Aging Repairing Oil,ALGENIST,Treatment,4.4,1.0
+14,5,0.34,0.0,0.78,0.6,Cucumber Gel Mask Extreme Detoxifying Hydrator,PETER THOMAS ROTH,Face Mask,4.2,1.0
+14,6,0.28,0.0,0.7,0.53,Midnight Recovery Botanical Cleansing Oil,KIEHL'S SINCE 1851,Cleanser,4.4,1.0
+14,7,0.22,0.0,0.67,0.51,C+ Collagen Deep Cream,DR. DENNIS GROSS SKINCARE,Moisturizer,4.2,0.982
+14,8,0.18,0.0,0.61,0.47,Turmeric Brightening Polish,VOLITION BEAUTY,Cleanser,4.6,1.0
+14,9,0.12,0.0,0.56,0.4,Peony Brightening Night Treatment Mask,FRESH,Face Mask,4.0,0.992
+15,0,0.27,0.78,0.46,0.42,IRIS™ Illuminating Eye Massager,FOREO,Eye cream,3.5,0.725
+15,1,0.23,0.74,0.4,0.37,Lock-It Makeup Setting Mist,KAT VON D,Moisturizer,4.1,0.931
+15,2,0.19,0.67,0.32,0.32,Sake Brightening Bio-Cellulose Mask,BOSCIA,Face Mask,4.3,1.0
+15,3,0.1,0.65,0.31,0.28,Multi-Active Day Cream SPF 20 - All Skin Types,CLARINS,Sun protect,3.5,0.64
+15,4,0.09,0.6,0.29,0.27,Dermaclear™ Micro Water,DR. JART+,Cleanser,4.4,0.97
+15,5,0.06,0.54,0.25,0.22,Cicapair™ Tiger Grass Nightly Re.Pair Mask,DR. JART+,Face Mask,4.3,1.0
+15,6,0.03,0.47,0.21,0.17,Turmeric Brightening Polish,VOLITION BEAUTY,Cleanser,4.6,1.0
+15,7,0.0,0.39,0.18,0.12,Ultramoor Mud Mask,OMOROVICZA,Face Mask,4.5,1.0
+15,8,0.0,0.35,0.09,0.05,VOLCASMIC™ Matte Glow Moisturizer,GLAMGLOW,Moisturizer,4.1,0.94
+15,9,0.0,0.28,0.04,0.0,White Lucent Luminizing Infuser,SHISEIDO,Cleanser,3.8,0.953
+16,0,0.06,0.58,0.5,0.85,Alpha Beta® Universal Daily Peel,DR. DENNIS GROSS SKINCARE,Treatment,4.5,1.0
+16,1,0.01,0.52,0.45,0.78,Black Jelly Pack,J.ONE,Face Mask,4.8,1.0
+16,2,0.0,0.45,0.41,0.75,Dermask Intra Jet Firming Solution™,DR. JART+,Face Mask,3.3,0.775
+16,3,0.0,0.4,0.38,0.72,Flower Fusion™ Violet Nourishing Sheet Mask,ORIGINS,Face Mask,3.6,0.914
+16,4,0.0,0.34,0.27,0.66,Day-Light Protection Sun Screen SPF 50 PA+++,NEOGEN DERMALOGY,Sun protect,4.6,1.0
+16,5,0.0,0.29,0.22,0.65,MATCHA Magic Super-Antioxidant Mask,BOSCIA,Face Mask,4.5,1.0
+16,6,0.0,0.25,0.2,0.61,Acne Healing Dots,PEACE OUT,Treatment,4.3,0.989
+16,7,0.0,0.24,0.14,0.56,Detoxifying Silt Gelee Mask,VOLITION BEAUTY,Face Mask,4.7,1.0
+16,8,0.0,0.18,0.06,0.51,Facial Treatment Oil,SK-II,Moisturizer,4.5,0.841
+16,9,0.0,0.13,0.03,0.47,Virgin Marula Luxury Facial Oil,DRUNK ELEPHANT,Moisturizer,4.4,1.0
+17,0,0.59,0.62,0.42,0.58,Flower Fusion™ Raspberry Refreshing Sheet Mask,ORIGINS,Face Mask,4.6,1.0
+17,1,0.58,0.55,0.35,0.5,Water Drench Hyaluronic Cloud Hydra-Gel Eye Patches,PETER THOMAS ROTH,Eye cream,4.4,1.0
+17,2,0.53,0.51,0.29,0.42,Essential Power Skin Toner for Normal to Dry Skin,LANEIGE,Cleanser,4.5,1.0
+17,3,0.45,0.46,0.21,0.38,FUTURE RESPONSE Age Defense Creme SPF 30,AMOREPACIFIC,Sun protect,3.8,0.923
+17,4,0.4,0.42,0.2,0.35,Pomegranate AHA & Enzymes Resurfacing Mask,KORRES,Face Mask,4.4,0.968
+17,5,0.36,0.35,0.16,0.32,GLOWSTARTER™ Mega Illuminating Moisturizer,GLAMGLOW,Moisturizer,4.0,0.954
+17,6,0.33,0.3,0.14,0.28,Face Lotion SPF 30,MOROCCANOIL,Sun protect,0.0,0.127
+17,7,0.31,0.31,0.11,0.29,Dermaclear™ Micro Milk Peel,DR. JART+,Treatment,4.4,1.0
+17,8,0.24,0.25,0.07,0.25,Neuropeptide Firming & Illuminating Under-Eye Cream,PERRICONE MD,Eye cream,5.0,1.0
+17,9,0.2,0.18,0.03,0.17,Clearly Corrective™ Dark Circle Perfector,KIEHL'S SINCE 1851,Eye cream,3.6,0.916
+18,0,0.07,0.46,1.0,1.0,Resveratrol Lift Firming Serum,CAUDALIE,Treatment,4.3,0.786
+18,1,0.05,0.42,0.98,0.97,MATCHA Magic Super-Antioxidant Mask,BOSCIA,Face Mask,4.5,1.0
+18,2,0.0,0.37,0.93,0.95,Herbal-Infused Micellar Cleansing Water,KIEHL'S SINCE 1851,Cleanser,3.7,0.894
+18,3,0.0,0.32,0.87,0.9,A Perfect World™ SPF 40 Age-Defense Moisturizer with White Tea,ORIGINS,Moisturizer,3.5,0.845
+18,4,0.0,0.26,0.86,0.84,Advanced Night Repair Synchronized Recovery Complex II,ESTÉE LAUDER,Treatment,4.3,1.0
+18,5,0.0,0.18,0.83,0.8,Capture Youth Plump Filler Age-Delay Plumping Serum,DIOR,Treatment,4.4,0.739
+18,6,0.0,0.15,0.81,0.78,Tarteguard Mineral Powder Sunscreen Broad Spectrum SPF 30,TARTE,Sun protect,4.2,1.0
+18,7,0.0,0.08,0.72,0.72,All That Contours Hydrogel Expansion Stretch Mask,DR. JART+,Face Mask,3.3,0.834
+18,8,0.0,0.04,0.69,0.7,Instant Radiance Sun Defense Sunscreen Broad Spectrum SPF 40,DR. DENNIS GROSS SKINCARE,Sun protect,3.9,0.925
+18,9,0.0,0.0,0.6,0.65,Waterproof Eye Makeup Remover,SEPHORA COLLECTION,Cleanser,4.4,0.86
+19,0,0.61,0.99,0.65,0.01,The Moisturizing Soft Lotion,LA MER,Moisturizer,3.6,0.649
+19,1,0.57,0.99,0.62,0.0,GinZing™ Peel-Off Mask to Refine and Refresh,ORIGINS,Face Mask,3.0,0.504
+19,2,0.54,0.95,0.6,0.0,Bye Bye Pores Primer™ Oil-Free Poreless Skin-Perfecting Serum Primer,IT COSMETICS,Treatment,3.6,0.938
+19,3,0.53,0.92,0.58,0.0,No Puffery™ Cooling Roll-On For Puffy Eyes,ORIGINS,Eye cream,3.4,0.654
+19,4,0.47,0.88,0.54,0.0,Saturn Sulfur Acne Treatment Mask,SUNDAY RILEY,Treatment,4.3,1.0
+19,5,0.46,0.84,0.48,0.0,Ultra Facial Cream SPF 30,KIEHL'S SINCE 1851,Moisturizer,4.2,1.0
+19,6,0.43,0.82,0.45,0.0,Luna Sleeping Night Oil,SUNDAY RILEY,Moisturizer,4.1,0.993
+19,7,0.35,0.74,0.39,0.0,Daily Protection Broad Spectrum SPF 50 Sunscreen,EVE LOM,Sun protect,4.4,1.0
+19,8,0.3,0.69,0.35,0.0,After Sun Greek Yoghurt Cooling Gel for Face and Body,KORRES,Sun protect,4.6,1.0
+19,9,0.25,0.67,0.3,0.0,EradiKate™ Acne Treatment,KATE SOMERVILLE,Treatment,4.3,1.0
+20,0,0.72,0.2,0.63,0.26,Wrinkle Release Facial Sheet Mask,SKIN LAUNDRY,Face Mask,4.2,1.0
+20,1,0.7,0.14,0.56,0.18,Resort Collection Sun Protection Mist Broad Spectrum SPF 30 Sunscreen,AMOREPACIFIC,Sun protect,3.3,0.88
+20,2,0.68,0.08,0.55,0.14,Beauty Water,SON & PARK,Moisturizer,4.6,1.0
+20,3,0.6,0.05,0.52,0.1,Ultramoor Mud Mask,OMOROVICZA,Face Mask,4.5,1.0
+20,4,0.54,0.02,0.47,0.06,Glow Addict Mask,FOREO,Face Mask,0.0,0.2
+20,5,0.52,0.0,0.48,0.05,Modern Friction™ Cleansing Oil with Radiance-Boosting White & Purple Rice,ORIGINS,Cleanser,4.5,1.0
+20,6,0.47,0.0,0.41,0.0,Advanced Génifique Sensitive Antioxidant Serum,LANCÔME,Treatment,4.6,1.0
+20,7,0.47,0.0,0.37,0.0,Cellumination Cream EX,SK-II,Moisturizer,4.3,1.0
+20,8,0.44,0.0,0.34,0.0,Nose Mask - Pineapple,SEPHORA COLLECTION,Face Mask,2.9,0.802
+20,9,0.4,0.0,0.3,0.0,Hydration Lover Rubber Mask,DR. JART+,Face Mask,4.0,1.0
+21,0,0.74,0.55,0.43,0.01,Essential Energy Eye Definer,SHISEIDO,Eye cream,0.0,0.204
+21,1,0.74,0.53,0.42,0.01,The Eye Concentrate,LA MER,Eye cream,3.6,0.682
+21,2,0.7,0.47,0.41,0.0,Dermaclear™ Micro Milk Peel,DR. JART+,Treatment,4.4,1.0
+21,3,0.67,0.41,0.33,0.0,C+ Collagen Brighten & Firm Vitamin C Serum,DR. DENNIS GROSS SKINCARE,Treatment,3.9,0.893
+21,4,0.63,0.37,0.28,0.0,Blackhead Solutions Self-heating Blackhead Extractor,CLINIQUE,Cleanser,3.7,0.888
+21,5,0.59,0.3,0.23,0.0,Helix AM/PM Eye Gel,VOLITION BEAUTY,Eye cream,3.9,0.994
+21,6,0.56,0.23,0.16,0.0,Squalane + Antioxidant Cleansing Oil,BIOSSANCE,Moisturizer,4.4,1.0
+21,7,0.48,0.21,0.12,0.0,Clay Mask,SEPHORA COLLECTION,Face Mask,4.3,1.0
+21,8,0.44,0.2,0.06,0.0,Flower Fusion™ Orange Radiance-Boosting Sheet Mask,ORIGINS,Face Mask,3.8,1.0
+21,9,0.39,0.14,0.0,0.0,Checks and Balances™ Frothy Face Wash,ORIGINS,Cleanser,4.3,1.0
+22,0,0.8,0.86,0.9,0.21,24K Gold Mask Pure Luxury Lift & Firm Mask,PETER THOMAS ROTH,Face Mask,3.4,0.951
+22,1,0.76,0.8,0.86,0.18,Water Bank Moisture Cream,LANEIGE,Moisturizer,4.4,0.796
+22,2,0.73,0.78,0.81,0.14,Sleeping Mask - Rose,SEPHORA COLLECTION,Face Mask,4.3,0.535
+22,3,0.69,0.77,0.77,0.12,Moisture Surge CC Cream Hydrating Colour Corrector Broad Spectrum SPF 30,CLINIQUE,Moisturizer,3.8,0.712
+22,4,0.64,0.76,0.71,0.09,Powerful Wrinkle Reducing Cream Sunscreen Broad Spectrum SPF 30,KIEHL'S SINCE 1851,Sun protect,3.5,0.906
+22,5,0.57,0.7,0.69,0.06,Daily Reviving Concentrate,KIEHL'S SINCE 1851,Moisturizer,4.7,1.0
+22,6,0.51,0.61,0.65,0.0,High Potency Classics: Nutritive Cleanser,PERRICONE MD,Cleanser,4.4,1.0
+22,7,0.46,0.57,0.59,0.0,Alpha Beta® Ultra Gentle Daily Peel for Sensitive Skin,DR. DENNIS GROSS SKINCARE,Treatment,4.3,1.0
+22,8,0.41,0.52,0.54,0.0,Kakadu C ™ Serum,DERMADOCTOR,Treatment,4.1,0.873
+22,9,0.37,0.49,0.5,0.01,FAB Skin Lab Retinol Serum 0.25% Pure Concentrate,FIRST AID BEAUTY,Treatment,4.3,1.0
+23,0,0.81,0.88,0.02,0.74,Ultimate Miracle Worker Multi-Rejuvenating Retinol + Superfood Oil and Pads,PHILOSOPHY,Cleanser,4.1,1.0
+23,1,0.77,0.82,0.0,0.69,GENIUS Liquid Collagen,ALGENIST,Treatment,4.0,0.994
+23,2,0.71,0.75,0.0,0.63,Extra-Firming Mask,CLARINS,Face Mask,4.9,1.0
+23,3,0.64,0.68,0.0,0.57,Vitamin C Ester Brightening Amine Face Lift,PERRICONE MD,Treatment,4.4,0.931
+23,4,0.58,0.64,0.0,0.49,Moisturizing Foam Cleanser,LANEIGE,Cleanser,3.8,0.735
+23,5,0.51,0.62,0.0,0.46,Hello Bright Eyes,ERNO LASZLO,Eye cream,5.0,1.0
+23,6,0.44,0.56,0.0,0.39,Ultra Facial Cream SPF 30,KIEHL'S SINCE 1851,Moisturizer,4.2,1.0
+23,7,0.36,0.49,0.0,0.31,Advanced Génifique Yeux Light-Pearl™ Eye Illuminator Youth Activating Concentrate,LANCÔME,Eye cream,3.6,1.0
+23,8,0.34,0.43,0.0,0.26,Pure Argan Milk™ Intensive Hydrating Treatment,JOSIE MARAN,Treatment,4.0,0.777
+23,9,0.31,0.37,0.0,0.19,Repairwear Anti-Gravity Eye Lift Cream,CLINIQUE,Eye cream,4.2,0.917
+24,0,0.22,0.82,0.46,0.31,Rise + Shine Gentle Cleanser,SATURDAY SKIN,Cleanser,4.5,1.0
+24,1,0.19,0.77,0.41,0.31,Herbal-Infused Micellar Cleansing Water,KIEHL'S SINCE 1851,Cleanser,3.7,0.866
+24,2,0.17,0.73,0.39,0.29,The Method: Polish Blemish Control,LANCER,Cleanser,4.7,1.0
+24,3,0.16,0.7,0.35,0.25,#GLITTERMASK GRAVITYMUD™ Firming Treatment,GLAMGLOW,Face Mask,4.3,1.0
+24,4,0.11,0.63,0.31,0.18,Puffy Under-Eye Patches,PEACE OUT,Eye cream,4.6,1.0
+24,5,0.02,0.6,0.27,0.13,Super Fluid Daily UV Defense Sunscreen Broad Spectrum SPF 50+,KIEHL'S SINCE 1851,Sun protect,4.4,1.0
+24,6,0.0,0.53,0.2,0.06,Pep-Start Daily UV Protector Broad Spectrum SPF 50,CLINIQUE,Sun protect,4.2,0.969
+24,7,0.0,0.48,0.16,0.01,EGF Day Serum,BIOEFFECT,Treatment,4.6,1.0
+24,8,0.0,0.4,0.11,0.0,Hydrating Facial Sheet Mask,SKIN LAUNDRY,Face Mask,4.2,0.987
+24,9,0.0,0.38,0.06,0.0,Invincible Setting Powder SPF 45 Refill,SUPERGOOP!,Sun protect,5.0,1.0
+25,0,0.98,0.54,0.94,0.12,Purity Made Simple Cleanser,PHILOSOPHY,Cleanser,4.5,0.811
+25,1,0.95,0.5,0.88,0.07,Beauty Shroom™ Plumping Jelly Serum,MOON JUICE,Treatment,4.5,1.0
+25,2,0.92,0.43,0.84,0.04,Detoxifying Silt Gelee Mask,VOLITION BEAUTY,Face Mask,4.7,1.0
+25,3,0.86,0.37,0.78,0.0,Deep Cleansing Mask,OMOROVICZA,Face Mask,4.3,0.843
+25,4,0.77,0.35,0.73,0.0,GinZing™ Refreshing Scrub Cleanser,ORIGINS,Cleanser,4.5,1.0
+25,5,0.71,0.3,0.7,0.0,Future Solution LX Extra Rich Cleansing Foam,SHISEIDO,Cleanser,4.3,0.805
+25,6,0.68,0.22,0.68,0.0,Miracle Water 3-in-1 Micellar Cleanser,IT COSMETICS,Moisturizer,4.5,1.0
+25,7,0.64,0.19,0.57,0.0,Beauty Water,SON & PARK,Moisturizer,4.6,1.0
+25,8,0.58,0.14,0.55,0.0,T.L.C. Sukari Babyfacial™,DRUNK ELEPHANT,Cleanser,4.5,1.0
+25,9,0.52,0.13,0.52,0.0,Facial Treatment Clear Lotion Toner,SK-II,Cleanser,4.1,1.0
+26,0,0.39,0.58,0.25,0.71,Doctor's Kit Gold Standard Anti-Aging Solution,DR. DENNIS GROSS SKINCARE,Treatment,5.0,1.0
+26,1,0.32,0.53,0.2,0.67,Vine[activ] Energizing Vitamin C Eye Cream,CAUDALIE,Eye cream,3.7,0.874
+26,2,0.3,0.47,0.14,0.6,PROfessional Strength 40% Triple Acid Peel,PETER THOMAS ROTH,Treatment,4.0,0.957
+26,3,0.28,0.44,0.05,0.56,Micellar Cleansing Water & Milk,SEPHORA COLLECTION,Cleanser,4.1,1.0
+26,4,0.21,0.35,0.0,0.49,Facial Soap with Dish,CLINIQUE,Cleanser,4.4,0.833
+26,5,0.17,0.32,0.0,0.43,C-Tango™ Multivitamin Eye Cream,DRUNK ELEPHANT,Eye cream,0.0,0.181
+26,6,0.14,0.33,0.0,0.42,5 in 1 Eye Cream,FIRST AID BEAUTY,Eye cream,3.9,0.953
+26,7,0.06,0.27,0.0,0.4,C-Firma™ Day Serum,DRUNK ELEPHANT,Treatment,4.1,0.994
+26,8,0.02,0.22,0.0,0.33,Dramatically Different Moisturizing Gel,CLINIQUE,Moisturizer,4.5,1.0
+26,9,0.0,0.2,0.0,0.28,Everyday Sunscreen Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.3,0.951
+27,0,0.31,0.85,0.72,0.3,Rapid Age Spot and Pigment Lightening Serum,MURAD,Treatment,3.8,0.721
+27,1,0.28,0.81,0.68,0.25,Cold Plasma+ Eye,PERRICONE MD,Eye cream,4.0,0.934
+27,2,0.23,0.75,0.64,0.19,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Soothing Face Mask,ORIGINS,Face Mask,4.5,1.0
+27,3,0.18,0.69,0.61,0.12,C+ Collagen Brighten & Firm Eye Cream,DR. DENNIS GROSS SKINCARE,Eye cream,3.5,0.919
+27,4,0.13,0.66,0.58,0.07,FRXXXTION Stick Exfoliating Cleanser,TARTE,Cleanser,4.6,1.0
+27,5,0.12,0.62,0.55,0.02,Deep Cleansing Mask,OMOROVICZA,Face Mask,4.3,1.0
+27,6,0.08,0.55,0.5,0.0,Repairative Moisturizer,TATA HARPER,Moisturizer,3.4,0.647
+27,7,0.02,0.51,0.43,0.0,Premier Cru Eye Cream,CAUDALIE,Eye cream,3.3,0.87
+27,8,0.0,0.48,0.38,0.0,Ferulic + Retinol Eye Cream,DR. DENNIS GROSS SKINCARE,Eye cream,3.4,0.797
+27,9,0.0,0.47,0.32,0.0,Prism Exfoliating Glow Potion,HERBIVORE,Treatment,4.3,1.0
+28,0,0.3,0.55,0.0,0.29,Make My Day Hydrating & Anti-Pollution UFO™ Activated Mask,FOREO,Face Mask,5.0,1.0
+28,1,0.23,0.5,0.0,0.24,Ferulic + Retinol Wrinkle Recovery Peel,DR. DENNIS GROSS SKINCARE,Treatment,4.4,1.0
+28,2,0.2,0.45,0.0,0.17,Rescue Mask,EVE LOM,Face Mask,3.9,1.0
+28,3,0.12,0.41,0.0,0.13,Pore Master Patch,DR. JART+,Face Mask,3.4,0.905
+28,4,0.09,0.39,0.0,0.13,High Potency Classics: Nutritive Cleanser,PERRICONE MD,Cleanser,4.4,1.0
+28,5,0.06,0.31,0.0,0.08,Vital Treatment Essence for Hydrating,BLITHE,Cleanser,4.5,1.0
+28,6,0.01,0.26,0.0,0.04,Super Fluid UV Mineral Defense Titanium Dioxide Sunscreen Broad Spectrum SPF 50+,KIEHL'S SINCE 1851,Sun protect,3.7,0.903
+28,7,0.0,0.2,0.0,0.0,Argan Daily Moisturizer Tinted SPF 47 Protect + Perfect,JOSIE MARAN,Sun protect,4.0,0.862
+28,8,0.0,0.13,0.0,0.0,Professional 3% Retinoid Plus,PETER THOMAS ROTH,Treatment,4.6,1.0
+28,9,0.0,0.06,0.0,0.0,Eye Fuel,KIEHL'S SINCE 1851,Eye cream,4.0,0.978
+29,0,0.08,0.52,0.63,0.34,Pore Corrector Anti-Aging Primer,ALGENIST,Treatment,4.4,1.0
+29,1,0.05,0.48,0.56,0.27,Face Mask,SEPHORA COLLECTION,Face Mask,4.3,1.0
+29,2,0.01,0.43,0.48,0.23,Clinique Smart Custom-Repair Serum,CLINIQUE,Treatment,4.0,0.938
+29,3,0.0,0.38,0.44,0.19,Fresh Pressed Renewing Powder Cleanser with Pure Vitamin C,CLINIQUE,Cleanser,4.9,1.0
+29,4,0.0,0.31,0.39,0.1,Vital Treatment Essence for Hydrating,BLITHE,Cleanser,4.5,1.0
+29,5,0.0,0.27,0.35,0.1,Purity Made Simple Cleanser,PHILOSOPHY,Cleanser,4.5,1.0
+29,6,0.0,0.21,0.29,0.01,MD Crème Mineral Beauty Balm Broad Spectrum SPF 50 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,4.2,1.0
+29,7,0.0,0.15,0.24,0.01,Time In A Bottle 100% In-Control,PHILOSOPHY,Treatment,4.0,1.0
+29,8,0.0,0.13,0.17,0.0,High Potency Classics: Face Finishing & Firming Moisturizer,PERRICONE MD,Moisturizer,4.3,1.0
+29,9,0.0,0.06,0.16,0.0,Future Solution LX Extra Rich Cleansing Foam,SHISEIDO,Cleanser,4.3,1.0
+30,0,0.41,0.63,0.19,0.7,Watermelon Glow Sleeping Mask,GLOW RECIPE,Moisturizer,4.1,0.993
+30,1,0.39,0.59,0.15,0.64,NightBright™ Duo,DRUNK ELEPHANT,Treatment,4.2,0.987
+30,2,0.32,0.55,0.11,0.57,+ Retinol Firming Eye Cream,KATE SOMERVILLE,Eye cream,3.7,0.884
+30,3,0.25,0.51,0.08,0.53,Ultra Repair® Pure Mineral Sunscreen Moisturizer Broad Spectrum SPF 40,FIRST AID BEAUTY,Sun protect,3.6,0.925
+30,4,0.22,0.47,0.0,0.48,Uplifting Miracle Worker Eye Cream,PHILOSOPHY,Eye cream,3.1,0.771
+30,5,0.15,0.42,0.0,0.45,YOUTHMUD™ Tinglexfoliate Treatment,GLAMGLOW,Cleanser,4.1,1.0
+30,6,0.11,0.36,0.0,0.39,DermalQuench Liquid Lift™ + Retinol Advanced Resurfacing Treatment,KATE SOMERVILLE,Treatment,4.1,1.0
+30,7,0.06,0.29,0.0,0.31,Black Tea Age-Delay Lotion Broad Spectrum Sunscreen SPF 20,FRESH,Sun protect,3.5,0.884
+30,8,0.01,0.25,0.0,0.25,I-Waken Eye Serum,INDIE LEE,Eye cream,3.8,0.95
+30,9,0.0,0.19,0.0,0.19,Waterproof Eye Make-Up Remover with Soothing Cornflower,KLORANE,Cleanser,4.5,0.776
+31,0,0.52,0.05,0.25,0.85,Ibuki Beauty Sleeping Mask,SHISEIDO,Moisturizer,4.4,0.983
+31,1,0.47,0.0,0.19,0.85,ExfoliKate® Cleanser Daily Foaming Wash,KATE SOMERVILLE,Cleanser,4.5,0.901
+31,2,0.41,0.0,0.14,0.81,Shake & Shot™ Rubber Hydro Mask,DR. JART+,Face Mask,4.6,1.0
+31,3,0.36,0.0,0.13,0.77,Flawless Skin Daily Face Shield SPF 40,LAURA MERCIER,Sun protect,4.2,0.861
+31,4,0.31,0.0,0.07,0.75,Essential Power Skin Toner for Combination to Oily Skin,LANEIGE,Cleanser,4.4,1.0
+31,5,0.28,0.0,0.01,0.72,Rub-A-Dub Refining Peel Gel,SATURDAY SKIN,Cleanser,4.6,1.0
+31,6,0.24,0.0,0.0,0.66,Sens’Eyes - Waterproof Sensitive Eye Cleanser,MAKE UP FOR EVER,Cleanser,4.4,0.839
+31,7,0.2,0.0,0.0,0.62,Ready Steady Glow Daily AHA Tonic,REN CLEAN SKINCARE,Cleanser,4.4,0.992
+31,8,0.15,0.0,0.0,0.54,High-Potency Night-a-Mins™ Resurfacing Cream with Fruit-Derived AHAs,ORIGINS,Moisturizer,4.3,0.859
+31,9,0.1,0.0,0.0,0.48,Lightstim® for Acne,LIGHTSTIM,Treatment,4.0,0.989
+32,0,0.83,0.55,0.9,0.74,Facial Treatment Cleansing Oil,SK-II,Cleanser,4.5,0.878
+32,1,0.78,0.51,0.88,0.66,Water Bank Hydrating Gel,LANEIGE,Moisturizer,4.6,0.819
+32,2,0.75,0.47,0.87,0.63,Micellar Cleansing Water,CAUDALIE,Cleanser,4.0,0.712
+32,3,0.73,0.43,0.86,0.59,The Moisturizing Soft Cream,LA MER,Moisturizer,3.8,0.521
+32,4,0.71,0.39,0.85,0.56,Peony Brightening Night Treatment Mask,FRESH,Face Mask,4.0,0.953
+32,5,0.66,0.35,0.78,0.55,Complete Eye Renewal Balm,ALGENIST,Eye cream,4.0,1.0
+32,6,0.6,0.27,0.75,0.46,PRE:EMPT SERIES™ Skin Perfecting Serum,PERRICONE MD,Treatment,4.3,0.786
+32,7,0.54,0.24,0.65,0.43,Treatment Toner,AMOREPACIFIC,Moisturizer,4.4,0.694
+32,8,0.5,0.21,0.62,0.42,Moisturizing Mask,CAUDALIE,Face Mask,4.3,0.737
+32,9,0.47,0.16,0.54,0.36,Goat Milk De-Puffing Eye Balm,KATE SOMERVILLE,Eye cream,3.9,0.953
+33,0,0.27,0.32,0.54,0.14,Rejuvenating Serum,TATA HARPER,Treatment,3.7,1.0
+33,1,0.2,0.25,0.52,0.08,Shake & Shot™ Rubber Hydro Mask,DR. JART+,Face Mask,4.6,1.0
+33,2,0.16,0.2,0.43,0.05,Fresh Pressed Daily Booster with Pure Vitamin C 10%,CLINIQUE,Treatment,4.0,0.908
+33,3,0.13,0.13,0.38,0.0,Beste™ No. 9 Jelly Cleanser,DRUNK ELEPHANT,Cleanser,4.1,1.0
+33,4,0.08,0.09,0.35,0.0,Honey Drop Lightweight Moisturizer with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.1,1.0
+33,5,0.04,0.05,0.31,0.0,Sleep Tight Firming Night Balm with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.3,1.0
+33,6,0.0,0.02,0.23,0.0,Skin Rescue Acne Clearing Pads with White Clay,FIRST AID BEAUTY,Treatment,4.2,1.0
+33,7,0.0,0.0,0.18,0.0,Outsmart Acne Clarifying Treatment,MURAD,Treatment,4.3,1.0
+33,8,0.0,0.0,0.16,0.0,A Glowing Regimen Trial Set,PHILOSOPHY,Cleanser,4.8,1.0
+33,9,0.0,0.0,0.13,0.0,Hyaluronic Marine Hydrating Modeling Mask,DR. DENNIS GROSS SKINCARE,Face Mask,4.1,0.726
+34,0,0.58,0.7,0.86,0.77,Zero Baggage Anti-Dark Circle Eye Cream,NATURALLY SERIOUS,Eye cream,3.3,0.932
+34,1,0.51,0.63,0.83,0.73,Shake & Shot™ Rubber Brightening Mask,DR. JART+,Face Mask,4.3,1.0
+34,2,0.49,0.6,0.75,0.66,Hydro-Dynamic® Quenching Essence,MURAD,Cleanser,4.3,1.0
+34,3,0.45,0.53,0.72,0.62,Future Solution LX Total Protective Emulsion Broad Spectrum SPF 20 Sunscreen,SHISEIDO,Sun protect,3.0,0.515
+34,4,0.43,0.5,0.69,0.58,Radiance Drops - Rainforest of the Sea™ Collection,TARTE,Moisturizer,3.7,0.343
+34,5,0.38,0.49,0.71,0.54,Go-Go Eyes,CLINIQUE,Eye cream,3.7,1.0
+34,6,0.32,0.43,0.65,0.47,Argan Cleansing Oil,JOSIE MARAN,Moisturizer,4.1,1.0
+34,7,0.29,0.39,0.61,0.41,Power K Eye Rescue®,PETER THOMAS ROTH,Eye cream,3.3,0.298
+34,8,0.26,0.38,0.59,0.4,Shake & Shot™ Rubber Soothing Mask,DR. JART+,Face Mask,4.3,1.0
+34,9,0.2,0.34,0.53,0.34,Time Release Acne Cleanser,MURAD,Cleanser,4.4,1.0
+35,0,0.22,0.22,0.44,0.03,Ceramidin™ Facial Mask,DR. JART+,Face Mask,4.6,1.0
+35,1,0.17,0.14,0.39,0.0,The Regenerating Serum,LA MER,Treatment,3.9,0.959
+35,2,0.16,0.07,0.35,0.0,Hydra-Essentiel Bi-Phase Serum,CLARINS,Treatment,4.6,1.0
+35,3,0.11,0.03,0.32,0.0,GenOptics Aura Essence Serum,SK-II,Moisturizer,4.1,1.0
+35,4,0.05,0.0,0.21,0.0,The Silk Cream,TATCHA,Moisturizer,4.3,1.0
+35,5,0.0,0.0,0.17,0.0,Argan Daily Moisturizer SPF 47,JOSIE MARAN,Moisturizer,3.9,1.0
+35,6,0.0,0.0,0.11,0.0,Renewed Hope in A Jar Overnight Recharging & Refining Moisturizer,PHILOSOPHY,Moisturizer,4.4,1.0
+35,7,0.0,0.0,0.07,0.0,Perfect Canvas Skin Finishing Serum,REN CLEAN SKINCARE,Treatment,4.5,1.0
+35,8,0.0,0.0,0.05,0.0,Resurfacing Serum,TATA HARPER,Treatment,4.2,1.0
+35,9,0.0,0.0,0.02,0.0,Revitalizing Supreme+ Global Anti-Aging Cell Power Creme SPF 15,ESTÉE LAUDER,Moisturizer,4.0,0.876
+36,0,0.03,0.64,0.14,0.46,Advanced Génifique Youth Activating Serum,LANCÔME,Treatment,4.5,1.0
+36,1,0.02,0.59,0.08,0.43,Clay Mask,SEPHORA COLLECTION,Face Mask,4.3,0.976
+36,2,0.0,0.55,0.01,0.38,Dark Circle Corrector Set,ALGENIST,Eye cream,4.3,1.0
+36,3,0.0,0.5,0.0,0.32,The Nightly Retinol + Peptide Anti-Aging Serum,BEAUTYBIO,Treatment,5.0,1.0
+36,4,0.0,0.44,0.0,0.3,BB Crème au Ginseng,ERBORIAN,Moisturizer,4.4,1.0
+36,5,0.0,0.41,0.0,0.25,Blue Tansy AHA + BHA Resurfacing Clarity Mask,HERBIVORE,Treatment,4.5,1.0
+36,6,0.0,0.36,0.0,0.19,Mineral Moisture Defense Body Broad Spectrum SPF 50 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,4.1,0.86
+36,7,0.0,0.3,0.0,0.13,Pureness Balancing Softener Alcohol-Free,SHISEIDO,Cleanser,4.4,0.941
+36,8,0.0,0.29,0.0,0.07,The Deep Cleanse,TATCHA,Cleanser,4.4,1.0
+36,9,0.0,0.22,0.0,0.04,Enhancing Eye Lift Serum,CLARINS,Eye cream,3.4,0.823
+37,0,0.02,0.54,1.0,0.35,Instant Mineral SPF 45,PETER THOMAS ROTH,Sun protect,3.4,0.866
+37,1,0.0,0.49,0.96,0.34,Breakout Fighters,KATE SOMERVILLE,Treatment,4.0,0.743
+37,2,0.0,0.44,0.95,0.32,Ultra Repair Instant Oatmeal Mask,FIRST AID BEAUTY,Face Mask,4.4,1.0
+37,3,0.0,0.38,0.91,0.26,Smart Night Custom-Repair Moisturizer - Very Dry to Dry,CLINIQUE,Moisturizer,4.7,0.979
+37,4,0.0,0.33,0.85,0.19,Peony Brightening Night Treatment Mask,FRESH,Face Mask,4.0,1.0
+37,5,0.0,0.24,0.83,0.12,Goddess Clay Mask,CHARLOTTE TILBURY,Face Mask,4.3,0.771
+37,6,0.0,0.2,0.78,0.09,The Nightly Retinol + Peptide Anti-Aging Serum,BEAUTYBIO,Treatment,5.0,1.0
+37,7,0.0,0.15,0.71,0.0,Bye Bye Breakout™ Full-Coverage Concealer,IT COSMETICS,Treatment,3.9,0.992
+37,8,0.0,0.09,0.66,0.0,Mission Perfection Eye Broad Spectrum SPF 15,CLARINS,Eye cream,4.0,0.682
+37,9,0.0,0.1,0.65,0.0,Wild Rose Foaming Cream Cleanser,KORRES,Cleanser,4.8,1.0
+38,0,0.56,0.22,0.7,0.77,Pep-Start Double Bubble Purifying Mask,CLINIQUE,Face Mask,4.0,0.901
+38,1,0.55,0.17,0.68,0.71,Crème Ancienne®,FRESH,Moisturizer,4.4,1.0
+38,2,0.52,0.12,0.64,0.66,Prime & Protect Mattifying Primer with Broad Spectrum SPF 50,CANE + AUSTIN,Sun protect,4.2,1.0
+38,3,0.45,0.08,0.63,0.61,C+ Collagen Brighten & Firm Eye Cream,DR. DENNIS GROSS SKINCARE,Eye cream,3.5,0.907
+38,4,0.44,0.0,0.61,0.57,Orchidee Imperiale The Eye and Lip Contour Cream,GUERLAIN,Eye cream,3.0,0.853
+38,5,0.4,0.0,0.55,0.54,Time In A Bottle 100% In-Control,PHILOSOPHY,Treatment,4.0,1.0
+38,6,0.33,0.0,0.51,0.49,PRE:EMPT SERIES™ Skin Perfecting Serum,PERRICONE MD,Treatment,4.3,0.989
+38,7,0.3,0.0,0.43,0.41,Cucumber Herbal Conditioning Cleanser,KIEHL'S SINCE 1851,Cleanser,4.6,1.0
+38,8,0.27,0.0,0.35,0.38,Evercalm™ Gentle Cleansing Milk,REN CLEAN SKINCARE,Cleanser,4.3,0.99
+38,9,0.23,0.0,0.32,0.31,Mineral Sunscreen Stick Broad Spectrum SPF 40 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,4.5,1.0
+39,0,0.96,0.4,0.72,0.08,Watermelon Glow Sleeping Mask,GLOW RECIPE,Moisturizer,4.1,0.7
+39,1,0.91,0.35,0.7,0.04,Dramatically Different Moisturizing Lotion+,CLINIQUE,Moisturizer,3.9,0.97
+39,2,0.85,0.29,0.62,0.0,MOISTURE BOUND Refreshing Hydra-Gel Oil-Free,AMOREPACIFIC,Moisturizer,4.2,0.743
+39,3,0.81,0.27,0.61,0.0,Exfoliating Scrub,CLINIQUE,Cleanser,4.7,1.0
+39,4,0.73,0.2,0.57,0.0,Vintage Single Extract Essence,AMOREPACIFIC,Moisturizer,4.5,1.0
+39,5,0.7,0.15,0.56,0.0,Moisturizing Foam Cleanser,LANEIGE,Cleanser,3.8,0.974
+39,6,0.62,0.11,0.47,0.0,FLASHMUD™ Brightening Treatment,GLAMGLOW,Cleanser,4.1,0.982
+39,7,0.55,0.05,0.42,0.0,Dark Circle Corrector Set,ALGENIST,Eye cream,4.3,1.0
+39,8,0.51,0.0,0.39,0.02,White Lucent Anti-Dark Circles Eye Cream,SHISEIDO,Eye cream,3.6,0.752
+39,9,0.45,0.0,0.34,0.0,BRILLIANT FUTURE™ Age Defense & Renew Eye Cream,BAREMINERALS,Eye cream,3.5,1.0
+40,0,0.43,0.37,0.51,0.34,Repairwear Laser Focus Line Smoothing Cream Broad Spectrum SPF 15 for Very Dry to Dry Combination Skin,CLINIQUE,Sun protect,4.4,0.836
+40,1,0.35,0.32,0.45,0.3,Sheet Masks,DR. JART+,Face Mask,4.2,1.0
+40,2,0.26,0.31,0.39,0.27,Pink Cloud Rosewater Moisture Crème,HERBIVORE,Moisturizer,4.6,1.0
+40,3,0.21,0.25,0.34,0.22,Orchidée Impériale Eye Serum,GUERLAIN,Eye cream,5.0,1.0
+40,4,0.16,0.2,0.31,0.16,Bye Bye Lines Serum™ Advanced Anti-Aging Wrinkle-Smoothing Miracle Concentrate,IT COSMETICS,Treatment,4.1,1.0
+40,5,0.08,0.15,0.23,0.11,Rénergie Lift Multi-Action Sunscreen Broad Spectrum SPF 15 For All Skin Types,LANCÔME,Moisturizer,3.9,1.0
+40,6,0.06,0.09,0.15,0.06,Rōsilliance™ Organic BB+ Cream SPF 30,COOLA,Sun protect,3.8,0.945
+40,7,0.02,0.03,0.11,0.02,Hello FAB Coconut Skin Smoothie Priming Moisturizer,FIRST AID BEAUTY,Moisturizer,4.2,0.965
+40,8,0.0,0.01,0.07,0.0,Premium Beauty Balm SPF 45,DR. JART+,Moisturizer,4.2,0.813
+40,9,0.0,0.0,0.0,0.0,ABSOLUE PREMIUM ßx – Absolute Replenishing Cream SPF 15 Sunscreen,LANCÔME,Moisturizer,4.5,0.933
+41,0,0.27,0.81,0.54,0.48,Pure Skin® Clarifying Dietary Supplement,MURAD,Treatment,4.1,1.0
+41,1,0.23,0.76,0.49,0.41,Volcanic Elixir Polynesian Beauty Oil,FARSÁLI,Moisturizer,4.5,0.933
+41,2,0.21,0.7,0.43,0.38,Regenerating Cleanser,TATA HARPER,Cleanser,4.2,1.0
+41,3,0.15,0.63,0.37,0.34,High-Potency Night-a-Mins™ Resurfacing Cream with Fruit-Derived AHAs,ORIGINS,Moisturizer,4.3,0.877
+41,4,0.08,0.6,0.32,0.31,Repairwear Laser Focus Line Smoothing Cream Broad Spectrum SPF 15 for Combination Oily to Oily Skin,CLINIQUE,Sun protect,3.7,0.714
+41,5,0.06,0.53,0.29,0.29,Advanced Génifique Youth Activating Serum,LANCÔME,Treatment,4.5,1.0
+41,6,0.07,0.48,0.24,0.26,Extra-Firming Mask,CLARINS,Face Mask,4.9,1.0
+41,7,0.04,0.4,0.19,0.2,Visionnaire Advanced Multi-Correcting Cream,LANCÔME,Moisturizer,4.6,1.0
+41,8,0.0,0.38,0.17,0.17,Black Jelly Pack,J.ONE,Face Mask,4.8,1.0
+41,9,0.0,0.35,0.14,0.13,Spotlight Brightening Mask,SATURDAY SKIN,Face Mask,4.6,1.0
+42,0,0.38,0.03,0.85,0.18,Oil-Free Face Cream Broad Spectrum SPF 30,CLINIQUE,Sun protect,3.3,0.784
+42,1,0.36,0.0,0.83,0.12,Super Fluid UV Mineral Defense Titanium Dioxide Sunscreen Broad Spectrum SPF 50+,KIEHL'S SINCE 1851,Sun protect,3.7,0.859
+42,2,0.3,0.0,0.79,0.11,Instant Radiance Sun Defense Sunscreen Broad Spectrum SPF 40,DR. DENNIS GROSS SKINCARE,Sun protect,3.9,0.974
+42,3,0.27,0.0,0.74,0.04,Hydra Zen Masque Anti-Stress Moisturizing Night Face Mask,LANCÔME,Face Mask,4.6,1.0
+42,4,0.25,0.0,0.69,0.0,Ultra Facial Oil-Free Cleanser,KIEHL'S SINCE 1851,Cleanser,4.2,0.87
+42,5,0.21,0.0,0.64,0.0,Vinopure Natural Salicylic Acid Pore Minimizing Toner,CAUDALIE,Cleanser,3.8,1.0
+42,6,0.16,0.0,0.61,0.0,Gold Camellia Beauty Oil,TATCHA,Moisturizer,4.6,0.851
+42,7,0.09,0.0,0.55,0.0,GloPRO® EYE MicroTip™ Attachment Head,BEAUTYBIO,Eye cream,0.0,-0.046
+42,8,0.1,0.02,0.53,0.04,R.N.A. POWER Anti-Aging Essence Serum,SK-II,Treatment,4.4,1.0
+42,9,0.05,0.0,0.47,0.01,BUBBLESHEET™ Oxygenating Deep Cleanse Mask - Breast Cancer Awareness Edition,GLAMGLOW,Face Mask,5.0,1.0
+43,0,0.49,0.76,0.69,0.65,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Soothing Face Mask,ORIGINS,Face Mask,4.5,1.0
+43,1,0.46,0.73,0.66,0.63,Rejuvenating Serum,TATA HARPER,Treatment,3.7,0.967
+43,2,0.4,0.66,0.63,0.61,Coconut Melt,KOPARI,Moisturizer,4.2,0.95
+43,3,0.34,0.63,0.6,0.55,BB Eye Cream with Soothing Cornflower,KLORANE,Eye cream,3.3,0.908
+43,4,0.3,0.58,0.56,0.48,Advanced Génifique Hydrogel Melting Mask,LANCÔME,Face Mask,4.5,1.0
+43,5,0.27,0.52,0.52,0.42,Clay Mask,SEPHORA COLLECTION,Face Mask,4.3,1.0
+43,6,0.22,0.47,0.48,0.37,Toning Lotion with Camomile,CLARINS,Cleanser,4.5,1.0
+43,7,0.16,0.43,0.45,0.33,Rosa Centifolia™ No.1 Purity Cleansing Balm,REN CLEAN SKINCARE,Cleanser,4.2,1.0
+43,8,0.1,0.34,0.38,0.27,Clean Bee Ultra Gentle Facial Cleanser,FARMACY,Cleanser,4.3,1.0
+43,9,0.04,0.3,0.33,0.22,Énergie de Vie The Illuminating & Anti-Fatigue Cooling Eye Gel,LANCÔME,Eye cream,3.5,0.879
+44,0,0.75,0.33,0.7,0.27,Capture Totale Dreamskin Advanced,DIOR,Moisturizer,4.3,1.0
+44,1,0.69,0.23,0.62,0.24,Sport Continuous Spray SPF 30 - Tropical Coconut,COOLA,Sun protect,4.8,1.0
+44,2,0.67,0.17,0.54,0.2,Blackhead Solutions Self-heating Blackhead Extractor,CLINIQUE,Cleanser,3.7,0.951
+44,3,0.61,0.09,0.53,0.18,Restorative Eye Crème,TATA HARPER,Eye cream,4.0,1.0
+44,4,0.55,0.05,0.51,0.13,Squalane + Glycolic Renewal Facial,BIOSSANCE,Cleanser,4.8,1.0
+44,5,0.49,0.01,0.44,0.08,Ultra Facial Overnight Hydrating Mask,KIEHL'S SINCE 1851,Moisturizer,4.4,1.0
+44,6,0.45,0.0,0.37,0.04,EradiKate™ Acne Treatment,KATE SOMERVILLE,Treatment,4.3,1.0
+44,7,0.41,0.0,0.28,0.0,Coconut Ceramide Mask,TOO COOL FOR SCHOOL,Face Mask,4.5,1.0
+44,8,0.35,0.0,0.3,0.0,100% Squalane Oil,BIOSSANCE,Moisturizer,4.6,1.0
+44,9,0.34,0.0,0.24,0.0,Face Mask,SEPHORA COLLECTION,Face Mask,4.3,1.0
+45,0,0.98,0.52,0.28,0.1,Good Genes All-In-One Lactic Acid Treatment,SUNDAY RILEY,Treatment,4.3,1.0
+45,1,0.91,0.49,0.21,0.01,Baggage Claim Gold Eye Masks,WANDER BEAUTY,Eye cream,4.3,1.0
+45,2,0.87,0.42,0.12,0.0,Clearing Mask,INDIE LEE,Face Mask,4.4,1.0
+45,3,0.82,0.36,0.03,0.0,Calendula & Aloe Soothing Hydration Mask,KIEHL'S SINCE 1851,Face Mask,4.0,1.0
+45,4,0.76,0.31,0.0,0.0,Oxygen Facial Flash Recovery Mask,DR. BRANDT SKINCARE,Face Mask,4.5,1.0
+45,5,0.7,0.3,0.0,0.0,Facial Radiance® Intensive Peel,FIRST AID BEAUTY,Treatment,4.6,1.0
+45,6,0.6,0.24,0.0,0.0,Micro Essence Infusion Mask,ESTÉE LAUDER,Face Mask,4.6,0.989
+45,7,0.53,0.2,0.0,0.0,Sport Continuous Spray SPF 30 - Unscented,COOLA,Sun protect,5.0,1.0
+45,8,0.49,0.14,0.0,0.0,Face Mask Magic,SEPHORA COLLECTION,Face Mask,5.0,1.0
+45,9,0.45,0.1,0.0,0.0,FIRMx™ 360 Eye Renewal,PETER THOMAS ROTH,Eye cream,4.0,1.0
+46,0,0.87,0.49,0.87,0.57,Featherweight Daily Moisturizing Cream,SATURDAY SKIN,Moisturizer,4.6,1.0
+46,1,0.83,0.45,0.8,0.51,Future Solution LX Extra Rich Cleansing Foam,SHISEIDO,Cleanser,4.3,0.74
+46,2,0.76,0.44,0.79,0.49,Wild Rose Foaming Cream Cleanser,KORRES,Cleanser,4.8,1.0
+46,3,0.73,0.39,0.77,0.44,Wild Rose Vitamin C Active Brightening Oil,KORRES,Moisturizer,4.4,0.772
+46,4,0.73,0.36,0.72,0.39,Line Release Under Eye Repair Cream,KATE SOMERVILLE,Eye cream,3.9,0.823
+46,5,0.68,0.3,0.69,0.35,Greek Yoghurt Foaming Cream Cleanser,KORRES,Cleanser,4.6,0.844
+46,6,0.65,0.28,0.67,0.28,Wrinkle Release Eye Cream with Peptides,SKIN LAUNDRY,Eye cream,3.8,0.909
+46,7,0.59,0.24,0.61,0.21,Resurfacing Mask,TATA HARPER,Face Mask,4.3,1.0
+46,8,0.54,0.18,0.54,0.16,Future Solution LX Total Regenerating Cream,SHISEIDO,Moisturizer,4.0,0.952
+46,9,0.47,0.13,0.48,0.1,Mask-Imum Revival Hydra-Plumping Mask,NATURALLY SERIOUS,Face Mask,4.5,1.0
+47,0,0.05,0.15,0.56,0.3,Retinol Youth Renewal Serum,MURAD,Treatment,4.3,1.0
+47,1,0.02,0.11,0.51,0.23,GenOptics Spot Essence Serum,SK-II,Moisturizer,4.2,1.0
+47,2,0.0,0.11,0.47,0.18,Advanced Génifique Sensitive Antioxidant Serum,LANCÔME,Treatment,4.6,1.0
+47,3,0.0,0.04,0.43,0.13,Hydra Zen Masque Anti-Stress Moisturizing Night Face Mask,LANCÔME,Face Mask,4.6,1.0
+47,4,0.0,0.0,0.4,0.07,Sake Brightening Bio-Cellulose Mask,BOSCIA,Face Mask,4.3,1.0
+47,5,0.0,0.0,0.34,0.01,Treatment Lotion Hydrating Mask,LA MER,Face Mask,4.1,1.0
+47,6,0.0,0.0,0.33,0.0,Matcha Toner,MILK MAKEUP,Cleanser,3.7,0.936
+47,7,0.0,0.0,0.33,0.0,Bye Bye Makeup™ 3-in-1 Makeup Melting Cleansing Balm,IT COSMETICS,Cleanser,4.5,1.0
+47,8,0.0,0.0,0.29,0.0,Cicapair™ Tiger Grass Camo Drops,DR. JART+,Treatment,4.1,1.0
+47,9,0.0,0.0,0.22,0.0,DayWear UV Base Advanced Anti-Oxidant & UV Defense SPF 50,ESTÉE LAUDER,Sun protect,4.2,0.861
+48,0,0.99,0.31,0.62,0.61,Hyaluronic Marine Hydration Booster,DR. DENNIS GROSS SKINCARE,Treatment,4.4,0.56
+48,1,0.95,0.3,0.61,0.61,Squalane + Antioxidant Cleansing Oil,BIOSSANCE,Moisturizer,4.4,1.0
+48,2,0.89,0.26,0.56,0.55,Ultra Facial Cream,KIEHL'S SINCE 1851,Moisturizer,4.4,1.0
+48,3,0.86,0.19,0.5,0.5,Tarteguard 30 Vegan Sunscreen Lotion Broad Spectrum SPF 30,TARTE,Sun protect,3.7,0.881
+48,4,0.85,0.14,0.47,0.44,Benefiance WrinkleResist24 Day Cream Broad Spectrum SPF 18,SHISEIDO,Moisturizer,4.3,1.0
+48,5,0.78,0.09,0.44,0.39,Everyday Sunscreen Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.3,1.0
+48,6,0.74,0.03,0.4,0.32,Water Bank Essence,LANEIGE,Moisturizer,4.7,0.988
+48,7,0.69,0.0,0.35,0.25,Potent-C™ Power Eye Cream,PETER THOMAS ROTH,Eye cream,4.4,1.0
+48,8,0.62,0.0,0.31,0.2,Greek Yoghurt Advanced Nourishing Sleeping Facial,KORRES,Face Mask,4.4,1.0
+48,9,0.56,0.0,0.24,0.14,Hypoallergenic Firming Eye Cream,PERRICONE MD,Eye cream,4.4,1.0
+49,0,0.59,0.29,0.23,0.71,Hydrating Toner,MURAD,Cleanser,4.4,0.87
+49,1,0.55,0.26,0.17,0.68,100 percent Pure Argan Oil Light,JOSIE MARAN,Moisturizer,4.4,1.0
+49,2,0.5,0.16,0.12,0.65,VOLCASMIC™ Matte Glow Moisturizer,GLAMGLOW,Moisturizer,4.1,1.0
+49,3,0.46,0.09,0.08,0.62,Blackhead Solutions Self-heating Blackhead Extractor,CLINIQUE,Cleanser,3.7,0.936
+49,4,0.39,0.03,0.04,0.56,Vinopure Natural Salicylic Acid Pore Minimizing Toner,CAUDALIE,Cleanser,3.8,0.771
+49,5,0.36,0.01,0.03,0.53,SUPERMASK - The Bubble Mask,SEPHORA COLLECTION,Face Mask,4.7,1.0
+49,6,0.31,0.0,0.0,0.48,Baggage Claim Gold Eye Masks,WANDER BEAUTY,Eye cream,4.3,0.997
+49,7,0.28,0.0,0.0,0.4,Extra-Firming Neck Anti-Wrinkle Rejuvenating Cream,CLARINS,Moisturizer,4.1,1.0
+49,8,0.22,0.0,0.0,0.34,Wrinkle Release Facial Sheet Mask,SKIN LAUNDRY,Face Mask,4.2,1.0
+49,9,0.17,0.0,0.0,0.3,White Marble Dual Phase Vitamin C Peel,ERNO LASZLO,Treatment,4.7,1.0
+50,0,0.65,0.91,0.83,0.07,Defense Refresh Setting Mist Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,3.3,0.547
+50,1,0.63,0.85,0.79,0.05,Acne System,PETER THOMAS ROTH,Treatment,4.3,1.0
+50,2,0.56,0.78,0.73,0.0,Black Tea Firming and De-Puffing Eye Cream,FRESH,Eye cream,4.0,0.714
+50,3,0.51,0.72,0.7,0.0,Wild Rose Exfoliating Cleanser,KORRES,Cleanser,4.4,0.836
+50,4,0.45,0.67,0.68,0.0,Ultra Repair Hydra-Firm Sleeping Cream,FIRST AID BEAUTY,Moisturizer,4.3,1.0
+50,5,0.4,0.61,0.63,0.0,Invincible Setting Powder SPF 45 Refill,SUPERGOOP!,Sun protect,5.0,1.0
+50,6,0.33,0.57,0.54,0.0,Cleansing Gel Oil Enriched,BELIF,Cleanser,4.5,1.0
+50,7,0.28,0.49,0.51,0.0,Clinique Smart Custom-Repair Serum,CLINIQUE,Treatment,4.0,1.0
+50,8,0.27,0.42,0.45,0.0,Rose Face Mask,FRESH,Face Mask,4.2,0.837
+50,9,0.2,0.4,0.41,0.0,Rare Earth Deep Pore Daily Cleanser,KIEHL'S SINCE 1851,Cleanser,4.6,1.0
+51,0,0.49,0.08,0.04,0.43,Pore Corrector Anti-Aging Primer,ALGENIST,Treatment,4.4,1.0
+51,1,0.44,0.06,0.0,0.38,Advanced Génifique Hydrogel Melting Mask,LANCÔME,Face Mask,4.5,1.0
+51,2,0.42,0.01,0.0,0.34,Facial Treatment Cleanser,SK-II,Cleanser,4.3,1.0
+51,3,0.37,0.0,0.0,0.32,Acne Clearing Solution,MURAD,Treatment,3.9,0.782
+51,4,0.34,0.0,0.0,0.28,Uluru Purifying Mask,DR ROEBUCK’S,Face Mask,5.0,1.0
+51,5,0.26,0.0,0.0,0.22,Skin Rescue Deep Cleanser With Red Clay,FIRST AID BEAUTY,Cleanser,4.3,1.0
+51,6,0.2,0.0,0.0,0.18,Wrinkle Warrior® Eye Gel Visible Dark Circle Eraser,KATE SOMERVILLE,Eye cream,3.0,0.846
+51,7,0.15,0.0,0.0,0.14,Tarteguard 20 Tinted Moisturizer Broad Spectrum SPF 20 Sunscreen,TARTE,Sun protect,4.0,0.894
+51,8,0.13,0.0,0.0,0.07,Daily Moisturizer Broad Spectrum SPF 35,SKIN LAUNDRY,Sun protect,4.1,0.98
+51,9,0.04,0.0,0.0,0.07,The Method: Nourish,LANCER,Moisturizer,4.5,1.0
+52,0,0.04,0.76,0.47,0.65,After-Sun Milk Soothing Body Lotion,MOROCCANOIL,Sun protect,4.7,1.0
+52,1,0.0,0.71,0.4,0.61,Creamy Eye Treatment with Avocado,KIEHL'S SINCE 1851,Eye cream,4.3,1.0
+52,2,0.0,0.64,0.36,0.54,Your Skin But Better™ CC+™ Cream with SPF 50+,IT COSMETICS,Moisturizer,4.1,0.972
+52,3,0.0,0.6,0.33,0.47,Rise + Shine Gentle Cleanser,SATURDAY SKIN,Cleanser,4.5,1.0
+52,4,0.0,0.56,0.29,0.41,Purifying Mask,TATA HARPER,Face Mask,4.4,1.0
+52,5,0.0,0.52,0.26,0.35,Treatment Cleansing Foam,AMOREPACIFIC,Cleanser,4.5,0.997
+52,6,0.0,0.46,0.19,0.32,Shaping Facial Lift Total V Contouring Serum,CLARINS,Treatment,3.7,0.919
+52,7,0.0,0.4,0.16,0.27,GENIUS Ultimate Anti-Aging Cream,ALGENIST,Moisturizer,4.3,1.0
+52,8,0.0,0.33,0.09,0.2,Moisturizing Toner,CAUDALIE,Cleanser,4.4,1.0
+52,9,0.0,0.29,0.04,0.16,Pure Skin® Clarifying Dietary Supplement,MURAD,Treatment,4.1,1.0
+53,0,0.33,0.69,0.29,0.95,Perfectionist CP+R Wrinkle Lifting/Firming Serum,ESTÉE LAUDER,Treatment,4.3,0.792
+53,1,0.27,0.65,0.26,0.92,Fresh Pressed Daily Booster with Pure Vitamin C 10%,CLINIQUE,Treatment,4.0,0.999
+53,2,0.22,0.58,0.19,0.86,Pack Your Bags Undereye Patches,TARTE,Eye cream,4.2,1.0
+53,3,0.14,0.55,0.08,0.77,Squalane + Probiotic Gel Moisturizer,BIOSSANCE,Moisturizer,4.4,1.0
+53,4,0.07,0.47,0.01,0.7,Nightly Refining Micro-Peel Concentrate,KIEHL'S SINCE 1851,Treatment,4.3,1.0
+53,5,0.03,0.42,0.0,0.6,No Puffery™ Cooling Roll-On For Puffy Eyes,ORIGINS,Eye cream,3.4,0.666
+53,6,0.0,0.39,0.0,0.54,Cicapair™ Tiger Grass Cream,DR. JART+,Moisturizer,4.3,1.0
+53,7,0.0,0.34,0.0,0.51,Resort Collection Sun Protection Mist Broad Spectrum SPF 30 Sunscreen,AMOREPACIFIC,Sun protect,3.3,0.909
+53,8,0.0,0.32,0.0,0.45,Exfoliating Scrub,CLINIQUE,Cleanser,4.7,1.0
+53,9,0.0,0.23,0.0,0.41,Turmeric & Cranberry Seed Energizing Radiance Mask,KIEHL'S SINCE 1851,Face Mask,4.5,1.0
+54,0,0.54,0.41,0.19,0.36,Coconut Gel Sheet Mask - Hydrating,FARMACY,Face Mask,4.5,1.0
+54,1,0.48,0.37,0.14,0.32,Ultra Facial Overnight Hydrating Mask,KIEHL'S SINCE 1851,Moisturizer,4.4,1.0
+54,2,0.46,0.35,0.07,0.27,Miraculous Anti-wrinkle Miracle Worker,PHILOSOPHY,Moisturizer,4.3,1.0
+54,3,0.46,0.27,0.06,0.2,Phoenix Cell Regenerating Facial Oil,HERBIVORE,Moisturizer,4.5,1.0
+54,4,0.42,0.22,0.04,0.13,C+ Collagen Brighten & Firm Eye Cream,DR. DENNIS GROSS SKINCARE,Eye cream,3.5,0.9
+54,5,0.39,0.15,0.01,0.13,Take The Day Off Cleansing Oil,CLINIQUE,Moisturizer,4.3,0.893
+54,6,0.34,0.14,0.0,0.1,Powerful-Strength Line-Reducing Concentrate 12.5% Vitamin C,KIEHL'S SINCE 1851,Treatment,3.8,0.968
+54,7,0.31,0.12,0.0,0.03,Face Mask - Aloe Vera - Replenishing,SEPHORA COLLECTION,Face Mask,4.7,1.0
+54,8,0.23,0.08,0.0,0.0,Hello FAB Ginger & Turmeric Vitamin C Jelly Mask,FIRST AID BEAUTY,Face Mask,4.4,1.0
+54,9,0.18,0.0,0.0,0.0,Cicapair™ Tiger Grass Re.Pair Serum,DR. JART+,Treatment,4.2,1.0
+55,0,0.61,0.24,0.16,0.55,Protein Booster Skin Serum,JACK BLACK,Treatment,4.7,1.0
+55,1,0.59,0.17,0.11,0.5,Ultimate Revival Eye Cream,SK-II,Eye cream,3.0,0.792
+55,2,0.53,0.13,0.07,0.48,Dramatically Different Hydrating Jelly,CLINIQUE,Moisturizer,4.0,0.805
+55,3,0.48,0.06,0.02,0.47,Water Pocket Sheet Mask Water Bank (Moisturizing),LANEIGE,Face Mask,4.1,1.0
+55,4,0.44,0.02,0.0,0.44,Refreshing Gel Cleanser,CLARISONIC,Cleanser,5.0,1.0
+55,5,0.39,0.0,0.0,0.41,Powerful Wrinkle Reducing Cream Sunscreen Broad Spectrum SPF 30,KIEHL'S SINCE 1851,Sun protect,3.5,0.909
+55,6,0.31,0.0,0.0,0.36,Intensive-C® Radiance Peel,MURAD,Treatment,4.5,1.0
+55,7,0.24,0.0,0.0,0.32,Potent-C™ Power Serum,PETER THOMAS ROTH,Treatment,4.3,1.0
+55,8,0.21,0.0,0.0,0.26,High-Potency Night-a-Mins™ Oil-Free Resurfacing Cream with Fruit-Derived AHAs,ORIGINS,Moisturizer,4.3,1.0
+55,9,0.14,0.0,0.0,0.25,Moisturizing Toner,CAUDALIE,Cleanser,4.4,1.0
+56,0,0.27,0.83,0.98,0.24,Skin Rescue Purifying Mask With Red Clay,FIRST AID BEAUTY,Face Mask,4.0,1.0
+56,1,0.26,0.78,0.92,0.24,Tsubaki Oil Deep Hydrating Bio-Cellulose Mask,BOSCIA,Face Mask,4.1,1.0
+56,2,0.23,0.7,0.89,0.22,Charcoal Pore Pudding Intensive Wash-Off Treatment,BOSCIA,Face Mask,4.4,1.0
+56,3,0.19,0.64,0.83,0.14,Hygge HydraClay™ Detox Mask,OLEHENRIKSEN,Face Mask,4.2,0.755
+56,4,0.14,0.61,0.79,0.12,Virgin Marula Luxury Facial Oil Mini,DRUNK ELEPHANT,Moisturizer,4.5,0.891
+56,5,0.09,0.56,0.77,0.0,Turn Back Time Anti-Aging Supplement,HUM NUTRITION,Sun protect,4.2,0.815
+56,6,0.04,0.53,0.75,0.0,Beauty Shroom™ Plumping Jelly Serum,MOON JUICE,Treatment,4.5,1.0
+56,7,0.0,0.49,0.66,0.0,Anti-Aging Primer,COVER FX,Treatment,4.2,0.876
+56,8,0.0,0.44,0.64,0.0,24K Gold Pure Luxury Lift & Firm Hydra-Gel Eye Patches,PETER THOMAS ROTH,Face Mask,4.1,1.0
+56,9,0.0,0.38,0.57,0.0,Sun Lotion 50 SPF,MOROCCANOIL,Sun protect,3.9,0.791
+57,0,0.51,0.82,0.28,0.3,Moisture Surge Hydrating Supercharged Concentrate,CLINIQUE,Moisturizer,4.0,0.944
+57,1,0.49,0.74,0.22,0.26,Sake Brightening Bio-Cellulose Mask,BOSCIA,Face Mask,4.3,1.0
+57,2,0.46,0.68,0.16,0.2,30 Day Treatment,BIOEFFECT,Treatment,5.0,1.0
+57,3,0.4,0.62,0.09,0.17,Pore Corrector Anti-Aging Primer,ALGENIST,Treatment,4.4,0.974
+57,4,0.33,0.59,0.07,0.13,Banana Bright Eye Crème,OLEHENRIKSEN,Eye cream,4.2,0.968
+57,5,0.29,0.55,0.03,0.13,Skin Rescue Acne Clearing Charcoal Cleanser with Probiotics,FIRST AID BEAUTY,Cleanser,3.9,0.934
+57,6,0.24,0.48,0.0,0.12,Sheer Transformation® Perfecting Moisturizer,OLEHENRIKSEN,Moisturizer,4.2,1.0
+57,7,0.19,0.45,0.0,0.08,THIRSTYMUD™ Hydrating Treatment,GLAMGLOW,Moisturizer,4.3,1.0
+57,8,0.12,0.4,0.0,0.03,Hello FAB Coconut Skin Smoothie Priming Moisturizer,FIRST AID BEAUTY,Moisturizer,4.2,1.0
+57,9,0.03,0.36,0.0,0.0,Purity Made Simple Pore Extractor Mask,PHILOSOPHY,Face Mask,4.5,1.0
+58,0,0.19,0.7,0.57,0.23,Your Skin But Better™ CC+Illumination™ Cream with SPF 50+,IT COSMETICS,Moisturizer,3.9,1.0
+58,1,0.15,0.64,0.51,0.19,Sport Continuous Spray SPF 50 - Guava Mango,COOLA,Sun protect,4.1,0.984
+58,2,0.13,0.57,0.51,0.15,Ice-Cold Eye Cream,KENZOKI,Eye cream,3.9,0.829
+58,3,0.07,0.48,0.49,0.1,Clay Mask,SEPHORA COLLECTION,Face Mask,4.3,0.998
+58,4,0.0,0.44,0.43,0.05,Herbal-Infused Micellar Cleansing Water,KIEHL'S SINCE 1851,Cleanser,3.7,0.999
+58,5,0.0,0.39,0.36,0.0,Black Tea Age-Delay Lotion Broad Spectrum Sunscreen SPF 20,FRESH,Sun protect,3.5,0.883
+58,6,0.0,0.33,0.32,0.0,Vine[Activ] Vitamin C Anti-Wrinkle Serum,CAUDALIE,Treatment,4.1,1.0
+58,7,0.0,0.32,0.3,0.0,Active Retinol Renewal Kit,MURAD,Treatment,5.0,1.0
+58,8,0.0,0.23,0.25,0.0,ELEVATE Advanced Lift Contouring Cream,ALGENIST,Treatment,4.3,0.985
+58,9,0.0,0.18,0.22,0.0,Banana Bright Eye Crème,OLEHENRIKSEN,Eye cream,4.2,1.0
+59,0,0.04,0.5,0.59,0.87,Hydra Zen Masque Anti-Stress Moisturizing Night Face Mask,LANCÔME,Face Mask,4.6,1.0
+59,1,0.0,0.44,0.59,0.81,Purifying Cleansing Gel,BOSCIA,Cleanser,4.5,1.0
+59,2,0.0,0.37,0.53,0.76,Advanced Génifique Hydrogel Melting Mask,LANCÔME,Face Mask,4.5,1.0
+59,3,0.0,0.3,0.46,0.7,SUPERMUD® Activated Charcoal Treatment,GLAMGLOW,Treatment,4.2,1.0
+59,4,0.0,0.27,0.39,0.66,Repairwear Laser Focus Line Smoothing Cream Broad Spectrum SPF 15 for Very Dry to Dry Combination Skin,CLINIQUE,Sun protect,4.4,0.997
+59,5,0.0,0.2,0.3,0.62,Sport Continuous Spray SPF 30 - Unscented,COOLA,Sun protect,5.0,1.0
+59,6,0.0,0.15,0.23,0.59,Instant Detox Mask,CAUDALIE,Face Mask,4.4,0.93
+59,7,0.0,0.11,0.18,0.53,Miracle Water 3-in-1 Micellar Cleanser,IT COSMETICS,Moisturizer,4.5,1.0
+59,8,0.0,0.06,0.12,0.5,Featherweight Daily Moisturizing Cream,SATURDAY SKIN,Moisturizer,4.6,1.0
+59,9,0.0,0.0,0.07,0.45,Wild Rose Exfoliating Cleanser,KORRES,Cleanser,4.4,0.987
+60,0,0.34,0.69,0.65,0.85,Advanced Time Zone Age Reversing Line/Wrinkle Eye Creme,ESTÉE LAUDER,Eye cream,3.5,0.693
+60,1,0.31,0.65,0.63,0.8,GENIUS Ultimate Anti-Aging Melting Cleanser,ALGENIST,Cleanser,4.1,0.52
+60,2,0.28,0.61,0.58,0.77,Vinoperfect Radiance Serum,CAUDALIE,Treatment,4.2,1.0
+60,3,0.23,0.56,0.5,0.7,Future Solution LX Extra Rich Cleansing Foam,SHISEIDO,Cleanser,4.3,1.0
+60,4,0.23,0.51,0.45,0.65,Daily Deflector™ Moisturizer Broad Spectrum SPF 50+,KATE SOMERVILLE,Sun protect,3.9,0.782
+60,5,0.17,0.48,0.42,0.57,Tinted Moisturizer SPF 20 - Illuminating,LAURA MERCIER,Sun protect,4.4,0.956
+60,6,0.12,0.45,0.38,0.55,Diamondbuff by Bee Stunning,SEPHORA COLLECTION,Cleanser,4.5,0.927
+60,7,0.09,0.41,0.34,0.51,Ultra Facial Moisturizer SPF 30,KIEHL'S SINCE 1851,Sun protect,3.7,0.964
+60,8,0.05,0.36,0.33,0.48,The Indigo Cream Soothing Skin Protectant,TATCHA,Moisturizer,4.2,1.0
+60,9,0.0,0.33,0.27,0.43,Hungarian Thermal Water Mineral-Rich Atomic Heat Mask,PETER THOMAS ROTH,Face Mask,4.0,0.965
+61,0,0.92,1.0,0.75,0.43,Ultra Repair® Pure Mineral Sunscreen Moisturizer Broad Spectrum SPF 40,FIRST AID BEAUTY,Sun protect,3.6,0.94
+61,1,0.87,0.97,0.68,0.36,Pore Corrector Anti-Aging Primer,ALGENIST,Treatment,4.4,1.0
+61,2,0.79,0.89,0.65,0.31,100% Squalane Oil,BIOSSANCE,Moisturizer,4.6,1.0
+61,3,0.72,0.87,0.61,0.28,Hydro-Dynamic® Quenching Essence,MURAD,Cleanser,4.3,1.0
+61,4,0.67,0.78,0.54,0.2,Vinosource Intense Moisture Rescue Cream,CAUDALIE,Moisturizer,4.2,1.0
+61,5,0.6,0.71,0.51,0.14,Resort Collection Sun Protection Mist Broad Spectrum SPF 30 Sunscreen,AMOREPACIFIC,Sun protect,3.3,0.968
+61,6,0.55,0.67,0.49,0.05,Pore Corrector Anti-Aging Primer,ALGENIST,Treatment,4.4,1.0
+61,7,0.54,0.64,0.45,0.02,Powerful Wrinkle Reducing Eye Cream,KIEHL'S SINCE 1851,Eye cream,3.9,0.955
+61,8,0.51,0.59,0.39,0.0,Watermelon Glow Sleeping Mask,GLOW RECIPE,Moisturizer,4.1,0.954
+61,9,0.46,0.51,0.35,0.0,Ultra Repair Face Moisturizer,FIRST AID BEAUTY,Moisturizer,4.2,1.0
+62,0,0.15,0.53,0.57,0.79,Extra-Firming Mask,CLARINS,Face Mask,4.9,1.0
+62,1,0.12,0.46,0.49,0.7,100 percent Pure Argan Oil Light,JOSIE MARAN,Moisturizer,4.4,1.0
+62,2,0.06,0.4,0.43,0.66,Vitamin C Ester Brightening Eye Serum,PERRICONE MD,Eye cream,4.1,0.872
+62,3,0.03,0.37,0.39,0.6,Violet-C Radiance Mask,TATCHA,Face Mask,4.1,0.978
+62,4,0.0,0.32,0.34,0.55,Bio-Performance LiftDynamic Eye Treatment,SHISEIDO,Eye cream,3.9,1.0
+62,5,0.0,0.29,0.31,0.49,POWER Recharging Night Pressed Serum,ALGENIST,Moisturizer,4.4,1.0
+62,6,0.0,0.26,0.23,0.45,"Black Pine 3D Sculpting, Firming & Lifting Super Eye Serum",KORRES,Eye cream,4.2,1.0
+62,7,0.0,0.2,0.19,0.4,Ever-Matte Poreless Priming Perfector,BECCA,Treatment,3.6,0.965
+62,8,0.0,0.17,0.15,0.34,Luminous Deep Hydration Lifting Mask,TATCHA,Face Mask,4.5,1.0
+62,9,0.0,0.12,0.12,0.24,Ibuki Beauty Sleeping Mask,SHISEIDO,Moisturizer,4.4,1.0
+63,0,0.01,0.8,0.9,0.68,Classic Face Sport SPF 50 - White Tea,COOLA,Sun protect,3.9,0.958
+63,1,0.0,0.76,0.87,0.67,Face Lotion SPF 30,MOROCCANOIL,Sun protect,0.0,-0.14
+63,2,0.0,0.77,0.89,0.69,Sport Continuous Spray SPF 50 - Unscented,COOLA,Sun protect,4.4,1.0
+63,3,0.0,0.71,0.81,0.64,Ferulic Acid + Retinol Brightening Solution,DR. DENNIS GROSS SKINCARE,Treatment,4.1,1.0
+63,4,0.0,0.64,0.74,0.59,Resurfacing Mask,TATA HARPER,Face Mask,4.3,1.0
+63,5,0.0,0.63,0.69,0.56,Hydration Lover Rubber Mask,DR. JART+,Face Mask,4.0,0.978
+63,6,0.0,0.59,0.65,0.51,Ultimate Revival Eye Cream,SK-II,Eye cream,3.0,0.574
+63,7,0.0,0.57,0.61,0.46,Repairwear Laser Focus Line Smoothing Cream Broad Spectrum SPF 15 for Very Dry to Dry Combination Skin,CLINIQUE,Sun protect,4.4,0.891
+63,8,0.0,0.5,0.54,0.42,Adaptogen Deep Moisture Cream,YOUTH TO THE PEOPLE,Moisturizer,4.8,1.0
+63,9,0.0,0.46,0.51,0.37,Sheer Transformation® Perfecting Moisturizer,OLEHENRIKSEN,Moisturizer,4.2,1.0
+64,0,0.48,0.24,0.57,0.57,Hydra Life Pores Away Pink Clay Mask,DIOR,Face Mask,4.2,0.866
+64,1,0.42,0.23,0.55,0.53,Retinol Youth Renewal Serum,MURAD,Treatment,4.3,0.991
+64,2,0.36,0.17,0.51,0.48,Solid Cleansing Oil,ERBORIAN,Cleanser,4.4,1.0
+64,3,0.33,0.12,0.45,0.41,Rénergie Lift Multi-Action Night,LANCÔME,Moisturizer,4.3,1.0
+64,4,0.29,0.07,0.36,0.34,Honeymoon Glow AHA Resurfacing Night Serum with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.6,1.0
+64,5,0.22,0.0,0.32,0.27,Renewed Hope in A Jar Refreshing & Refining Moisturizer,PHILOSOPHY,Moisturizer,4.1,0.995
+64,6,0.2,0.0,0.26,0.19,Advanced Génifique Hydrogel Melting Mask,LANCÔME,Face Mask,4.5,1.0
+64,7,0.15,0.0,0.25,0.14,Visionnaire Eye Cream Advanced Multi-Correcting Eye Balm,LANCÔME,Eye cream,3.9,0.974
+64,8,0.1,0.0,0.19,0.06,Powerful Wrinkle Reducing Eye Cream,KIEHL'S SINCE 1851,Eye cream,3.9,1.0
+64,9,0.05,0.0,0.12,0.03,Egg Cream Mask Firming,TOO COOL FOR SCHOOL,Face Mask,4.2,1.0
+65,0,0.5,0.9,0.29,0.8,Plantscription™ Youth-Renewing Power Night Cream,ORIGINS,Moisturizer,4.4,1.0
+65,1,0.46,0.86,0.23,0.74,Dermask Intra Jet Wrinkless Solution™,DR. JART+,Face Mask,3.9,1.0
+65,2,0.42,0.83,0.16,0.68,Treatment Toner,AMOREPACIFIC,Moisturizer,4.4,0.989
+65,3,0.37,0.77,0.09,0.64,Kakadu C™ Intensive Vitamin C Peel Pads with Ferulic Acid & Vitamin E,DERMADOCTOR,Treatment,4.8,1.0
+65,4,0.27,0.71,0.06,0.59,Brightening Derm Revival Mask,SK-II,Face Mask,4.5,1.0
+65,5,0.22,0.65,0.03,0.56,Time Release Acne Cleanser,MURAD,Cleanser,4.4,1.0
+65,6,0.16,0.61,0.0,0.53,Rose Hibiscus Coconut Water Hydrating Face Mist,HERBIVORE,Moisturizer,4.1,0.968
+65,7,0.1,0.57,0.0,0.5,Capture Totale Multi-Perfection Creme,DIOR,Moisturizer,4.4,0.907
+65,8,0.04,0.51,0.0,0.43,Facial Radiance Pads,FIRST AID BEAUTY,Treatment,4.3,1.0
+65,9,0.02,0.45,0.0,0.37,Balancing Moisturizer Broad Spectrum SPF 15 PA++,MURAD,Sun protect,3.7,0.809
+66,0,0.65,0.31,0.44,0.58,Premier Cru Rich Cream,CAUDALIE,Moisturizer,4.5,1.0
+66,1,0.59,0.26,0.37,0.52,Extra Rich Cleansing Milk,SHISEIDO,Cleanser,5.0,1.0
+66,2,0.52,0.2,0.3,0.47,The True Cream Moisturizing Bomb,BELIF,Moisturizer,4.6,1.0
+66,3,0.48,0.22,0.25,0.43,No Puffery™ Cooling Roll-On For Puffy Eyes,ORIGINS,Eye cream,3.4,0.616
+66,4,0.43,0.18,0.26,0.4,Waterfall Glacier Water Cream,SATURDAY SKIN,Moisturizer,4.6,1.0
+66,5,0.38,0.12,0.21,0.34,Face Mask - Grape - Anti-pollution,SEPHORA COLLECTION,Face Mask,5.0,1.0
+66,6,0.34,0.02,0.13,0.28,High-Potency Night-a-Mins™ Resurfacing Cream with Fruit-Derived AHAs,ORIGINS,Moisturizer,4.3,1.0
+66,7,0.28,0.0,0.1,0.23,Prismatic Luminizing Shield SPF 50,VOLITION BEAUTY,Sun protect,4.2,1.0
+66,8,0.26,0.0,0.02,0.16,Wild Rose 15% Vitamin C Spotless Serum,KORRES,Treatment,3.9,1.0
+66,9,0.21,0.0,0.0,0.14,My Daily Dose Custom-Blended Serum Set,SKIN INC SUPPLEMENT BAR,Treatment,4.3,0.825
+67,0,0.83,0.26,0.82,0.48,Advanced Génifique Youth Activating Serum Duo,LANCÔME,Treatment,2.0,0.149
+67,1,0.79,0.24,0.82,0.49,Vintage Single Extract Essence,AMOREPACIFIC,Moisturizer,4.5,0.833
+67,2,0.74,0.19,0.75,0.41,Hydro-Dynamic® Ultimate Moisture For Eyes,MURAD,Eye cream,4.2,0.985
+67,3,0.67,0.1,0.71,0.37,Waterfall Glacier Water Cream,SATURDAY SKIN,Moisturizer,4.6,1.0
+67,4,0.63,0.03,0.64,0.32,Hydrating Toner,MURAD,Cleanser,4.4,0.618
+67,5,0.59,0.0,0.6,0.29,GENIUS Ultimate Anti-Aging Cream,ALGENIST,Moisturizer,4.3,1.0
+67,6,0.5,0.0,0.53,0.25,Cleansing Wipes - Cucumber - Anti-fatigue,SEPHORA COLLECTION,Cleanser,4.4,0.891
+67,7,0.48,0.0,0.5,0.18,Face Mask - Pineapple - Pore Perfecting,SEPHORA COLLECTION,Face Mask,4.7,1.0
+67,8,0.41,0.0,0.46,0.15,No Foundation Foundation Serum SPF 30,PERRICONE MD,Treatment,4.3,1.0
+67,9,0.34,0.0,0.42,0.08,Evercalm™ Anti-Redness Serum,REN CLEAN SKINCARE,Treatment,3.8,0.986
+68,0,0.97,0.8,0.37,0.79,Premier Cru Eye Cream,CAUDALIE,Eye cream,3.3,0.833
+68,1,0.92,0.76,0.33,0.79,Gentle Cleansing Milk,CAUDALIE,Cleanser,4.1,0.931
+68,2,0.85,0.7,0.31,0.75,Glycol Lactic Radiance Renewal Mask,REN CLEAN SKINCARE,Face Mask,4.4,1.0
+68,3,0.81,0.68,0.25,0.69,Defense Refresh Setting Mist Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,3.3,0.881
+68,4,0.82,0.64,0.19,0.7,Daily Protection Broad Spectrum SPF 50 Sunscreen,EVE LOM,Sun protect,4.4,1.0
+68,5,0.77,0.61,0.17,0.63,Water Drench Hyaluronic Cloud Serum,PETER THOMAS ROTH,Treatment,4.2,1.0
+68,6,0.73,0.55,0.14,0.59,DayWear Eye Cooling Anti-Oxidant Moisture GelCreme,ESTÉE LAUDER,Eye cream,3.7,0.922
+68,7,0.69,0.51,0.12,0.52,50+ SPF Sunscreen For Face Wrinkle Control Cream,CLARINS,Sun protect,4.1,0.892
+68,8,0.65,0.46,0.09,0.45,Superberry Hydrate + Glow Oil,YOUTH TO THE PEOPLE,Moisturizer,4.8,1.0
+68,9,0.61,0.41,0.02,0.41,Secret Sauce Clinically Advanced Miraculous Anti-Aging Moisturizer,IT COSMETICS,Moisturizer,3.8,1.0
+69,0,0.03,0.88,0.56,0.92,Virgin Marula Luxury Facial Oil,DRUNK ELEPHANT,Moisturizer,4.4,1.0
+69,1,0.0,0.86,0.5,0.86,Flower Fusion™ Lavender Soothing Sheet Mask,ORIGINS,Face Mask,4.3,1.0
+69,2,0.0,0.8,0.44,0.8,Wrinkle Release Eye Cream with Peptides,SKIN LAUNDRY,Eye cream,3.8,0.872
+69,3,0.0,0.77,0.39,0.8,Baggage Claim Rose Gold Eye Masks,WANDER BEAUTY,Eye cream,4.6,1.0
+69,4,0.0,0.71,0.35,0.76,Irish Moor Mud Purifying Black Mask,PETER THOMAS ROTH,Face Mask,4.4,1.0
+69,5,0.0,0.66,0.32,0.74,Tight & Bright Clay Multi-Mask,TARTE,Face Mask,4.1,1.0
+69,6,0.0,0.59,0.32,0.66,Solid Cleansing Oil,ERBORIAN,Cleanser,4.4,1.0
+69,7,0.0,0.55,0.26,0.63,Herbal-Infused Micellar Cleansing Water,KIEHL'S SINCE 1851,Cleanser,3.7,0.918
+69,8,0.0,0.53,0.23,0.6,Advanced Génifique Yeux Light-Pearl™ Eye Illuminator Youth Activating Concentrate,LANCÔME,Eye cream,3.6,0.907
+69,9,0.0,0.47,0.18,0.54,By All Greens™ Foaming Deep Cleansing Mask,ORIGINS,Face Mask,3.9,0.99
+70,0,0.1,0.89,0.14,0.45,Sport Continuous Spray SPF 50 - Guava Mango,COOLA,Sun protect,4.1,1.0
+70,1,0.06,0.84,0.1,0.39,Capture Youth Lift Sculptor Age-Delay Lifting Serum,DIOR,Treatment,5.0,0.977
+70,2,0.03,0.79,0.05,0.3,Rosa Centifolia™ No.1 Purity Cleansing Balm,REN CLEAN SKINCARE,Cleanser,4.2,0.986
+70,3,0.0,0.77,0.02,0.24,Squalane + Probiotic Gel Moisturizer,BIOSSANCE,Moisturizer,4.4,1.0
+70,4,0.0,0.74,0.0,0.18,Protini™ Polypeptide Cream,DRUNK ELEPHANT,Moisturizer,4.4,1.0
+70,5,0.0,0.69,0.0,0.1,Cold Plasma+ Eye,PERRICONE MD,Eye cream,4.0,1.0
+70,6,0.0,0.67,0.0,0.05,White Lucent Luminizing Surge,SHISEIDO,Treatment,4.5,1.0
+70,7,0.0,0.58,0.0,0.0,Midnight Secret Late Night Recovery Treatment,GUERLAIN,Moisturizer,4.2,1.0
+70,8,0.0,0.54,0.0,0.0,Plantscription™ Anti-Aging Power Serum,ORIGINS,Treatment,3.9,0.987
+70,9,0.0,0.5,0.0,0.0,Bright Biotic™ Dark Spot Minimizing Serum,DR. BRANDT SKINCARE,Treatment,4.3,1.0
+71,0,0.95,0.03,0.37,0.44,DayWear Multi-Protection Anti-Oxidant Sheer Tint Release Moisturizer Broad Spectrum SPF 15 - Normal/ Combination Skin,ESTÉE LAUDER,Sun protect,4.6,0.845
+71,1,0.88,0.01,0.31,0.42,Ultra Repair Face Moisturizer,FIRST AID BEAUTY,Moisturizer,4.2,1.0
+71,2,0.82,0.0,0.25,0.37,Overnight Miracle Mask,SK-II,Face Mask,3.8,0.991
+71,3,0.78,0.0,0.19,0.32,Overtime Mask,SUMMER FRIDAYS,Face Mask,4.5,1.0
+71,4,0.77,0.0,0.14,0.28,Pure Deepsea Hydrating Mask,SKIN INC SUPPLEMENT BAR,Face Mask,4.5,1.0
+71,5,0.68,0.0,0.09,0.2,Pore Refining Solutions Charcoal Mask,CLINIQUE,Face Mask,4.4,0.838
+71,6,0.62,0.0,0.05,0.16,Lingerie de Peau BB Cream,GUERLAIN,Moisturizer,4.3,1.0
+71,7,0.54,0.0,0.05,0.09,Rapid Age Spot and Pigment Lightening Serum,MURAD,Treatment,3.8,0.997
+71,8,0.54,0.0,0.01,0.01,Coconut Gel Sheet Mask - Hydrating,FARMACY,Face Mask,4.5,1.0
+71,9,0.51,0.0,0.0,0.0,BB Tinted Treatment 12-Hour Primer Broad Spectrum SPF 30 Sunscreen,TARTE,Moisturizer,4.3,1.0
+72,0,0.85,0.45,0.66,0.64,V-Facial Intensive Wrap,CLARINS,Face Mask,4.9,0.829
+72,1,0.79,0.39,0.6,0.59,Visionnaire Eye Cream Advanced Multi-Correcting Eye Balm,LANCÔME,Eye cream,3.9,1.0
+72,2,0.73,0.34,0.57,0.51,Visionnaire Eye Cream Advanced Multi-Correcting Eye Balm,LANCÔME,Eye cream,3.9,1.0
+72,3,0.68,0.32,0.52,0.5,Watermelon Glow Sleeping Mask,GLOW RECIPE,Moisturizer,4.1,1.0
+72,4,0.65,0.25,0.49,0.43,Face Hero,GO-TO,Moisturizer,4.8,1.0
+72,5,0.62,0.21,0.45,0.37,Umbra Tinte™ Physical Daily Defense Broad Spectrum Sunscreen SPF 30,DRUNK ELEPHANT,Sun protect,3.6,0.862
+72,6,0.57,0.18,0.44,0.29,Confidence in a Cream™ Transforming Moisturizing Super Cream,IT COSMETICS,Moisturizer,4.3,0.987
+72,7,0.5,0.1,0.39,0.25,PRE:EMPT SERIES™ Brightening Eye Cream,PERRICONE MD,Eye cream,3.6,0.793
+72,8,0.43,0.08,0.36,0.22,Rose Hibiscus Coconut Water Hydrating Face Mist,HERBIVORE,Moisturizer,4.1,1.0
+72,9,0.37,0.02,0.32,0.17,Checks and Balances™ Frothy Face Wash,ORIGINS,Cleanser,4.3,1.0
+73,0,0.87,0.33,0.15,0.9,Moisture Surge 72-Hour Auto-Replenishing Hydrator,CLINIQUE,Moisturizer,4.4,1.0
+73,1,0.83,0.3,0.1,0.87,Water Drench Hyaluronic Cloud Hydra-Gel Eye Patches,PETER THOMAS ROTH,Eye cream,4.4,1.0
+73,2,0.78,0.24,0.05,0.85,Moisturizing Bomb Cushion Compact Broad Spectrum SPF 50,BELIF,Sun protect,3.7,0.912
+73,3,0.71,0.18,0.03,0.78,Black Tea Age-Delay Firming Serum,FRESH,Treatment,3.9,0.996
+73,4,0.66,0.11,0.0,0.73,Dragon Fruit Brightening Superfruit Mask,ORIGINS,Face Mask,3.8,1.0
+73,5,0.64,0.05,0.0,0.69,Water Drench Hyaluronic Cloud Cream,PETER THOMAS ROTH,Moisturizer,4.4,1.0
+73,6,0.57,0.02,0.0,0.65,Full Spectrum 360° Sun Silk Drops SPF 30,COOLA,Sun protect,4.6,1.0
+73,7,0.48,0.0,0.0,0.58,Hello FAB Coconut Water Cream,FIRST AID BEAUTY,Moisturizer,4.2,1.0
+73,8,0.44,0.0,0.0,0.53,Midnight Secret Late Night Recovery Treatment,GUERLAIN,Moisturizer,4.2,0.944
+73,9,0.38,0.0,0.0,0.5,Supergoop! x Milly Defense Refresh Setting Mist Broad Spectrum Sunscreen SPF 50,SUPERGOOP!,Sun protect,3.7,1.0
+74,0,0.24,0.32,0.17,0.05,Pep-Start Double Bubble Purifying Mask,CLINIQUE,Face Mask,4.0,0.95
+74,1,0.17,0.26,0.13,0.0,Banana Bright Eye Crème,OLEHENRIKSEN,Eye cream,4.2,1.0
+74,2,0.14,0.23,0.07,0.0,Peat Miracle Revital Serum Concentrate,BELIF,Treatment,4.5,1.0
+74,3,0.08,0.17,0.0,0.0,Essential Energy Eye Definer,SHISEIDO,Eye cream,0.0,0.164
+74,4,0.07,0.13,0.01,0.0,Adaptogen Deep Moisture Cream,YOUTH TO THE PEOPLE,Moisturizer,4.8,1.0
+74,5,0.03,0.11,0.0,0.0,R.N.A. POWER Anti-Aging Essence Serum,SK-II,Treatment,4.4,1.0
+74,6,0.0,0.06,0.0,0.0,C-Tango™ Multivitamin Eye Cream,DRUNK ELEPHANT,Eye cream,0.0,0.211
+74,7,0.0,0.05,0.0,0.0,Midnight Recovery Eye,KIEHL'S SINCE 1851,Eye cream,3.9,1.0
+74,8,0.0,0.0,0.0,0.0,Resurfacing Serum,TATA HARPER,Treatment,4.2,0.985
+74,9,0.0,0.0,0.0,0.0,Ultimate Sun Protection Lotion WetForce SPF 50+ Mini,SHISEIDO,Sun protect,5.0,1.0
+75,0,0.78,0.87,0.52,0.46,Cleansing Spa Water Makeup Remover,KOH GEN DO,Cleanser,4.5,0.896
+75,1,0.68,0.81,0.5,0.43,H2 Elemental Energy Hydrating Booster Serum,PERRICONE MD,Treatment,4.1,1.0
+75,2,0.65,0.73,0.45,0.38,Midnight Recovery Concentrate,KIEHL'S SINCE 1851,Moisturizer,4.4,1.0
+75,3,0.58,0.68,0.42,0.35,Deep Cleansing Mask,OMOROVICZA,Face Mask,4.3,1.0
+75,4,0.52,0.65,0.38,0.28,Clear Complexion Moisturizer,BOSCIA,Treatment,3.6,0.959
+75,5,0.46,0.59,0.33,0.22,Capture Totale Dreamskin Advanced,DIOR,Moisturizer,4.3,1.0
+75,6,0.38,0.53,0.26,0.2,Coconut Ceramide Mask,TOO COOL FOR SCHOOL,Face Mask,4.5,1.0
+75,7,0.34,0.52,0.23,0.18,Eye Duty Triple Remedy A.M. Gel Cream,FIRST AID BEAUTY,Eye cream,4.1,0.994
+75,8,0.3,0.44,0.14,0.12,Sleeping Mask - Coconut Water,SEPHORA COLLECTION,Face Mask,5.0,1.0
+75,9,0.24,0.4,0.09,0.08,PRE:EMPT SERIES™ Brightening Eye Cream,PERRICONE MD,Eye cream,3.6,0.94
+76,0,0.07,0.28,0.63,0.55,Aqua Bomb Sleeping Mask,BELIF,Moisturizer,4.7,0.831
+76,1,0.02,0.24,0.58,0.5,Daydream™ Mineral Primer SPF 30,COOLA,Sun protect,4.2,1.0
+76,2,0.0,0.2,0.52,0.45,Gentle Cleansing Milk,CAUDALIE,Cleanser,4.1,1.0
+76,3,0.0,0.15,0.48,0.39,Facial Radiance Pads,FIRST AID BEAUTY,Treatment,4.3,1.0
+76,4,0.0,0.1,0.43,0.33,Hydro-Dynamic® Quenching Essence,MURAD,Cleanser,4.3,1.0
+76,5,0.0,0.01,0.42,0.27,Ultra Repair Hydra-Firm Sleeping Cream,FIRST AID BEAUTY,Moisturizer,4.3,1.0
+76,6,0.0,0.0,0.38,0.21,All About Eyes Serum De-Puffing Eye Massage,CLINIQUE,Eye cream,3.8,0.733
+76,7,0.0,0.0,0.37,0.18,Pore Cleaner Bubble Foam,BELIF,Face Mask,4.4,1.0
+76,8,0.0,0.0,0.34,0.12,Moisture Surge 72-Hour Auto-Replenishing Hydrator,CLINIQUE,Moisturizer,4.4,1.0
+76,9,0.0,0.0,0.25,0.09,Rènergie Lift Multi-Action Sunscreen Broad Spectrum SPF 15 For Dry Skin,LANCÔME,Sun protect,4.2,0.839
+77,0,0.72,0.22,0.45,0.23,SUPERMASK - The Golden Mask,SEPHORA COLLECTION,Face Mask,2.6,0.689
+77,1,0.65,0.17,0.4,0.18,Hello FAB Coconut Skin Smoothie Priming Moisturizer,FIRST AID BEAUTY,Moisturizer,4.2,1.0
+77,2,0.64,0.12,0.37,0.13,Hydro Biotic™ Recovery Sleeping Mask,DR. BRANDT SKINCARE,Face Mask,4.6,1.0
+77,3,0.59,0.05,0.3,0.07,Waterfall Glacier Water Cream,SATURDAY SKIN,Moisturizer,4.6,1.0
+77,4,0.58,0.02,0.24,0.0,No Foundation Foundation Serum SPF 30,PERRICONE MD,Treatment,4.3,1.0
+77,5,0.5,0.0,0.18,0.0,Sun-Defying Sunscreen Oil Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.1,0.945
+77,6,0.45,0.0,0.13,0.0,Cicapair ™ Tiger Grass Color Correcting Treatment SPF 30,DR. JART+,Moisturizer,4.2,0.978
+77,7,0.41,0.0,0.05,0.0,Nose Mask - Pineapple,SEPHORA COLLECTION,Face Mask,2.9,0.793
+77,8,0.35,0.0,0.03,0.0,Max Complexion Correction Pads,PETER THOMAS ROTH,Treatment,4.4,0.915
+77,9,0.32,0.0,0.0,0.0,Crème Ancienne Face Oil Elixir,FRESH,Treatment,3.6,0.83
+78,0,0.83,0.09,0.1,0.74,Martian Mattifying Melting Water-Gel Toner,SUNDAY RILEY,Cleanser,3.9,0.783
+78,1,0.8,0.05,0.07,0.7,Crème Ancienne Face Oil Elixir,FRESH,Treatment,3.6,0.897
+78,2,0.77,0.01,0.02,0.62,Defense Refresh Setting Mist Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,3.3,0.893
+78,3,0.73,0.0,0.0,0.57,The Moisturizing Soft Cream,LA MER,Moisturizer,3.8,0.94
+78,4,0.67,0.0,0.0,0.5,Purifying Cleanser,TATA HARPER,Cleanser,4.4,0.985
+78,5,0.65,0.0,0.0,0.42,Your Skin But Better™ CC+™ Cream with SPF 50+,IT COSMETICS,Moisturizer,4.1,1.0
+78,6,0.59,0.0,0.0,0.39,Pekee Bar™,DRUNK ELEPHANT,Cleanser,4.5,1.0
+78,7,0.56,0.0,0.0,0.36,Beauty Shroom™ Exfoliating Acid Potion,MOON JUICE,Treatment,4.9,1.0
+78,8,0.51,0.0,0.0,0.31,Advanced Night Repair Intensive Recovery Ampoules,ESTÉE LAUDER,Moisturizer,4.9,1.0
+78,9,0.42,0.0,0.0,0.3,Find Your Balance™ Oil Control Cleanser,OLEHENRIKSEN,Cleanser,4.5,0.867
+79,0,0.72,0.97,0.6,0.35,GinZing™ Refreshing Eye Cream to Brighten and Depuff,ORIGINS,Eye cream,4.0,1.0
+79,1,0.66,0.87,0.54,0.31,Greek Yoghurt Advanced Nourishing Sleeping Facial,KORRES,Face Mask,4.4,1.0
+79,2,0.61,0.82,0.45,0.26,Shaba Complex™ Eye Serum,DRUNK ELEPHANT,Eye cream,3.9,1.0
+79,3,0.56,0.76,0.44,0.2,H2 Elemental Energy Hydrating Booster Serum,PERRICONE MD,Treatment,4.1,1.0
+79,4,0.49,0.73,0.41,0.14,Peat Miracle Revital Serum Concentrate,BELIF,Treatment,4.5,1.0
+79,5,0.38,0.66,0.36,0.07,Sheet Masks,DR. JART+,Face Mask,4.2,0.874
+79,6,0.31,0.6,0.31,0.04,Crème Ancienne® Ultimate Nourishing Honey Mask,FRESH,Face Mask,4.2,1.0
+79,7,0.28,0.51,0.24,0.01,Capture Totale Dreamskin 1-Minute Mask,DIOR,Face Mask,3.8,0.906
+79,8,0.23,0.5,0.22,0.0,Capture Youth Age-Delay Advanced Crème,DIOR,Moisturizer,3.9,1.0
+79,9,0.2,0.43,0.17,0.0,Plantscription™ SPF 25 Power Anti-Aging Oil-Free Cream,ORIGINS,Sun protect,4.6,1.0
+80,0,0.85,0.97,0.82,0.61,Wonderfeel™ Double Cleanser,OLEHENRIKSEN,Cleanser,4.4,0.849
+80,1,0.76,0.95,0.83,0.55,Rose Jelly Mask,LANCÔME,Face Mask,4.1,0.722
+80,2,0.74,0.94,0.82,0.53,UncompliKated SPF 50 Soft Focus Makeup Setting Spray,KATE SOMERVILLE,Sun protect,3.2,0.523
+80,3,0.74,0.88,0.81,0.5,Acne Healing Dots,PEACE OUT,Treatment,4.3,1.0
+80,4,0.69,0.84,0.73,0.44,Martian Mattifying Melting Water-Gel Toner,SUNDAY RILEY,Cleanser,3.9,0.753
+80,5,0.64,0.81,0.72,0.43,Bright Biotic™ Dark Spot Minimizing Serum,DR. BRANDT SKINCARE,Treatment,4.3,1.0
+80,6,0.59,0.76,0.68,0.37,Perfectionist Pro Rapid Firm + Lift Treatment,ESTÉE LAUDER,Treatment,5.0,0.888
+80,7,0.55,0.71,0.63,0.35,Ultimate Miracle Worker Multi-Rejuvenating Retinol + Superfood Oil and Pads,PHILOSOPHY,Cleanser,4.1,1.0
+80,8,0.48,0.67,0.58,0.29,R.N.A. POWER Anti-Aging Eye Cream,SK-II,Eye cream,4.3,1.0
+80,9,0.45,0.63,0.51,0.26,C.E.O. C + E Micro-Dissolve Cleansing Oil,SUNDAY RILEY,Cleanser,4.3,1.0
+81,0,0.87,0.57,0.4,0.14,Micellar Cleansing Water & Milk - Pomegranate,SEPHORA COLLECTION,Cleanser,4.2,0.994
+81,1,0.82,0.5,0.34,0.11,Acne System,PETER THOMAS ROTH,Treatment,4.3,1.0
+81,2,0.77,0.44,0.27,0.09,Micro Polish Cleanser,REN CLEAN SKINCARE,Cleanser,4.5,0.909
+81,3,0.71,0.4,0.21,0.06,Ultra Facial Overnight Hydrating Mask,KIEHL'S SINCE 1851,Moisturizer,4.4,1.0
+81,4,0.63,0.33,0.16,0.02,Powerful Wrinkle Reducing Cream Sunscreen Broad Spectrum SPF 30,KIEHL'S SINCE 1851,Sun protect,3.5,0.875
+81,5,0.6,0.27,0.1,0.01,Evercalm™ Anti-Redness Serum,REN CLEAN SKINCARE,Treatment,3.8,0.876
+81,6,0.56,0.23,0.07,0.0,Zero Baggage Anti-Dark Circle Eye Cream,NATURALLY SERIOUS,Eye cream,3.3,0.901
+81,7,0.52,0.2,0.02,0.0,The Broad Spectrum SPF 50 UV Protecting Fluid,LA MER,Sun protect,4.7,1.0
+81,8,0.48,0.14,0.0,0.0,The True Cream Aqua Bomb,BELIF,Moisturizer,4.5,0.926
+81,9,0.43,0.08,0.0,0.0,Keep Young And Beautiful™ Instant Brightening Beauty Shot Eye Lift,REN CLEAN SKINCARE,Eye cream,3.7,0.966
+82,0,0.08,0.05,0.16,0.62,EGF Serum,BIOEFFECT,Treatment,5.0,1.0
+82,1,0.02,0.03,0.15,0.58,DermalQuench Liquid Lift™ Advanced Wrinkle Treatment,KATE SOMERVILLE,Treatment,3.7,0.897
+82,2,0.0,0.0,0.08,0.56,Tsubaki Oil Deep Hydrating Bio-Cellulose Mask,BOSCIA,Face Mask,4.1,1.0
+82,3,0.0,0.0,0.0,0.51,Clay Mask,SEPHORA COLLECTION,Face Mask,4.3,1.0
+82,4,0.0,0.0,0.0,0.46,Face Mask - Grape - Anti-pollution,SEPHORA COLLECTION,Face Mask,5.0,1.0
+82,5,0.0,0.0,0.0,0.42,Midnight Recovery Eye,KIEHL'S SINCE 1851,Eye cream,3.9,1.0
+82,6,0.01,0.0,0.0,0.33,Lift & Plump Sheet Mask with Vegan Stem Cell Complex,LANCER,Face Mask,3.9,0.914
+82,7,0.0,0.0,0.0,0.3,Turmeric 2-in-1 Brightening & Exfoliating Mask,KORA ORGANICS,Face Mask,4.6,1.0
+82,8,0.0,0.0,0.0,0.26,Treatment Enzyme Peel,AMOREPACIFIC,Cleanser,4.7,1.0
+82,9,0.0,0.0,0.0,0.22,Tarteguard 20 Tinted Moisturizer Broad Spectrum SPF 20 Sunscreen,TARTE,Sun protect,4.0,1.0
+83,0,0.68,0.49,0.67,0.05,20% Glycolic Solutions Jumbo Peel Swab,PETER THOMAS ROTH,Treatment,4.3,1.0
+83,1,0.59,0.44,0.62,0.0,Your Skin But Better™ CC+Illumination™ Cream with SPF 50+,IT COSMETICS,Moisturizer,3.9,1.0
+83,2,0.55,0.4,0.54,0.0,Advanced Night Repair Concentrated Recovery Eye Mask,ESTÉE LAUDER,Face Mask,3.3,0.856
+83,3,0.49,0.38,0.52,0.0,Prep-N-Glow™ Cloths,NUFACE,Cleanser,4.7,1.0
+83,4,0.43,0.32,0.45,0.0,Facial Treatment Mask,SK-II,Face Mask,4.4,1.0
+83,5,0.36,0.29,0.41,0.0,Dermaclear™ Micro Milk Peel,DR. JART+,Treatment,4.4,1.0
+83,6,0.31,0.23,0.36,0.0,Ultimune Eye Power Infusing Eye Concentrate,SHISEIDO,Eye cream,3.8,0.951
+83,7,0.27,0.18,0.35,0.0,Truth Serum®,OLEHENRIKSEN,Treatment,4.3,1.0
+83,8,0.24,0.1,0.31,0.0,ELEVATE Firming & Lifting Contouring Eye Cream,ALGENIST,Eye cream,3.0,0.801
+83,9,0.21,0.1,0.27,0.0,Shake & Shot™ Rubber Hydro Mask,DR. JART+,Face Mask,4.6,1.0
+84,0,0.18,0.38,0.7,0.5,Naturally Gentle Eye Makeup Remover,CLINIQUE,Cleanser,4.4,0.86
+84,1,0.17,0.38,0.65,0.44,TIME RESPONSE Vintage Wash-off Masque,AMOREPACIFIC,Face Mask,5.0,0.613
+84,2,0.09,0.36,0.61,0.4,After-Sun Mask - Watermelon,SEPHORA COLLECTION,Face Mask,4.3,0.725
+84,3,0.05,0.32,0.57,0.36,Australian Pink Clay Porefining Face Mask,SAND & SKY,Face Mask,4.7,0.952
+84,4,0.01,0.26,0.5,0.31,GenOptics Aura Essence Serum,SK-II,Moisturizer,4.1,1.0
+84,5,0.0,0.21,0.45,0.27,Self Tan Express Bronzing Face Sheet Mask,ST. TROPEZ TANNING ESSENTIALS,Face Mask,3.8,0.849
+84,6,0.0,0.16,0.42,0.23,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Soothing Face Mask,ORIGINS,Face Mask,4.5,1.0
+84,7,0.0,0.14,0.34,0.18,Nutritious Radiant Vitality Energy Lotion,ESTÉE LAUDER,Cleanser,0.0,-0.012
+84,8,0.03,0.13,0.36,0.18,Double Serum Complete Age Control Concentrate,CLARINS,Treatment,4.1,0.987
+84,9,0.0,0.07,0.31,0.14,Classic Face Sport SPF 50 - White Tea,COOLA,Sun protect,3.9,0.96
+85,0,0.71,0.42,0.12,0.02,Solid Cleansing Oil,ERBORIAN,Cleanser,4.4,1.0
+85,1,0.65,0.39,0.04,0.0,Truth Serum®,OLEHENRIKSEN,Treatment,4.3,1.0
+85,2,0.58,0.32,0.0,0.0,The Future is Female Peppermint Blotting Linens,BOSCIA,Cleanser,3.3,0.885
+85,3,0.54,0.24,0.0,0.0,Advanced Génifique Youth Activating Serum Duo,LANCÔME,Treatment,2.0,0.386
+85,4,0.51,0.26,0.0,0.01,EradiKate™ Acne Treatment,KATE SOMERVILLE,Treatment,4.3,1.0
+85,5,0.45,0.22,0.0,0.0,Limited Edition Dramatically Different Moisturizing Lotion+™,CLINIQUE,Moisturizer,0.0,0.197
+85,6,0.46,0.23,0.0,0.0,5 in 1 Face Cream SPF 30,FIRST AID BEAUTY,Moisturizer,3.9,1.0
+85,7,0.39,0.18,0.0,0.0,Professional 3% Retinoid Plus,PETER THOMAS ROTH,Treatment,4.6,1.0
+85,8,0.37,0.13,0.0,0.0,Maracuja C-Brighter™ Eye Treatment,TARTE,Eye cream,4.0,0.957
+85,9,0.31,0.11,0.0,0.0,Facial Treatment Cleanser,SK-II,Cleanser,4.3,1.0
+86,0,0.4,0.31,0.34,0.33,Ultimate Miracle Worker Multi-Rejuvenating Retinol + Superfood Oil and Pads,PHILOSOPHY,Cleanser,4.1,0.926
+86,1,0.36,0.29,0.33,0.31,Ferulic Acid + Retinol Brightening Solution,DR. DENNIS GROSS SKINCARE,Treatment,4.1,0.996
+86,2,0.34,0.23,0.25,0.25,Ceramidin™ Facial Mask,DR. JART+,Face Mask,4.6,1.0
+86,3,0.3,0.18,0.18,0.2,Advanced Génifique Sensitive Antioxidant Serum,LANCÔME,Treatment,4.6,1.0
+86,4,0.25,0.1,0.13,0.14,Ultra Facial Moisturizer SPF 30,KIEHL'S SINCE 1851,Sun protect,3.7,0.971
+86,5,0.24,0.05,0.06,0.13,Pure Truth™ Youth Activating Oil,OLEHENRIKSEN,Treatment,4.0,0.936
+86,6,0.15,0.01,0.01,0.11,Sun-Defying Sunscreen Oil Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.1,1.0
+86,7,0.13,0.0,0.0,0.09,Take a Deep Breath Oxygenating Eye Gel Cream,PHILOSOPHY,Eye cream,4.1,0.779
+86,8,0.11,0.0,0.0,0.02,Soothing Face Cleanser Oil,BOBBI BROWN,Cleanser,4.2,0.922
+86,9,0.05,0.0,0.0,0.0,Squalane + Antioxidant Cleansing Oil,BIOSSANCE,Moisturizer,4.4,1.0
+87,0,0.15,0.2,0.6,0.76,Luna Sleeping Night Oil,SUNDAY RILEY,Moisturizer,4.1,1.0
+87,1,0.11,0.17,0.55,0.71,White Lucent MultiBright Night Cream,SHISEIDO,Moisturizer,4.1,0.963
+87,2,0.04,0.1,0.5,0.69,SKINLONGEVITY™ Vital Power Infusion Serum,BAREMINERALS,Treatment,4.4,1.0
+87,3,0.01,0.04,0.45,0.67,Gold Rush Eye Balm,EDIBLE BEAUTY,Eye cream,4.5,1.0
+87,4,0.0,0.0,0.41,0.62,COMPLEXION RESCUE™ Tinted Moisturizer Broad Spectrum SPF 30,BAREMINERALS,Moisturizer,3.9,0.814
+87,5,0.0,0.0,0.37,0.57,Pep-Start Eye Cream,CLINIQUE,Eye cream,3.7,0.892
+87,6,0.0,0.0,0.3,0.48,Multi-Active Eye,CLARINS,Eye cream,3.4,0.828
+87,7,0.01,0.0,0.25,0.42,Capture Totale 360 Light-Up Open-Up Replenishing Eye Serum,DIOR,Eye cream,4.1,0.84
+87,8,0.0,0.0,0.2,0.41,Truth™ On the Glow Cleansing Cloths,OLEHENRIKSEN,Cleanser,4.2,1.0
+87,9,0.0,0.0,0.17,0.39,Hungarian Thermal Water Mineral-Rich Atomic Heat Mask,PETER THOMAS ROTH,Face Mask,4.0,0.94
+88,0,0.62,0.86,0.63,0.15,Resurfacing Serum,TATA HARPER,Treatment,4.2,1.0
+88,1,0.58,0.84,0.56,0.13,Clear Complexion Cleanser,BOSCIA,Cleanser,4.4,1.0
+88,2,0.59,0.82,0.51,0.06,Black Jelly Pack,J.ONE,Face Mask,4.8,1.0
+88,3,0.55,0.78,0.44,0.04,Ibuki Beauty Sleeping Mask,SHISEIDO,Moisturizer,4.4,1.0
+88,4,0.5,0.74,0.39,0.01,Oil-Control Mattifier SPF 15 PA++,MURAD,Moisturizer,4.2,1.0
+88,5,0.44,0.69,0.37,0.0,TIME RESPONSE Eye Reserve Crème,AMOREPACIFIC,Eye cream,5.0,1.0
+88,6,0.36,0.67,0.31,0.0,The Deep Cleanse,TATCHA,Cleanser,4.4,1.0
+88,7,0.32,0.67,0.23,0.0,Dermask Water Jet Soothing Hydra Solution™,DR. JART+,Face Mask,4.1,0.973
+88,8,0.24,0.64,0.15,0.0,Renewed Hope in A Jar Moisture Mask,PHILOSOPHY,Face Mask,4.8,1.0
+88,9,0.2,0.57,0.1,0.0,POWERMUD™ Dualcleanse Treatment,GLAMGLOW,Cleanser,3.9,0.947
+89,0,0.08,0.86,0.86,0.62,Powerful Wrinkle Reducing Eye Cream,KIEHL'S SINCE 1851,Eye cream,3.9,1.0
+89,1,0.02,0.8,0.84,0.56,Luminous Dewy Skin Sheet Mask,TATCHA,Face Mask,4.3,0.736
+89,2,0.0,0.76,0.79,0.51,Hydro-Dynamic® Ultimate Moisture For Eyes,MURAD,Eye cream,4.2,1.0
+89,3,0.0,0.71,0.74,0.45,Hydra Life Deep Hydration Sorbet Water Essence,DIOR,Treatment,4.6,1.0
+89,4,0.0,0.68,0.72,0.39,Capture Youth Age-Delay Advanced Crème,DIOR,Moisturizer,3.9,1.0
+89,5,0.0,0.66,0.71,0.35,Vine[Activ] Vitamin C Anti-Wrinkle Serum,CAUDALIE,Treatment,4.1,0.687
+89,6,0.0,0.62,0.69,0.3,Facial Treatment Oil,SK-II,Moisturizer,4.5,0.554
+89,7,0.0,0.56,0.66,0.26,Clarifying Cleanser,MURAD,Cleanser,4.3,0.786
+89,8,0.0,0.5,0.61,0.24,The Water Cream,TATCHA,Moisturizer,4.2,0.727
+89,9,0.0,0.49,0.57,0.23,Broad Spectrum SPF 50 Mineral Sunscreen Fluid for Face,CLINIQUE,Sun protect,3.8,0.964
+90,0,0.15,0.06,0.1,0.9,Dramatically Different Moisturizing Gel,CLINIQUE,Moisturizer,4.5,1.0
+90,1,0.12,0.02,0.03,0.85,The Future is Female Peppermint Blotting Linens,BOSCIA,Cleanser,3.3,0.832
+90,2,0.13,0.0,0.01,0.82,Facial Treatment Essence Mini,SK-II,Moisturizer,4.1,1.0
+90,3,0.09,0.0,0.0,0.77,The Water Cream,TATCHA,Moisturizer,4.2,1.0
+90,4,0.01,0.0,0.0,0.69,Moisturizing Eye Bomb,BELIF,Eye cream,4.6,1.0
+90,5,0.0,0.0,0.0,0.65,Complete Eye Renewal Balm,ALGENIST,Eye cream,4.0,0.987
+90,6,0.0,0.0,0.0,0.61,Micellar Cleansing Water & Milk,SEPHORA COLLECTION,Cleanser,4.1,0.988
+90,7,0.0,0.0,0.0,0.55,Get Glowin’ Brightening Mask,SKIN INC SUPPLEMENT BAR,Face Mask,3.8,1.0
+90,8,0.0,0.0,0.0,0.5,Peel-off Mask,SEPHORA COLLECTION,Face Mask,3.6,0.876
+90,9,0.0,0.0,0.0,0.46,Exfoliating Swipeys,GO-TO,Cleanser,4.9,1.0
+91,0,0.28,0.41,0.34,0.6,Ultra Facial Moisturizer,KIEHL'S SINCE 1851,Moisturizer,3.9,0.986
+91,1,0.23,0.35,0.31,0.56,Goddess Clay Mask,CHARLOTTE TILBURY,Face Mask,4.3,1.0
+91,2,0.18,0.27,0.23,0.51,Vinoperfect Glycolic Brightening Essence,CAUDALIE,Treatment,4.4,1.0
+91,3,0.14,0.25,0.22,0.46,JuJu Bar,DRUNK ELEPHANT,Cleanser,4.6,1.0
+91,4,0.12,0.21,0.17,0.39,Rise + Shine Gentle Cleanser,SATURDAY SKIN,Cleanser,4.5,1.0
+91,5,0.07,0.14,0.14,0.35,Face Mask - Pineapple - Pore Perfecting,SEPHORA COLLECTION,Face Mask,4.7,1.0
+91,6,0.0,0.11,0.06,0.29,Future Solution LX Total Protective Cream Broad Spectrum SPF 20 Sunscreen,SHISEIDO,Sun protect,5.0,1.0
+91,7,0.0,0.06,0.02,0.24,Oil-Free Face Cream Broad Spectrum SPF 30,CLINIQUE,Sun protect,3.3,0.906
+91,8,0.0,0.01,0.0,0.19,Future Solution LX Total Protective Emulsion Broad Spectrum SPF 20 Sunscreen,SHISEIDO,Sun protect,3.0,0.802
+91,9,0.0,0.01,0.0,0.17,Sports BB Broad Spectrum SPF 50+ WetForce,SHISEIDO,Sun protect,4.1,0.988
+92,0,0.33,0.58,0.14,0.35,Bright Eyes Collagen-Infused Brightening Colloidal Silver Eye Masks,BEAUTYBIO,Eye cream,5.0,1.0
+92,1,0.28,0.52,0.12,0.31,Virgin Marula Luxury Facial Oil Mini,DRUNK ELEPHANT,Moisturizer,4.5,1.0
+92,2,0.23,0.48,0.13,0.27,YOUTHMUD™ Tinglexfoliate Treatment,GLAMGLOW,Cleanser,4.1,1.0
+92,3,0.21,0.41,0.08,0.2,Resilience Lift Night Lifting/Firming Face and Neck Creme,ESTÉE LAUDER,Moisturizer,4.2,1.0
+92,4,0.1,0.32,0.06,0.15,Advanced Génifique Eye Cream,LANCÔME,Eye cream,4.1,1.0
+92,5,0.03,0.26,0.02,0.08,Alpha Beta® Pore Perfecting Cleansing Gel,DR. DENNIS GROSS SKINCARE,Cleanser,4.6,1.0
+92,6,0.0,0.19,0.0,0.07,Do Not Age with Dr. Brandt Triple Peptide Eye Cream,DR. BRANDT SKINCARE,Eye cream,4.2,1.0
+92,7,0.0,0.14,0.0,0.02,Dramatically Different Moisturizing Gel,CLINIQUE,Moisturizer,4.5,1.0
+92,8,0.0,0.07,0.0,0.0,BIENFAIT UV SPF 50+ Super Fluid Facial Sunscreen,LANCÔME,Sun protect,4.4,0.846
+92,9,0.0,0.05,0.0,0.0,Coconut Gel Sheet Mask - Brightening,FARMACY,Face Mask,4.5,1.0
+93,0,0.83,0.74,0.69,0.53,Ultra Facial Deep Moisture Balm,KIEHL'S SINCE 1851,Moisturizer,4.7,1.0
+93,1,0.76,0.71,0.65,0.45,SUPERMASK - The Mud Mask,SEPHORA COLLECTION,Face Mask,4.6,0.793
+93,2,0.73,0.64,0.59,0.42,MOISTURE BOUND Rejuvenating Serum,AMOREPACIFIC,Treatment,4.4,1.0
+93,3,0.69,0.58,0.53,0.34,Sun-Defying Sunscreen Oil Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.1,0.998
+93,4,0.65,0.54,0.47,0.3,INSTAMUD 60 Second Pore-Refining Treatment,GLAMGLOW,Face Mask,4.1,1.0
+93,5,0.58,0.49,0.46,0.28,Lala Retro™ Whipped Cream,DRUNK ELEPHANT,Moisturizer,4.2,0.977
+93,6,0.56,0.44,0.38,0.24,Everyday Sunscreen Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.3,1.0
+93,7,0.51,0.41,0.3,0.19,Espada Acne-Clearing Blue Light Pen,FOREO,Treatment,3.9,0.976
+93,8,0.45,0.36,0.24,0.13,THIRSTYMUD™ Hydrating Treatment,GLAMGLOW,Moisturizer,4.3,1.0
+93,9,0.39,0.32,0.19,0.1,The Moisturizing Soft Cream,LA MER,Moisturizer,3.8,0.978
+94,0,0.08,0.84,0.1,0.77,MAGNETIGHT™ Age-Defier Mask Bundle,DR. BRANDT SKINCARE,Face Mask,4.0,0.936
+94,1,0.03,0.79,0.01,0.73,Ultra Facial Overnight Hydrating Mask,KIEHL'S SINCE 1851,Moisturizer,4.4,0.988
+94,2,0.0,0.74,0.0,0.71,Multi-Masking™ Medley,BOSCIA,Face Mask,4.1,1.0
+94,3,0.0,0.68,0.0,0.69,Cleansing Gel Oil Enriched,BELIF,Cleanser,4.5,1.0
+94,4,0.0,0.66,0.0,0.65,FUTURE RESPONSE Age Defense Serum,AMOREPACIFIC,Treatment,4.2,0.989
+94,5,0.0,0.64,0.0,0.63,Hydra-Therapy Skin Vitality Treatment Masks,ERNO LASZLO,Face Mask,4.3,1.0
+94,6,0.0,0.58,0.0,0.54,Oxygen Facial Flash Recovery Mask,DR. BRANDT SKINCARE,Face Mask,4.5,1.0
+94,7,0.0,0.55,0.0,0.5,Mission Perfection Eye Broad Spectrum SPF 15,CLARINS,Eye cream,4.0,1.0
+94,8,0.0,0.5,0.0,0.46,SUBLIME DEFENSE Ultra Lightweight UV Defense Fluid SPF 50,ALGENIST,Moisturizer,4.4,0.939
+94,9,0.0,0.43,0.0,0.41,pores no more® multi-performance stick,DR. BRANDT SKINCARE,Sun protect,3.6,0.907
+95,0,0.81,0.17,0.44,0.41,Cold Plasma+ Eye,PERRICONE MD,Eye cream,4.0,1.0
+95,1,0.76,0.1,0.42,0.36,FIRMx™ 360 Eye Renewal,PETER THOMAS ROTH,Eye cream,4.0,1.0
+95,2,0.73,0.07,0.34,0.29,Clear Complexion Cleanser,BOSCIA,Cleanser,4.4,1.0
+95,3,0.68,0.01,0.31,0.23,Dragon Fruit Brightening Superfruit Mask,ORIGINS,Face Mask,3.8,0.961
+95,4,0.62,0.0,0.24,0.17,COMPLEXION RESCUE™ Tinted Moisturizer Broad Spectrum SPF 30,BAREMINERALS,Moisturizer,3.9,0.78
+95,5,0.58,0.0,0.21,0.12,Radiance Transforming Mask,EVE LOM,Face Mask,0.0,0.179
+95,6,0.56,0.0,0.21,0.07,"Bye Bye Under Eye Eye Cream™ Smooths, Brightens, Depuffs",IT COSMETICS,Eye cream,3.7,0.958
+95,7,0.51,0.0,0.17,0.03,Rise + Glow™ Duo,DRUNK ELEPHANT,Treatment,4.0,0.979
+95,8,0.49,0.0,0.11,0.0,Intensive Instant Moisturizer + Cream,SEPHORA COLLECTION,Moisturizer,4.3,0.95
+95,9,0.44,0.0,0.1,0.0,Ultra Facial Cream,KIEHL'S SINCE 1851,Moisturizer,4.4,0.993
+96,0,0.84,0.37,0.95,0.98,Beauty Water,SON & PARK,Moisturizer,4.6,0.782
+96,1,0.83,0.33,0.88,0.96,Brightening Infusion Hydrogel Mask,DR. JART+,Face Mask,3.8,0.701
+96,2,0.84,0.29,0.84,0.93,Skin Rescue Acne Clearing Pads with White Clay,FIRST AID BEAUTY,Treatment,4.2,0.952
+96,3,0.77,0.23,0.79,0.91,Evercalm™ Overnight Recovery Balm,REN CLEAN SKINCARE,Moisturizer,4.9,0.798
+96,4,0.72,0.2,0.77,0.84,Fresh Pressed Renewing Powder Cleanser with Pure Vitamin C,CLINIQUE,Cleanser,4.9,1.0
+96,5,0.69,0.15,0.74,0.77,High Potency Classics: Hyaluronic Intensive Moisturizer,PERRICONE MD,Treatment,4.5,0.953
+96,6,0.63,0.1,0.74,0.73,Rare Earth Deep Pore Daily Cleanser,KIEHL'S SINCE 1851,Cleanser,4.6,0.893
+96,7,0.58,0.05,0.69,0.69,SUPERMASK - The Bubble Mask,SEPHORA COLLECTION,Face Mask,4.7,1.0
+96,8,0.51,0.01,0.62,0.64,Luminizing Pink Charcoal Mask,BOSCIA,Face Mask,3.5,0.846
+96,9,0.47,0.0,0.58,0.6,30 Day Treatment,BIOEFFECT,Treatment,5.0,1.0
+97,0,0.87,0.55,0.1,0.85,Gentle Oil-Free Eye Makeup Remover,NARS,Cleanser,4.3,0.883
+97,1,0.81,0.56,0.06,0.77,24K Gold Pure Luxury Lift & Firm Hydra-Gel Eye Patches,PETER THOMAS ROTH,Face Mask,4.1,1.0
+97,2,0.75,0.5,0.02,0.74,Dermask Intra Jet Wrinkless Solution™,DR. JART+,Face Mask,3.9,1.0
+97,3,0.7,0.46,0.0,0.67,Ferulic + Retinol Triple Correction Eye Serum,DR. DENNIS GROSS SKINCARE,Eye cream,3.8,1.0
+97,4,0.64,0.4,0.0,0.64,Nose Strip,SEPHORA COLLECTION,Face Mask,2.8,0.549
+97,5,0.64,0.39,0.0,0.64,Your Skin But Better CC+ Cream Oil-Free Matte with SPF 40,IT COSMETICS,Moisturizer,3.9,0.998
+97,6,0.57,0.29,0.0,0.55,Orchidee Imperiale The Eye and Lip Contour Cream,GUERLAIN,Eye cream,3.0,0.817
+97,7,0.54,0.27,0.0,0.53,Lock-It Makeup Setting Mist,KAT VON D,Moisturizer,4.1,0.853
+97,8,0.49,0.22,0.0,0.46,MOISTURE BOUND Rejuvenating Serum,AMOREPACIFIC,Treatment,4.4,1.0
+97,9,0.44,0.17,0.0,0.41,Skin Rescue Acne Clearing Charcoal Cleanser with Probiotics,FIRST AID BEAUTY,Cleanser,3.9,0.922
+98,0,0.35,0.03,0.05,0.5,The Microdelivery Exfoliating Facial Wash,PHILOSOPHY,Cleanser,4.6,1.0
+98,1,0.29,0.0,0.0,0.47,Sports BB Broad Spectrum SPF 50+ WetForce,SHISEIDO,Sun protect,4.1,0.976
+98,2,0.24,0.0,0.0,0.44,Hope In A Jar,PHILOSOPHY,Moisturizer,4.0,1.0
+98,3,0.23,0.0,0.0,0.41,Skin Rescue Deep Cleanser With Red Clay,FIRST AID BEAUTY,Cleanser,4.3,0.996
+98,4,0.2,0.0,0.0,0.33,White Lucent Brightening Cleansing Foam,SHISEIDO,Cleanser,4.5,0.912
+98,5,0.13,0.0,0.0,0.3,Confidence in a Cream™ Transforming Moisturizing Super Cream,IT COSMETICS,Moisturizer,4.3,1.0
+98,6,0.09,0.0,0.0,0.23,Secret Sauce Clinically Advanced Miraculous Anti-Aging Moisturizer,IT COSMETICS,Moisturizer,3.8,1.0
+98,7,0.05,0.0,0.0,0.2,Tarteguard 20 Tinted Moisturizer Broad Spectrum SPF 20 Sunscreen,TARTE,Sun protect,4.0,0.963
+98,8,0.0,0.0,0.0,0.13,Water Pocket Sheet Mask Water Bank (Moisturizing),LANEIGE,Face Mask,4.1,0.991
+98,9,0.0,0.0,0.0,0.11,Wrinkle Release Neck & Chest Sheet Mask,SKIN LAUNDRY,Face Mask,2.7,0.77
+99,0,0.83,0.7,0.14,0.71,Clarifying Mask,TATA HARPER,Face Mask,3.9,0.987
+99,1,0.79,0.63,0.11,0.67,Espada Acne-Clearing Blue Light Pen,FOREO,Treatment,3.9,1.0
+99,2,0.73,0.59,0.05,0.6,Watermelon Glow Sleeping Mask,GLOW RECIPE,Moisturizer,4.1,1.0
+99,3,0.65,0.55,0.0,0.54,Pink Cloud Rosewater Moisture Crème,HERBIVORE,Moisturizer,4.6,1.0
+99,4,0.6,0.49,0.0,0.5,Daily Moisturizer Broad Spectrum SPF 35,SKIN LAUNDRY,Sun protect,4.1,0.993
+99,5,0.57,0.43,0.0,0.44,A Glowing Regimen Trial Set,PHILOSOPHY,Cleanser,4.8,1.0
+99,6,0.54,0.39,0.0,0.37,Ultimate Miracle Worker Fix Eye Power-Treatment,PHILOSOPHY,Eye cream,3.9,0.887
+99,7,0.5,0.36,0.0,0.35,Watermelon Glow Jelly Sheet Mask,GLOW RECIPE,Face Mask,3.6,0.964
+99,8,0.45,0.31,0.0,0.31,Sports BB Broad Spectrum SPF 50+ WetForce,SHISEIDO,Sun protect,4.1,0.926
+99,9,0.41,0.27,0.0,0.25,Hydra Zen Masque Anti-Stress Moisturizing Night Face Mask,LANCÔME,Face Mask,4.6,1.0
+100,0,0.3,0.05,0.42,0.79,Bye Bye Breakout™ Full-Coverage Concealer,IT COSMETICS,Treatment,3.9,0.903
+100,1,0.27,0.0,0.4,0.7,Bright Biotic™ Dark Spot Minimizing Serum,DR. BRANDT SKINCARE,Treatment,4.3,1.0
+100,2,0.26,0.0,0.34,0.65,Mineral Crème Broad Spectrum SPF 50 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,4.3,0.797
+100,3,0.21,0.0,0.3,0.64,RetAsphere™ 2-in-1 Retinol Night Cream,KATE SOMERVILLE,Moisturizer,4.3,0.988
+100,4,0.2,0.0,0.21,0.59,Acne Healing Dots,PEACE OUT,Treatment,4.3,1.0
+100,5,0.14,0.0,0.18,0.52,Clarifying Cleanser,MURAD,Cleanser,4.3,1.0
+100,6,0.1,0.0,0.11,0.49,Clear Improvement™ Charcoal Honey Mask to Purify and Nourish,ORIGINS,Face Mask,4.7,1.0
+100,7,0.05,0.0,0.03,0.41,CC Cream Daily Correct Broad Spectrum SPF 35+ Sunscreen,SUPERGOOP!,Moisturizer,4.4,1.0
+100,8,0.0,0.0,0.0,0.34,Confidence in a Cleanser™ Skin-Transforming Hydrating Cleansing Serum,IT COSMETICS,Cleanser,4.7,1.0
+100,9,0.0,0.0,0.0,0.27,GinZing™ SPF 40 Energy-Boosting Tinted Moisturizer,ORIGINS,Moisturizer,4.0,0.94
+101,0,0.24,0.42,0.66,0.09,24K Gold Pure Luxury Lift & Firm Hydra-Gel Eye Patches,PETER THOMAS ROTH,Face Mask,4.1,1.0
+101,1,0.17,0.36,0.63,0.05,Future Solution LX Total Protective Cream Broad Spectrum SPF 20 Sunscreen,SHISEIDO,Sun protect,5.0,0.905
+101,2,0.16,0.3,0.59,0.0,Advanced Génifique Hydrogel Melting Mask,LANCÔME,Face Mask,4.5,1.0
+101,3,0.1,0.28,0.58,0.0,Umbra™ Sheer Physical Daily Defense Broad Spectrum Sunscreen SPF 30,DRUNK ELEPHANT,Sun protect,3.3,0.908
+101,4,0.04,0.23,0.52,0.0,Find Your Balance™ Oil Control Cleanser,OLEHENRIKSEN,Cleanser,4.5,0.885
+101,5,0.0,0.18,0.49,0.0,DermalQuench Liquid Lift™ + Retinol Advanced Resurfacing Treatment,KATE SOMERVILLE,Treatment,4.1,1.0
+101,6,0.0,0.1,0.42,0.0,Micellar Cleansing Water,CAUDALIE,Cleanser,4.0,0.994
+101,7,0.0,0.07,0.38,0.0,Hope In A Jar,PHILOSOPHY,Moisturizer,4.0,1.0
+101,8,0.0,0.02,0.37,0.0,Face Mask Magic,SEPHORA COLLECTION,Face Mask,5.0,1.0
+101,9,0.0,0.0,0.36,0.0,Day Cream Broad Spectrum Sunscreen SPF 30,ANTHONY,Sun protect,4.0,0.921
+102,0,0.25,0.02,0.79,0.34,Detoxifying Silt Gelee Mask,VOLITION BEAUTY,Face Mask,4.7,1.0
+102,1,0.2,0.0,0.73,0.29,H2Overdose Mask,FOREO,Face Mask,5.0,1.0
+102,2,0.15,0.0,0.69,0.22,Zero Oil™ Pore Purifying Toner,ORIGINS,Cleanser,4.3,0.606
+102,3,0.12,0.0,0.67,0.22,Acne System,PETER THOMAS ROTH,Treatment,4.3,1.0
+102,4,0.09,0.0,0.63,0.21,Banana Bright Eye Crème,OLEHENRIKSEN,Eye cream,4.2,0.728
+102,5,0.06,0.0,0.56,0.16,Nose Mask - Pineapple,SEPHORA COLLECTION,Face Mask,2.9,0.824
+102,6,0.03,0.0,0.53,0.13,Clinique Smart Custom-Repair Serum,CLINIQUE,Treatment,4.0,1.0
+102,7,0.0,0.0,0.47,0.07,Luminous Deep Hydration Lifting Mask,TATCHA,Face Mask,4.5,1.0
+102,8,0.0,0.0,0.45,0.01,Umbra™ Sheer Physical Daily Defense Broad Spectrum Sunscreen SPF 30,DRUNK ELEPHANT,Sun protect,3.3,0.826
+102,9,0.0,0.0,0.43,0.0,Facial Soap with Dish,CLINIQUE,Cleanser,4.4,0.836
+103,0,0.46,0.7,0.63,0.81,C-Firma™ Day Serum,DRUNK ELEPHANT,Treatment,4.1,0.977
+103,1,0.41,0.68,0.58,0.76,GloPRO® Prep Pads Clarifying Skin Cleansing Wipes with Peptides,BEAUTYBIO,Cleanser,4.0,0.985
+103,2,0.36,0.63,0.52,0.72,pores no more® multi-performance stick,DR. BRANDT SKINCARE,Sun protect,3.6,0.937
+103,3,0.32,0.59,0.51,0.69,Herbal-Infused Micellar Cleansing Water,KIEHL'S SINCE 1851,Cleanser,3.7,0.993
+103,4,0.25,0.55,0.45,0.65,GLOWSTARTER™ Mega Illuminating Moisturizer,GLAMGLOW,Moisturizer,4.0,0.95
+103,5,0.18,0.51,0.36,0.6,All About Eyes™ Rich,CLINIQUE,Eye cream,4.2,1.0
+103,6,0.1,0.45,0.33,0.55,New Day Gentle Exfoliating Grains,FARMACY,Cleanser,4.5,1.0
+103,7,0.04,0.4,0.26,0.5,DayWear Multi-Protection Anti-Oxidant Sheer Tint Release Moisturizer Broad Spectrum SPF 15 - Normal/ Combination Skin,ESTÉE LAUDER,Sun protect,4.6,0.896
+103,8,0.01,0.36,0.23,0.46,Flash Hydro-Boost Instant Plumping Emulsion,REN CLEAN SKINCARE,Treatment,4.5,1.0
+103,9,0.0,0.34,0.21,0.41,Squalane + Phyto-Retinol Serum,BIOSSANCE,Treatment,4.3,1.0
+104,0,0.54,0.25,0.75,0.19,After-Sun Mask - Watermelon,SEPHORA COLLECTION,Face Mask,4.3,0.758
+104,1,0.54,0.2,0.7,0.16,Broad Spectrum SPF 50 Mineral Sunscreen Fluid for Face,CLINIQUE,Sun protect,3.8,1.0
+104,2,0.49,0.16,0.62,0.13,Capture Youth Plump Filler Age-Delay Plumping Serum,DIOR,Treatment,4.4,0.858
+104,3,0.46,0.13,0.59,0.05,Goat Milk Moisturizing Cream,KATE SOMERVILLE,Moisturizer,4.1,1.0
+104,4,0.42,0.09,0.5,0.0,INSTAMUD 60 Second Pore-Refining Treatment,GLAMGLOW,Face Mask,4.1,1.0
+104,5,0.38,0.06,0.48,0.0,SKINLONGEVITY™ Vital Power Eye Gel Cream,BAREMINERALS,Eye cream,4.2,1.0
+104,6,0.33,0.02,0.4,0.0,Instant Firmx™,PETER THOMAS ROTH,Treatment,3.7,0.809
+104,7,0.3,0.0,0.4,0.0,Renewed Hope in A Jar Overnight Recharging & Refining Moisturizer,PHILOSOPHY,Moisturizer,4.4,1.0
+104,8,0.26,0.0,0.41,0.0,Ibuki Refining Moisturizer Enriched,SHISEIDO,Moisturizer,4.4,0.891
+104,9,0.24,0.0,0.36,0.0,Water Pocket Sheet Mask Sleeping Mask (Replenishing),LANEIGE,Face Mask,4.8,1.0
+105,0,0.97,0.5,0.5,0.92,Experiential Masks Set,SEPHORA COLLECTION,Face Mask,5.0,1.0
+105,1,0.9,0.5,0.46,0.85,Purity Made Simple One-Step Facial Cleansing Cloths,PHILOSOPHY,Cleanser,3.9,0.784
+105,2,0.86,0.49,0.41,0.79,Renewing Cleansing Cream,MURAD,Cleanser,4.5,0.898
+105,3,0.81,0.44,0.4,0.75,Umbra™ Sheer Physical Daily Defense Broad Spectrum Sunscreen SPF 30,DRUNK ELEPHANT,Sun protect,3.3,0.828
+105,4,0.79,0.42,0.33,0.72,Flower Fusion™ Raspberry Refreshing Sheet Mask,ORIGINS,Face Mask,4.6,1.0
+105,5,0.75,0.38,0.28,0.7,FUTURE RESPONSE Age Defense Serum,AMOREPACIFIC,Treatment,4.2,1.0
+105,6,0.74,0.33,0.24,0.66,Sun Lotion 30 SPF,MOROCCANOIL,Sun protect,4.4,1.0
+105,7,0.67,0.29,0.2,0.6,Lover Rubber Masks,DR. JART+,Face Mask,4.1,1.0
+105,8,0.63,0.25,0.17,0.56,Photo Finish Primerizer,SMASHBOX,Moisturizer,4.1,1.0
+105,9,0.59,0.18,0.11,0.52,Ultra Facial Deep Moisture Balm,KIEHL'S SINCE 1851,Moisturizer,4.7,1.0
+106,0,0.31,0.6,0.43,0.69,Max Complexion Correction Pads,PETER THOMAS ROTH,Treatment,4.4,1.0
+106,1,0.31,0.51,0.38,0.63,White Lucent Luminizing Infuser,SHISEIDO,Cleanser,3.8,1.0
+106,2,0.25,0.43,0.32,0.6,EGF Day Serum,BIOEFFECT,Treatment,4.6,1.0
+106,3,0.21,0.4,0.26,0.55,Time In A Bottle For Eyes 100% In-Control,PHILOSOPHY,Eye cream,3.9,0.962
+106,4,0.15,0.37,0.19,0.51,Deep Dive™ Glycolic Facial Cleanser,JACK BLACK,Cleanser,4.6,0.984
+106,5,0.09,0.32,0.14,0.47,Ultimate Miracle Worker Fix Eye Power-Treatment,PHILOSOPHY,Eye cream,3.9,0.971
+106,6,0.06,0.25,0.08,0.42,Honeymoon Glow AHA Resurfacing Night Serum with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.6,1.0
+106,7,0.0,0.22,0.03,0.35,EradiKate™ Mask Foam-Activated Acne Treatment,KATE SOMERVILLE,Treatment,4.2,0.754
+106,8,0.0,0.2,0.0,0.32,Orchidee Imperiale The Eye and Lip Contour Cream,GUERLAIN,Eye cream,3.0,0.808
+106,9,0.0,0.16,0.0,0.26,Pure Truth™ Youth Activating Oil,OLEHENRIKSEN,Treatment,4.0,0.986
+107,0,0.36,0.8,0.68,0.95,Nutrient-Charged Water Gel,MURAD,Moisturizer,4.6,0.833
+107,1,0.31,0.77,0.59,0.91,Beauty Water,SON & PARK,Moisturizer,4.6,1.0
+107,2,0.26,0.71,0.53,0.83,Crazy for Clay!,SEPHORA COLLECTION,Face Mask,4.0,0.966
+107,3,0.22,0.68,0.47,0.77,Tarteguard 30 Vegan Sunscreen Lotion Broad Spectrum SPF 30,TARTE,Sun protect,3.7,0.925
+107,4,0.16,0.61,0.44,0.72,8 HR Mattifying Moisturizer Sunscreen Broad Spectrum SPF20,SEPHORA COLLECTION,Sun protect,4.2,1.0
+107,5,0.14,0.57,0.37,0.67,Retinol Youth Renewal Night Cream,MURAD,Moisturizer,4.6,1.0
+107,6,0.1,0.49,0.33,0.6,Instant Radiance Sun Defense Sunscreen Broad Spectrum SPF 40,DR. DENNIS GROSS SKINCARE,Sun protect,3.9,1.0
+107,7,0.03,0.47,0.25,0.51,Skin Perfecting Lotion - Blemish Prone/Oily Skin,MURAD,Moisturizer,4.3,1.0
+107,8,0.0,0.43,0.19,0.44,Dramatically Different Hydrating Jelly,CLINIQUE,Moisturizer,4.0,0.923
+107,9,0.0,0.38,0.13,0.39,Eye Duty Triple Remedy A.M. Gel Cream,FIRST AID BEAUTY,Eye cream,4.1,1.0
+108,0,0.68,0.95,0.37,0.76,Green Tea Real Fresh Foam Cleanser,NEOGEN DERMALOGY,Cleanser,4.4,0.996
+108,1,0.65,0.93,0.33,0.71,ELEVATE Firming & Lifting Contouring Eye Cream,ALGENIST,Eye cream,3.0,0.778
+108,2,0.57,0.91,0.32,0.65,Wonderfeel™ Double Cleanser,OLEHENRIKSEN,Cleanser,4.4,1.0
+108,3,0.5,0.81,0.25,0.58,Multi-Masking™ Medley,BOSCIA,Face Mask,4.1,0.982
+108,4,0.5,0.74,0.22,0.51,Diorsnow Essence of Light Pure Concentrate of Light Brightening Milk Serum,DIOR,Treatment,4.5,1.0
+108,5,0.45,0.7,0.17,0.49,Benefiance WrinkleResist24 Intensive Eye Contour Cream,SHISEIDO,Eye cream,4.3,1.0
+108,6,0.39,0.65,0.1,0.44,Cleansing Wipes - Rose - Moisturizing,SEPHORA COLLECTION,Cleanser,4.6,0.872
+108,7,0.34,0.63,0.01,0.38,Advanced Night Repair Synchronized Recovery Complex II,ESTÉE LAUDER,Treatment,4.3,1.0
+108,8,0.27,0.6,0.0,0.33,Soy Face Cleansing Milk,FRESH,Cleanser,3.9,0.932
+108,9,0.19,0.54,0.0,0.3,Power Dose Vitamin C,DR. BRANDT SKINCARE,Treatment,4.4,1.0
+109,0,0.26,0.26,0.45,1.0,Water Bank Essence,LANEIGE,Moisturizer,4.7,1.0
+109,1,0.21,0.2,0.39,0.93,Acne Clearing Wash,PETER THOMAS ROTH,Cleanser,4.2,1.0
+109,2,0.16,0.17,0.37,0.87,SUPERMASK - The Bubble Mask,SEPHORA COLLECTION,Face Mask,4.7,1.0
+109,3,0.11,0.12,0.33,0.82,Golden Krocus Ageless Saffron Elixir Serum,KORRES,Treatment,4.1,1.0
+109,4,0.06,0.07,0.28,0.72,Take a Deep Breath Oxygenating Eye Gel Cream,PHILOSOPHY,Eye cream,4.1,0.877
+109,5,0.04,0.02,0.24,0.7,White Lucent Luminizing Surge,SHISEIDO,Treatment,4.5,1.0
+109,6,0.0,0.0,0.19,0.59,Sleeping Mask,SEPHORA COLLECTION,Moisturizer,4.2,0.897
+109,7,0.0,0.0,0.17,0.51,Blue Tansy AHA + BHA Resurfacing Clarity Mask,HERBIVORE,Treatment,4.5,1.0
+109,8,0.0,0.0,0.12,0.47,Multi-Task Eye Serum Mask,ERNO LASZLO,Eye cream,4.5,1.0
+109,9,0.0,0.0,0.07,0.4,The Rice Polish Foaming Enzyme Powder,TATCHA,Cleanser,4.4,1.0
+110,0,0.85,0.32,0.35,0.06,High Potency Classics: Nutritive Cleanser,PERRICONE MD,Cleanser,4.4,1.0
+110,1,0.81,0.3,0.31,0.01,MOISTURE BOUND Rejuvenating Serum,AMOREPACIFIC,Treatment,4.4,1.0
+110,2,0.74,0.26,0.27,0.0,Vitamin A Serum EVEN TONE & REDUCE DARK CIRCLES,SKIN INC SUPPLEMENT BAR,Eye cream,3.5,0.858
+110,3,0.73,0.23,0.2,0.0,Eye Mask - Cucumber - Anti-Puffiness,SEPHORA COLLECTION,Eye cream,3.0,0.596
+110,4,0.72,0.18,0.16,0.0,The Original MakeUp Eraser® Makeup Remover Cloth,MAKEUP ERASER,Cleanser,4.3,0.858
+110,5,0.71,0.14,0.1,0.0,Facial Treatment Essence,SK-II,Moisturizer,4.1,1.0
+110,6,0.65,0.09,0.03,0.0,Eye Duty Triple Remedy A.M. Gel Cream,FIRST AID BEAUTY,Eye cream,4.1,0.949
+110,7,0.59,0.01,0.0,0.0,Green Clean Makeup Meltaway Cleansing Balm with Echinacea GreenEnvy™,FARMACY,Cleanser,4.6,1.0
+110,8,0.55,0.0,0.0,0.0,Cleanser,EVE LOM,Cleanser,4.3,1.0
+110,9,0.48,0.0,0.0,0.0,Super Multi-Corrective Cream Sunscreen Broad Spectrum SPF 30,KIEHL'S SINCE 1851,Sun protect,3.5,0.896
+111,0,0.14,0.79,0.03,0.55,V-Facial Intensive Wrap,CLARINS,Face Mask,4.9,1.0
+111,1,0.1,0.72,0.0,0.55,Pep-Start Pout Restoring Night Mask,CLINIQUE,Face Mask,4.6,0.929
+111,2,0.07,0.67,0.0,0.49,Greek Yoghurt Advanced Nourishing Sleeping Facial,KORRES,Face Mask,4.4,0.995
+111,3,0.02,0.6,0.0,0.42,Waterfall Glacier Water Cream,SATURDAY SKIN,Moisturizer,4.6,1.0
+111,4,0.0,0.55,0.0,0.4,Gentle Cleansing Milk,CAUDALIE,Cleanser,4.1,1.0
+111,5,0.0,0.5,0.0,0.36,Énergie de Vie The Smoothing & Plumping Water-Infused Cream,LANCÔME,Moisturizer,4.2,1.0
+111,6,0.0,0.44,0.0,0.32,Reviving Eye Cream,OMOROVICZA,Eye cream,3.8,0.771
+111,7,0.0,0.42,0.0,0.3,Dr. Andrew Weil for Origins™ Mega-Bright Dark Circle Minimizer,ORIGINS,Eye cream,3.2,0.589
+111,8,0.0,0.36,0.0,0.26,Premier Cru Rich Cream,CAUDALIE,Moisturizer,4.5,1.0
+111,9,0.0,0.33,0.0,0.2,"Resilience Lift Firming/Sculpting Face and Neck Creme Broad Spectrum SPF 15, Normal/Combination Skin",ESTÉE LAUDER,Moisturizer,4.1,0.848
+112,0,0.82,0.07,0.97,0.64,FUTURE RESPONSE Age Defense Creme SPF 30,AMOREPACIFIC,Sun protect,3.8,0.721
+112,1,0.73,0.05,0.92,0.6,Honey Drop Lightweight Moisturizer with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.1,0.733
+112,2,0.73,0.02,0.88,0.52,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Soothing Face Mask,ORIGINS,Face Mask,4.5,1.0
+112,3,0.69,0.0,0.83,0.47,OIL OBSESSED™ Total Cleansing Oil,BAREMINERALS,Cleanser,4.6,0.588
+112,4,0.67,0.0,0.82,0.45,3 Muslin Cloths,EVE LOM,Cleanser,4.3,0.872
+112,5,0.65,0.0,0.76,0.41,Revitalixir™ Recovery Serum,MURAD,Treatment,4.5,0.858
+112,6,0.58,0.0,0.71,0.35,Hydro-Dynamic® Quenching Essence,MURAD,Cleanser,4.3,1.0
+112,7,0.52,0.0,0.67,0.32,GinZing™ SPF 40 Energy-Boosting Tinted Moisturizer,ORIGINS,Moisturizer,4.0,0.781
+112,8,0.47,0.0,0.63,0.26,Keep Young And Beautiful™ Instant Firming Beauty Shot,REN CLEAN SKINCARE,Treatment,4.1,0.677
+112,9,0.45,0.0,0.61,0.23,Benefiance NutriPerfect Night Cream,SHISEIDO,Moisturizer,4.7,0.887
+113,0,0.06,0.12,0.15,0.16,Eye Duty Triple Remedy A.M. Gel Cream,FIRST AID BEAUTY,Eye cream,4.1,1.0
+113,1,0.02,0.05,0.11,0.14,The Silk Cream,TATCHA,Moisturizer,4.3,0.829
+113,2,0.0,0.02,0.03,0.09,Tarteguard 20 Tinted Moisturizer Broad Spectrum SPF 20 Sunscreen,TARTE,Sun protect,4.0,0.965
+113,3,0.0,0.0,0.0,0.02,Express Beauty Mask With Ginkgo Biloba,APIVITA,Eye cream,4.0,0.845
+113,4,0.0,0.0,0.0,0.0,Squalane + Phyto-Retinol Serum,BIOSSANCE,Treatment,4.3,1.0
+113,5,0.0,0.0,0.0,0.0,Bio-Performance LiftDynamic Serum,SHISEIDO,Treatment,3.9,0.768
+113,6,0.0,0.0,0.0,0.0,Clear Skin Lover Rubber Mask,DR. JART+,Face Mask,4.2,1.0
+113,7,0.0,0.0,0.0,0.0,Aburatorigami Japanese Blotting Papers,TATCHA,Cleanser,4.7,1.0
+113,8,0.0,0.0,0.0,0.0,Fresh Pressed 7-day System with Pure Vitamin C,CLINIQUE,Cleanser,4.1,1.0
+113,9,0.0,0.0,0.0,0.0,Peat Miracle Revital Cream,BELIF,Moisturizer,4.7,1.0
+114,0,0.3,0.53,0.5,0.17,Treatment Enzyme Peel,AMOREPACIFIC,Cleanser,4.7,1.0
+114,1,0.26,0.49,0.48,0.11,Ferulic + Retinol Wrinkle Recovery Peel,DR. DENNIS GROSS SKINCARE,Treatment,4.4,1.0
+114,2,0.21,0.44,0.42,0.08,POWER Advanced Wrinkle Fighter 360° Eye Serum,ALGENIST,Treatment,4.1,1.0
+114,3,0.15,0.39,0.36,0.03,United State™ Balancing Tonic,ORIGINS,Cleanser,4.3,0.883
+114,4,0.11,0.38,0.29,0.0,needles no more® 3-D filler mask,DR. BRANDT SKINCARE,Treatment,3.7,0.993
+114,5,0.08,0.34,0.26,0.0,Protect Ultra Sheer Weightless Sunscreen Broad Spectrum SPF 50+ UVA/UVB,CANE + AUSTIN,Sun protect,4.1,0.936
+114,6,0.03,0.27,0.2,0.0,24/7 Retinol Eye Cream,DR. BRANDT SKINCARE,Eye cream,3.5,0.832
+114,7,0.0,0.22,0.15,0.0,Pore Refining Solutions Charcoal Mask,CLINIQUE,Face Mask,4.4,0.906
+114,8,0.0,0.17,0.1,0.0,InstaMatte™ Oil-Control Mask,MURAD,Face Mask,4.3,1.0
+114,9,0.0,0.09,0.04,0.0,pores no more® Vacuum Cleaner® Pore Purifying Mask,DR. BRANDT SKINCARE,Face Mask,4.1,0.971
+115,0,0.64,0.58,0.65,0.77,H2 Elemental Energy Hydrating Booster Serum,PERRICONE MD,Treatment,4.1,0.916
+115,1,0.61,0.52,0.62,0.73,Premier Cru Eye Cream,CAUDALIE,Eye cream,3.3,0.886
+115,2,0.57,0.51,0.59,0.71,D-Scar™ Scar Diminishing Serum,KATE SOMERVILLE,Treatment,4.2,1.0
+115,3,0.52,0.47,0.54,0.69,Refreshing Gel Cleanser,CLARISONIC,Cleanser,5.0,1.0
+115,4,0.5,0.39,0.5,0.65,Turmeric 2-in-1 Brightening & Exfoliating Mask,KORA ORGANICS,Face Mask,4.6,1.0
+115,5,0.44,0.33,0.45,0.6,Flower Fusion™ Orange Radiance-Boosting Sheet Mask,ORIGINS,Face Mask,3.8,0.984
+115,6,0.42,0.27,0.4,0.56,Max Mineral Naked Broad Spectrum SPF 45,PETER THOMAS ROTH,Sun protect,4.6,1.0
+115,7,0.39,0.2,0.37,0.49,Water Bank Essence,LANEIGE,Moisturizer,4.7,1.0
+115,8,0.3,0.15,0.34,0.44,The Cleansing Oil,LA MER,Cleanser,4.3,1.0
+115,9,0.25,0.13,0.3,0.41,Treatment Cleansing Foam,AMOREPACIFIC,Cleanser,4.5,1.0
+116,0,0.07,0.06,0.44,0.48,Hypoallergenic Firming Eye Cream,PERRICONE MD,Eye cream,4.4,1.0
+116,1,0.04,0.0,0.41,0.42,Clearly Corrective™ Brightening & Exfoliating Daily Cleanser,KIEHL'S SINCE 1851,Cleanser,4.3,1.0
+116,2,0.0,0.0,0.32,0.38,Glow Addict Mask,FOREO,Face Mask,0.0,0.205
+116,3,0.01,0.0,0.29,0.41,Dramatically Different Moisturizing Lotion+,CLINIQUE,Moisturizer,3.9,0.737
+116,4,0.0,0.0,0.23,0.38,Potent-C™ Power Serum,PETER THOMAS ROTH,Treatment,4.3,1.0
+116,5,0.0,0.0,0.14,0.32,Oxygen Facial Flash Recovery Mask,DR. BRANDT SKINCARE,Face Mask,4.5,1.0
+116,6,0.0,0.0,0.13,0.3,Honey Drop Lightweight Moisturizer with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.1,1.0
+116,7,0.0,0.0,0.08,0.25,Truth Serum®,OLEHENRIKSEN,Treatment,4.3,1.0
+116,8,0.0,0.0,0.03,0.16,Pep-Start Daily UV Protector Broad Spectrum SPF 50,CLINIQUE,Sun protect,4.2,1.0
+116,9,0.0,0.0,0.0,0.11,Hypoallergenic Firming Eye Cream,PERRICONE MD,Eye cream,4.4,1.0
+117,0,0.32,0.47,0.27,0.25,ExfoliKate® Intensive Exfoliating Treatment,KATE SOMERVILLE,Cleanser,4.4,0.972
+117,1,0.29,0.45,0.2,0.21,Experiential Masks Set,SEPHORA COLLECTION,Face Mask,5.0,1.0
+117,2,0.21,0.42,0.16,0.18,Pore-Balance™ Facial Sauna Scrub,OLEHENRIKSEN,Cleanser,4.6,1.0
+117,3,0.12,0.35,0.11,0.13,Photo Finish Primerizer,SMASHBOX,Moisturizer,4.1,1.0
+117,4,0.09,0.31,0.05,0.08,THIRSTYMUD™ Hydrating Treatment,GLAMGLOW,Moisturizer,4.3,1.0
+117,5,0.03,0.23,0.0,0.06,Treatment Cleansing Foam,AMOREPACIFIC,Cleanser,4.5,1.0
+117,6,0.0,0.19,0.0,0.0,Moment of Truth™ 2-in-1 Polishing Sugar Mask,OLEHENRIKSEN,Cleanser,4.5,1.0
+117,7,0.0,0.11,0.0,0.0,Water Replenishment Cotton Sheet Mask,DR. JART+,Face Mask,4.6,1.0
+117,8,0.0,0.06,0.0,0.0,Sheer Fluid Sun Shield Broad Spectrum SPF 30 Sunscreen,LANCER,Sun protect,4.8,1.0
+117,9,0.0,0.04,0.0,0.0,Mission Perfection Eye Broad Spectrum SPF 15,CLARINS,Eye cream,4.0,0.903
+118,0,0.76,0.5,0.51,0.5,Water Drench Hyaluronic Cloud Hydra-Gel Eye Patches,PETER THOMAS ROTH,Eye cream,4.4,1.0
+118,1,0.73,0.45,0.44,0.45,The Moisturizing Soft Cream,LA MER,Moisturizer,3.8,0.949
+118,2,0.71,0.37,0.42,0.36,Day Cream Broad Spectrum Sunscreen SPF 30,ANTHONY,Sun protect,4.0,1.0
+118,3,0.66,0.32,0.37,0.3,Hydra Life Cooling Hydration Sorbet Eye Gel,DIOR,Eye cream,3.8,0.975
+118,4,0.59,0.29,0.35,0.23,The Method: Cleanse,LANCER,Cleanser,4.4,0.803
+118,5,0.55,0.23,0.31,0.18,Water Replenishment Cotton Sheet Mask,DR. JART+,Face Mask,4.6,1.0
+118,6,0.49,0.17,0.26,0.12,Sun-Defying Sunscreen Oil Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.1,1.0
+118,7,0.44,0.13,0.19,0.08,Bright On Massage-Activated Vitamin C Mask with Echinacea GreenEnvy™,FARMACY,Face Mask,4.6,1.0
+118,8,0.38,0.03,0.13,0.03,Rénergie Lift Multi-Action Night,LANCÔME,Moisturizer,4.3,1.0
+118,9,0.35,0.0,0.09,0.0,Ibuki Refining Moisturizer,SHISEIDO,Moisturizer,4.1,0.837
+119,0,0.65,0.47,0.54,0.85,Ultra Repair® Pure Mineral Sunscreen Moisturizer Broad Spectrum SPF 40,FIRST AID BEAUTY,Sun protect,3.6,0.989
+119,1,0.6,0.45,0.51,0.77,Luminous Deep Hydration Firming Eye Serum,TATCHA,Eye cream,4.0,0.793
+119,2,0.55,0.45,0.49,0.73,Time In A Bottle For Eyes 100% In-Control,PHILOSOPHY,Eye cream,3.9,0.904
+119,3,0.51,0.42,0.49,0.7,Acne Solutions All-Over Clearing Treatment Oil-Free,CLINIQUE,Treatment,4.0,0.775
+119,4,0.48,0.4,0.47,0.68,Nourishing Oil Cleanser,TATA HARPER,Cleanser,4.1,1.0
+119,5,0.41,0.35,0.38,0.66,Nose Mask - Pineapple,SEPHORA COLLECTION,Face Mask,2.9,0.753
+119,6,0.34,0.32,0.37,0.63,Truth™ On the Glow Cleansing Cloths,OLEHENRIKSEN,Cleanser,4.2,1.0
+119,7,0.33,0.29,0.28,0.59,Rénergie Lift Multi-Action Sunscreen Broad Spectrum SPF 15 For All Skin Types,LANCÔME,Moisturizer,3.9,1.0
+119,8,0.26,0.24,0.21,0.54,Honey Potion Renewing Antioxidant Hydration Mask with Echinacea GreenEnvy™,FARMACY,Face Mask,4.3,1.0
+119,9,0.21,0.21,0.13,0.49,Wrinkle Warrior™ 2-in-1 Plumping Moisturizer + Serum,KATE SOMERVILLE,Moisturizer,3.9,1.0
+120,0,0.5,0.76,0.28,0.99,Midnight Recovery Botanical Cleansing Oil,KIEHL'S SINCE 1851,Cleanser,4.4,1.0
+120,1,0.5,0.7,0.23,0.95,Mask Heroes Face Savers,DR. JART+,Face Mask,4.9,1.0
+120,2,0.45,0.66,0.19,0.91,Resort Collection Sun Protection Cushion SPF 30+,AMOREPACIFIC,Sun protect,4.0,0.899
+120,3,0.41,0.62,0.12,0.85,Intensive Vitalizing Eye Essence,AMOREPACIFIC,Eye cream,3.9,1.0
+120,4,0.36,0.6,0.09,0.78,The Lifting and Firming Mask,LA MER,Face Mask,4.9,0.977
+120,5,0.28,0.49,0.04,0.75,Therapeutic Sulfur Mask Acne Treatment Mask,PETER THOMAS ROTH,Treatment,4.6,1.0
+120,6,0.23,0.5,0.0,0.72,Crème de la Mer Mini,LA MER,Moisturizer,4.1,1.0
+120,7,0.16,0.45,0.0,0.65,Alpha Beta® Ultra Gentle Daily Peel for Sensitive Skin,DR. DENNIS GROSS SKINCARE,Treatment,4.3,0.886
+120,8,0.08,0.41,0.0,0.57,Limited Edition Dramatically Different™ Moisturizing Gel,CLINIQUE,Moisturizer,5.0,1.0
+120,9,0.02,0.36,0.0,0.5,Vinosource Intense Moisture Rescue Cream,CAUDALIE,Moisturizer,4.2,1.0
+121,0,0.5,0.05,0.14,0.33,Sheer Fluid Sun Shield Broad Spectrum SPF 30 Sunscreen,LANCER,Sun protect,4.8,1.0
+121,1,0.46,0.0,0.09,0.31,Vine[Activ] Vitamin C Anti-Wrinkle Serum,CAUDALIE,Treatment,4.1,0.931
+121,2,0.48,0.0,0.05,0.27,Ginger Leaf & Hibiscus Firming Mask,KIEHL'S SINCE 1851,Face Mask,4.4,1.0
+121,3,0.41,0.0,0.02,0.19,All About Eyes™ Rich,CLINIQUE,Eye cream,4.2,1.0
+121,4,0.37,0.0,0.0,0.12,Purifying Cleanser,TATA HARPER,Cleanser,4.4,1.0
+121,5,0.34,0.0,0.0,0.05,Baggage Claim Rose Gold Eye Masks,WANDER BEAUTY,Eye cream,4.6,1.0
+121,6,0.28,0.0,0.0,0.02,Cold Plasma Sub-D Firming Neck Treatment,PERRICONE MD,Moisturizer,3.8,0.943
+121,7,0.26,0.0,0.0,0.0,Overnight Miracle Mask,SK-II,Face Mask,3.8,0.948
+121,8,0.22,0.0,0.0,0.0,Original Skin™ Retexturizing Mask with Rose Clay,ORIGINS,Face Mask,4.7,1.0
+121,9,0.17,0.0,0.0,0.0,Lightstim® for Acne,LIGHTSTIM,Treatment,4.0,0.944
+122,0,0.34,0.83,0.53,0.71,FLASHMUD™ Brightening Treatment,GLAMGLOW,Cleanser,4.1,1.0
+122,1,0.29,0.79,0.5,0.67,Skin Rescue Purifying Mask With Red Clay,FIRST AID BEAUTY,Face Mask,4.0,0.907
+122,2,0.23,0.74,0.46,0.62,All That Contours Hydrogel Expansion Stretch Mask,DR. JART+,Face Mask,3.3,0.846
+122,3,0.19,0.71,0.39,0.59,Prime & Protect Mattifying Primer with Broad Spectrum SPF 50,CANE + AUSTIN,Sun protect,4.2,1.0
+122,4,0.13,0.64,0.34,0.57,Maracuja Oil,TARTE,Moisturizer,4.4,0.851
+122,5,0.08,0.6,0.32,0.55,Cooling Water,MILK MAKEUP,Moisturizer,3.8,0.955
+122,6,0.03,0.55,0.29,0.51,IRIS™ Illuminating Eye Massager,FOREO,Eye cream,3.5,0.697
+122,7,0.0,0.56,0.25,0.47,Treatment Enzyme Peel,AMOREPACIFIC,Cleanser,4.7,1.0
+122,8,0.0,0.52,0.18,0.43,Ultimate Sun Protection Lotion WetForce SPF 50+,SHISEIDO,Sun protect,3.7,0.964
+122,9,0.0,0.44,0.13,0.38,Flower Fusion™ Raspberry Refreshing Sheet Mask,ORIGINS,Face Mask,4.6,1.0
+123,0,0.47,0.97,0.78,0.78,5 in 1 Face Cream SPF 30,FIRST AID BEAUTY,Moisturizer,3.9,0.862
+123,1,0.41,0.97,0.76,0.75,Anti-Wrinkle Miracle Worker Retinoid Eye Repair Cream,PHILOSOPHY,Eye cream,3.8,0.916
+123,2,0.35,0.92,0.71,0.72,Eye Contour Lifting Cream with Diamond Powder,LANCER,Eye cream,4.4,1.0
+123,3,0.31,0.88,0.63,0.7,Urban Environment Oil-Free UV Protector Broad Spectrum SPF 42 For Face,SHISEIDO,Sun protect,4.5,0.925
+123,4,0.24,0.84,0.58,0.66,Vinopure Natural Oil Control Moisturizer,CAUDALIE,Treatment,3.8,0.956
+123,5,0.21,0.82,0.56,0.63,Clear Complexion Moisturizer,BOSCIA,Treatment,3.6,0.844
+123,6,0.16,0.79,0.54,0.6,Essential-C Eye Cream SPF 15 PA++,MURAD,Eye cream,4.0,0.863
+123,7,0.13,0.74,0.49,0.56,Adaptogen Deep Moisture Cream,YOUTH TO THE PEOPLE,Moisturizer,4.8,1.0
+123,8,0.08,0.7,0.45,0.53,JuJu Bar,DRUNK ELEPHANT,Cleanser,4.6,1.0
+123,9,0.03,0.66,0.45,0.51,Purity Made Simple Cleanser,PHILOSOPHY,Cleanser,4.5,1.0
+124,0,0.95,0.11,0.02,0.31,Capture Youth Collection,DIOR,Treatment,4.3,1.0
+124,1,0.85,0.07,0.0,0.22,Powerful Wrinkle Reducing Cream Sunscreen Broad Spectrum SPF 30,KIEHL'S SINCE 1851,Sun protect,3.5,0.963
+124,2,0.81,0.03,0.0,0.14,Goodnight Glow Retin-ALT Sleeping Crème,OLEHENRIKSEN,Moisturizer,4.3,0.991
+124,3,0.75,0.0,0.0,0.06,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Advanced Face Serum,ORIGINS,Treatment,4.1,1.0
+124,4,0.71,0.0,0.0,0.03,GLOWSTARTER™ Mega Illuminating Moisturizer,GLAMGLOW,Moisturizer,4.0,1.0
+124,5,0.65,0.0,0.0,0.0,Extra-Firming Neck Anti-Wrinkle Rejuvenating Cream,CLARINS,Moisturizer,4.1,0.999
+124,6,0.61,0.0,0.0,0.0,Hydra-Therapy Skin Vitality Treatment Masks,ERNO LASZLO,Face Mask,4.3,1.0
+124,7,0.61,0.0,0.0,0.0,Ultra Repair Instant Oatmeal Mask,FIRST AID BEAUTY,Face Mask,4.4,1.0
+124,8,0.54,0.0,0.0,0.0,Pure Deepsea Hydrating Mask,SKIN INC SUPPLEMENT BAR,Face Mask,4.5,1.0
+124,9,0.52,0.0,0.0,0.0,Baggage Claim Gold Eye Masks,WANDER BEAUTY,Eye cream,4.3,1.0
+125,0,0.33,0.66,0.53,0.31,MOISTURE BOUND Rejuvenating Eye Treatment Gel,AMOREPACIFIC,Eye cream,4.3,1.0
+125,1,0.28,0.61,0.52,0.27,Breakout Fighters,KATE SOMERVILLE,Treatment,4.0,1.0
+125,2,0.26,0.56,0.52,0.23,Essential Power Skin Toner for Combination to Oily Skin,LANEIGE,Cleanser,4.4,1.0
+125,3,0.23,0.51,0.48,0.17,Rub-A-Dub Refining Peel Gel,SATURDAY SKIN,Cleanser,4.6,1.0
+125,4,0.2,0.42,0.46,0.13,Water Pocket Sheet Mask Water Bank (Moisturizing),LANEIGE,Face Mask,4.1,0.904
+125,5,0.14,0.37,0.42,0.07,Powerful-Strength Line-Reducing Concentrate 12.5% Vitamin C,KIEHL'S SINCE 1851,Treatment,3.8,0.747
+125,6,0.13,0.31,0.37,0.05,Vinosource Intense Moisture Rescue Cream,CAUDALIE,Moisturizer,4.2,1.0
+125,7,0.09,0.29,0.33,0.0,Jelly Pack,J.ONE,Moisturizer,4.3,1.0
+125,8,0.04,0.24,0.27,0.0,"Black Pine 3D Sculpting, Firming & Lifting Eye Cream",KORRES,Eye cream,4.0,1.0
+125,9,0.02,0.17,0.22,0.0,MATCHA Magic Super-Antioxidant Mask,BOSCIA,Face Mask,4.5,1.0
+126,0,0.25,0.56,0.22,0.97,Blue Herbal Acne Cleanser Treatment,KIEHL'S SINCE 1851,Cleanser,3.5,0.842
+126,1,0.21,0.56,0.17,0.92,Take The Day Off Cleansing Balm,CLINIQUE,Cleanser,4.6,1.0
+126,2,0.12,0.52,0.13,0.84,Retinol Youth Renewal Eye Serum,MURAD,Eye cream,4.2,1.0
+126,3,0.08,0.45,0.1,0.79,Resveratrol Lift Hyaluronic Acid Eye Lifting Balm,CAUDALIE,Eye cream,4.0,1.0
+126,4,0.02,0.35,0.03,0.72,Future Solution LX Extra Rich Cleansing Foam,SHISEIDO,Cleanser,4.3,0.992
+126,5,0.0,0.27,0.0,0.63,Cicapair ™ Tiger Grass Color Correcting Treatment SPF 30,DR. JART+,Moisturizer,4.2,1.0
+126,6,0.0,0.21,0.0,0.59,Dr. Andrew Weil For Origins™ Mega-Bright Dark Spot Correcting Night Mask,ORIGINS,Face Mask,3.8,0.738
+126,7,0.0,0.18,0.0,0.56,A Perfect World™ SPF 40 Age-Defense Moisturizer with White Tea,ORIGINS,Moisturizer,3.5,0.827
+126,8,0.0,0.15,0.0,0.52,"Black Pine 3D Sculpting, Firming & Lifting Super Eye Serum",KORRES,Eye cream,4.2,1.0
+126,9,0.0,0.12,0.0,0.46,Quick Dry Body Spray With SolSci-X™ Broad Spectrum SPF 40 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,3.9,1.0
+127,0,0.68,0.38,0.98,0.82,Watermelon Glow Jelly Sheet Mask,GLOW RECIPE,Face Mask,3.6,0.409
+127,1,0.68,0.38,0.94,0.85,Renewed Hope in a Jar Skin Tint,PHILOSOPHY,Sun protect,4.1,1.0
+127,2,0.62,0.31,0.89,0.82,Wild Rose 15% Vitamin C Spotless Serum,KORRES,Treatment,3.9,0.956
+127,3,0.57,0.23,0.83,0.77,Superfood Peptide Eye Cream,YOUTH TO THE PEOPLE,Eye cream,4.0,0.632
+127,4,0.51,0.21,0.82,0.74,ExfoliKate® Cleanser Daily Foaming Wash,KATE SOMERVILLE,Cleanser,4.5,0.844
+127,5,0.47,0.13,0.82,0.67,Superfood Skin Reset Antioxidant Mask,YOUTH TO THE PEOPLE,Face Mask,4.4,0.739
+127,6,0.45,0.1,0.77,0.64,CC Crème High Definition Radiance Face Cream Skin Perfector,ERBORIAN,Moisturizer,4.1,0.716
+127,7,0.42,0.07,0.74,0.62,Vinoperfect Glycolic Brightening Essence,CAUDALIE,Treatment,4.4,0.999
+127,8,0.36,0.02,0.64,0.57,Checks and Balances™ Frothy Face Wash,ORIGINS,Cleanser,4.3,1.0
+127,9,0.28,0.0,0.63,0.53,Green Screen Daily Environmental Protector Broad Spectrum MineralSunscreen SPF 30 with Echinacea GreenEnvy™,FARMACY,Sun protect,4.6,1.0
+128,0,0.54,0.93,0.7,0.14,Premier Cru Serum,CAUDALIE,Treatment,4.1,1.0
+128,1,0.5,0.88,0.63,0.07,POWER Advanced Wrinkle Fighter 360° Eye Serum,ALGENIST,Treatment,4.1,1.0
+128,2,0.45,0.85,0.6,0.02,City Sunscreen Serum SPF 30,SUPERGOOP!,Sun protect,4.1,0.948
+128,3,0.4,0.79,0.54,0.0,100% Squalane Oil,BIOSSANCE,Moisturizer,4.6,1.0
+128,4,0.32,0.73,0.5,0.0,The Treatment Lotion,LA MER,Treatment,4.4,1.0
+128,5,0.26,0.7,0.44,0.0,Firmarine Lift Face Mask,ERNO LASZLO,Face Mask,4.2,1.0
+128,6,0.2,0.68,0.38,0.0,Virgin Marula Luxury Facial Oil,DRUNK ELEPHANT,Moisturizer,4.4,1.0
+128,7,0.11,0.62,0.35,0.0,Shaba Complex™ Eye Serum,DRUNK ELEPHANT,Eye cream,3.9,1.0
+128,8,0.05,0.6,0.31,0.0,Resilience Lift Night Lifting/Firming Face and Neck Creme,ESTÉE LAUDER,Moisturizer,4.2,1.0
+128,9,0.0,0.55,0.26,0.0,Alpha Beta® Universal Daily Peel,DR. DENNIS GROSS SKINCARE,Treatment,4.5,0.96
+129,0,0.77,0.01,0.55,0.93,Skin Rescue Purifying Mask With Red Clay,FIRST AID BEAUTY,Face Mask,4.0,0.921
+129,1,0.73,0.0,0.49,0.93,Immortelle Eye Balm,L'OCCITANE,Eye cream,4.1,0.888
+129,2,0.71,0.0,0.43,0.88,Bright Lover Rubber Mask,DR. JART+,Face Mask,4.3,1.0
+129,3,0.69,0.0,0.42,0.86,30 Day Treatment,BIOEFFECT,Treatment,5.0,1.0
+129,4,0.68,0.0,0.38,0.8,MAGNETIGHT Age-Defier™ Mask,DR. BRANDT SKINCARE,Treatment,3.9,1.0
+129,5,0.64,0.0,0.32,0.77,All About Eyes™ Rich,CLINIQUE,Eye cream,4.2,1.0
+129,6,0.56,0.0,0.24,0.73,Camera Ready CC Cream Broad Spectrum SPF 30 Dark Spot Correcting,SMASHBOX,Moisturizer,3.9,0.979
+129,7,0.5,0.0,0.23,0.68,Essential-C Day Moisture Broad Spectrum SPF 30 PA+++,MURAD,Moisturizer,4.0,1.0
+129,8,0.44,0.0,0.17,0.67,Naked Skin Bronzing Beauty Balm Broad Spectrum SPF 20,URBAN DECAY,Sun protect,4.1,0.75
+129,9,0.39,0.0,0.15,0.65,Dermask Water Jet Vital Hydra Solution™,DR. JART+,Face Mask,4.6,1.0
+130,0,0.57,0.54,0.72,0.94,Resveratrol Lift Night Infusion Cream,CAUDALIE,Moisturizer,4.1,0.742
+130,1,0.5,0.53,0.69,0.9,Powerful-Strength Line-Reducing Eye-Brightening Concentrate,KIEHL'S SINCE 1851,Eye cream,3.1,0.815
+130,2,0.48,0.49,0.66,0.85,Mega-Mushroom Skin Relief Micellar Cleanser,ORIGINS,Cleanser,4.6,0.948
+130,3,0.42,0.41,0.61,0.8,GinZing™ Energy-Boosting Gel Moisturizer,ORIGINS,Moisturizer,4.4,1.0
+130,4,0.37,0.37,0.56,0.74,Detoxifying Silt Gelee Mask,VOLITION BEAUTY,Face Mask,4.7,1.0
+130,5,0.34,0.36,0.5,0.69,POWERMUD™ Dualcleanse Treatment,GLAMGLOW,Cleanser,3.9,1.0
+130,6,0.32,0.29,0.48,0.63,Sport Continuous Spray SPF 30 - Piña Colada,COOLA,Sun protect,4.5,1.0
+130,7,0.29,0.25,0.46,0.59,Dermask Ultra Jet Porecting Solution Bubbling Charcoal Sheet Mask,DR. JART+,Face Mask,3.9,0.981
+130,8,0.23,0.2,0.42,0.53,Resilience Lift Firming/Sculpting Eye Creme,ESTÉE LAUDER,Eye cream,3.3,0.782
+130,9,0.18,0.15,0.34,0.48,Turmeric 2-in-1 Brightening & Exfoliating Mask,KORA ORGANICS,Face Mask,4.6,1.0
+131,0,0.93,0.88,0.01,0.57,CC Crème High Definition Radiance Face Cream Skin Perfector,ERBORIAN,Moisturizer,4.1,1.0
+131,1,0.87,0.84,0.0,0.48,Rose Stem Cell Bio-Repair Gel Mask,PETER THOMAS ROTH,Face Mask,4.1,1.0
+131,2,0.82,0.8,0.0,0.43,Magic Eye Rescue Cream,CHARLOTTE TILBURY,Eye cream,3.9,0.97
+131,3,0.75,0.74,0.0,0.38,Line Smoother Oil-Free Moisturizer,JACK BLACK,Treatment,4.5,0.877
+131,4,0.7,0.66,0.0,0.35,Super Power Sunscreen Mousse Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.3,1.0
+131,5,0.67,0.6,0.0,0.3,Alpha Beta® Pore Perfecting Cleansing Gel,DR. DENNIS GROSS SKINCARE,Cleanser,4.6,1.0
+131,6,0.62,0.51,0.0,0.23,Rise + Shine Gentle Cleanser,SATURDAY SKIN,Cleanser,4.5,1.0
+131,7,0.55,0.48,0.0,0.15,Ultra Facial Deep Moisture Balm,KIEHL'S SINCE 1851,Moisturizer,4.7,1.0
+131,8,0.49,0.44,0.0,0.1,Pureness Deep Cleansing Foam,SHISEIDO,Cleanser,4.2,1.0
+131,9,0.44,0.37,0.0,0.06,ExfoliKate Glow Moisturizer,KATE SOMERVILLE,Moisturizer,4.6,1.0
+132,0,0.11,0.16,0.46,0.26,Creamy Eye Treatment with Avocado,KIEHL'S SINCE 1851,Eye cream,4.3,1.0
+132,1,0.07,0.09,0.4,0.23,Black Tea Firming Overnight Mask Mini,FRESH,Face Mask,4.0,0.802
+132,2,0.02,0.06,0.36,0.2,Witch Hazel Herbal Extract Toner,BELIF,Cleanser,4.6,0.951
+132,3,0.0,0.0,0.28,0.18,Time Freeze Sleeping Mask,LANEIGE,Face Mask,4.3,1.0
+132,4,0.0,0.0,0.21,0.1,Blackhead Solutions 7 Day Deep Pore Cleanse & Scrub,CLINIQUE,Cleanser,4.2,1.0
+132,5,0.0,0.0,0.19,0.03,Cicapair™ Tiger Grass Nightly Re.Pair Mask,DR. JART+,Face Mask,4.3,1.0
+132,6,0.0,0.0,0.11,0.0,The Microdelivery Resurfacing Peel,PHILOSOPHY,Treatment,4.7,0.879
+132,7,0.0,0.0,0.08,0.0,Lotus Youth Preserve Eye Cream,FRESH,Eye cream,3.5,0.701
+132,8,0.0,0.0,0.08,0.0,Lip Sleeping Mask,LANEIGE,Face Mask,4.6,0.89
+132,9,0.0,0.0,0.0,0.0,GENIUS Liquid Collagen,ALGENIST,Treatment,4.0,0.938
+133,0,0.09,0.67,0.18,0.14,V-Facial Intensive Wrap,CLARINS,Face Mask,4.9,1.0
+133,1,0.01,0.59,0.11,0.07,Skin Rescue Purifying Mask With Red Clay,FIRST AID BEAUTY,Face Mask,4.0,1.0
+133,2,0.0,0.56,0.05,0.01,Purifying Cleansing Gel,BOSCIA,Cleanser,4.5,1.0
+133,3,0.0,0.52,0.04,0.0,Daydream™ Mineral Primer SPF 30,COOLA,Sun protect,4.2,1.0
+133,4,0.0,0.49,0.0,0.0,Alpha Beta® Universal Daily Peel,DR. DENNIS GROSS SKINCARE,Treatment,4.5,1.0
+133,5,0.0,0.43,0.0,0.0,Essential Fx Acyl-Glutathione Deep Crease Serum,PERRICONE MD,Treatment,4.6,1.0
+133,6,0.0,0.4,0.0,0.0,Retinol Youth Renewal Serum,MURAD,Treatment,4.3,1.0
+133,7,0.0,0.31,0.0,0.0,Pure Truth™ Youth Activating Oil,OLEHENRIKSEN,Treatment,4.0,0.961
+133,8,0.0,0.26,0.0,0.0,Pep-Start Daily UV Protector Broad Spectrum SPF 50,CLINIQUE,Sun protect,4.2,1.0
+133,9,0.0,0.21,0.0,0.0,Énergie de Vie The Illuminating & Anti-Fatigue Cooling Eye Gel,LANCÔME,Eye cream,3.5,0.864
+134,0,0.69,0.06,0.12,0.31,Daily Protection Broad Spectrum SPF 50 Sunscreen,EVE LOM,Sun protect,4.4,1.0
+134,1,0.67,0.0,0.07,0.26,Lala Retro™ Whipped Cream,DRUNK ELEPHANT,Moisturizer,4.2,0.982
+134,2,0.65,0.0,0.01,0.2,Clearing Mask,INDIE LEE,Face Mask,4.4,1.0
+134,3,0.57,0.0,0.0,0.13,Daily Deflector™ Moisturizer Broad Spectrum SPF 50+,KATE SOMERVILLE,Sun protect,3.9,0.823
+134,4,0.5,0.0,0.0,0.09,SUPERMASK - The Primer Mask,SEPHORA COLLECTION,Face Mask,4.2,1.0
+134,5,0.43,0.0,0.0,0.03,Resveratrol Lift Hyaluronic Acid Eye Lifting Balm,CAUDALIE,Eye cream,4.0,0.952
+134,6,0.36,0.0,0.0,0.0,Glycol Lactic Radiance Renewal Mask,REN CLEAN SKINCARE,Face Mask,4.4,0.975
+134,7,0.34,0.0,0.0,0.0,GinZing™ Refreshing Scrub Cleanser,ORIGINS,Cleanser,4.5,1.0
+134,8,0.26,0.0,0.0,0.0,Visionnaire Advanced Multi-Correcting Cream,LANCÔME,Moisturizer,4.6,1.0
+134,9,0.23,0.0,0.0,0.0,3% Glycolic Solutions Cleanser,PETER THOMAS ROTH,Cleanser,4.4,1.0
+135,0,0.13,0.15,0.75,0.61,The Tonic,LA MER,Cleanser,4.1,0.623
+135,1,0.11,0.09,0.71,0.57,Vinoperfect Radiance Serum,CAUDALIE,Treatment,4.2,0.717
+135,2,0.09,0.08,0.66,0.51,Dermask Intra Jet Wrinkless Solution™,DR. JART+,Face Mask,3.9,1.0
+135,3,0.06,0.03,0.61,0.45,Evercalm™ Ultra Comforting Rescue Mask,REN CLEAN SKINCARE,Face Mask,4.5,0.784
+135,4,0.04,0.01,0.53,0.43,Dermask Water Jet Soothing Hydra Solution™,DR. JART+,Face Mask,4.1,1.0
+135,5,0.0,0.0,0.48,0.4,Advanced Génifique Sensitive Antioxidant Serum,LANCÔME,Treatment,4.6,1.0
+135,6,0.0,0.0,0.43,0.34,Ibuki Purifying Cleanser,SHISEIDO,Cleanser,4.3,1.0
+135,7,0.0,0.0,0.35,0.31,Multi-Active Night Cream - Normal to Combination Skin,CLARINS,Moisturizer,4.2,0.877
+135,8,0.0,0.0,0.3,0.3,Active Retinol Renewal Kit,MURAD,Treatment,5.0,1.0
+135,9,0.0,0.0,0.24,0.25,Pore Corrector Anti-Aging Primer,ALGENIST,Treatment,4.4,1.0
+136,0,0.45,0.7,0.08,0.56,ER+ Radical Recovery After-Sun Lotion,COOLA,Sun protect,4.8,1.0
+136,1,0.43,0.64,0.0,0.52,Face Mask - Coconut - Nourishing,SEPHORA COLLECTION,Face Mask,3.5,0.941
+136,2,0.4,0.6,0.0,0.48,Cilantro & Orange Extract Pollutant Defending Mask,KIEHL'S SINCE 1851,Face Mask,4.1,0.95
+136,3,0.36,0.53,0.0,0.4,Hope In A Jar,PHILOSOPHY,Moisturizer,4.0,1.0
+136,4,0.32,0.51,0.0,0.39,The Cleansing Oil,LA MER,Cleanser,4.3,1.0
+136,5,0.3,0.45,0.0,0.35,TIME RESPONSE Vintage Wash-off Masque,AMOREPACIFIC,Face Mask,5.0,1.0
+136,6,0.24,0.4,0.0,0.29,Superfood Skin Reset Antioxidant Mask,YOUTH TO THE PEOPLE,Face Mask,4.4,1.0
+136,7,0.17,0.33,0.0,0.23,Dermask Water Jet Soothing Hydra Solution™,DR. JART+,Face Mask,4.1,1.0
+136,8,0.12,0.3,0.0,0.18,Beauty Elixir,CAUDALIE,Moisturizer,4.3,0.98
+136,9,0.07,0.26,0.0,0.16,Instant Mineral SPF 45,PETER THOMAS ROTH,Sun protect,3.4,0.989
+137,0,0.09,0.51,0.81,0.45,Turmeric 2-in-1 Brightening & Exfoliating Mask,KORA ORGANICS,Face Mask,4.6,1.0
+137,1,0.0,0.46,0.77,0.39,Instant Eye Makeup Remover,CLARINS,Cleanser,4.5,1.0
+137,2,0.0,0.41,0.72,0.36,Cicapair™ Tiger Grass Cream,DR. JART+,Moisturizer,4.3,1.0
+137,3,0.0,0.34,0.7,0.29,The Ultimate Glow Set,GLAMGLOW,Face Mask,0.0,-0.107
+137,4,0.05,0.33,0.69,0.34,Rapid Age Spot and Pigment Lightening Serum,MURAD,Treatment,3.8,0.465
+137,5,0.0,0.34,0.67,0.32,Super Restorative Night Age Spot Correcting Replenishing Cream,CLARINS,Moisturizer,4.5,0.56
+137,6,0.0,0.34,0.65,0.32,Face Mask - Pineapple - Pore Perfecting,SEPHORA COLLECTION,Face Mask,4.7,0.829
+137,7,0.0,0.28,0.61,0.26,One Essential Eye Serum,DIOR,Eye cream,4.5,0.918
+137,8,0.0,0.23,0.57,0.25,Yoghurt Nourishing Fluid Veil Face Sunscreen Broad Spectrum SPF 30,KORRES,Sun protect,3.9,0.959
+137,9,0.0,0.15,0.52,0.24,Resveratrol Lift Night Infusion Cream,CAUDALIE,Moisturizer,4.1,1.0
+138,0,0.05,0.34,0.06,0.99,Jasmine Green Tea Balancing Toner,HERBIVORE,Moisturizer,4.2,1.0
+138,1,0.0,0.31,0.03,0.92,24/7 Retinol Eye Cream,DR. BRANDT SKINCARE,Eye cream,3.5,0.894
+138,2,0.0,0.28,0.0,0.87,Confidence in a Cream™ Transforming Moisturizing Super Cream,IT COSMETICS,Moisturizer,4.3,1.0
+138,3,0.0,0.24,0.0,0.83,Essential Power Skin Toner for Combination to Oily Skin,LANEIGE,Cleanser,4.4,1.0
+138,4,0.0,0.18,0.0,0.78,Luminizing Pink Charcoal Mask,BOSCIA,Face Mask,3.5,0.996
+138,5,0.0,0.11,0.0,0.73,Acne Solutions Clearing Concealer,CLINIQUE,Treatment,3.6,0.723
+138,6,0.0,0.07,0.0,0.7,A Perfect World™ Age-Defense Treatment Lotion with White Tea,ORIGINS,Cleanser,4.5,0.897
+138,7,0.0,0.03,0.0,0.66,T.L.C. Sukari Babyfacial™,DRUNK ELEPHANT,Cleanser,4.5,1.0
+138,8,0.0,0.0,0.0,0.62,RitualiTea™ Matcha Madness™ Revitalizing Powder Face Mask with Matcha & Green Tea,ORIGINS,Face Mask,3.8,0.948
+138,9,0.0,0.0,0.0,0.56,Eye Fuel,KIEHL'S SINCE 1851,Eye cream,4.0,1.0
+139,0,0.99,0.38,0.87,0.91,So Nurturing™ Cleansing Cloths,OLEHENRIKSEN,Cleanser,4.0,0.663
+139,1,0.99,0.34,0.85,0.9,Vinosource Intense Moisture Rescue Cream,CAUDALIE,Moisturizer,4.2,0.742
+139,2,0.96,0.33,0.82,0.87,Goat Milk Moisturizing Cream,KATE SOMERVILLE,Moisturizer,4.1,1.0
+139,3,0.9,0.27,0.76,0.84,GENIUS Ultimate Anti-Aging Cream,ALGENIST,Moisturizer,4.3,0.724
+139,4,0.87,0.24,0.73,0.82,Multi-Masking™ Medley,BOSCIA,Face Mask,4.1,0.942
+139,5,0.82,0.14,0.7,0.76,Backlight Priming Filter Face Primer,BECCA,Treatment,4.2,0.669
+139,6,0.8,0.13,0.67,0.74,Your Skin But Better™ CC+Illumination™ Cream with SPF 50+,IT COSMETICS,Moisturizer,3.9,0.981
+139,7,0.74,0.06,0.64,0.71,The Nightly Retinol + Peptide Anti-Aging Serum,BEAUTYBIO,Treatment,5.0,1.0
+139,8,0.72,0.05,0.61,0.65,Pore Cleaner Bubble Foam,BELIF,Face Mask,4.4,0.842
+139,9,0.65,0.02,0.58,0.58,Self Tan Dry Oil SPF 50,VITA LIBERATA,Sun protect,3.5,0.716
+140,0,0.22,0.0,0.02,0.3,+Retinol Vita C Power Serum,KATE SOMERVILLE,Treatment,3.9,0.973
+140,1,0.18,0.0,0.0,0.25,Lala Retro™ Whipped Cream,DRUNK ELEPHANT,Moisturizer,4.2,1.0
+140,2,0.12,0.0,0.0,0.2,Banana Bright Eye Crème,OLEHENRIKSEN,Eye cream,4.2,0.99
+140,3,0.06,0.0,0.0,0.12,Advanced Anti-Aging Repairing Oil,ALGENIST,Treatment,4.4,1.0
+140,4,0.01,0.0,0.0,0.07,SKINLONGEVITY™ Vital Power Eye Gel Cream,BAREMINERALS,Eye cream,4.2,1.0
+140,5,0.0,0.0,0.0,0.02,Herbal-Infused Micellar Cleansing Water,KIEHL'S SINCE 1851,Cleanser,3.7,0.971
+140,6,0.0,0.0,0.0,0.01,Do Not Age with Dr. Brandt Moisturizing Neck Cream,DR. BRANDT SKINCARE,Moisturizer,4.2,1.0
+140,7,0.0,0.01,0.0,0.0,Protini™ Polypeptide Cream,DRUNK ELEPHANT,Moisturizer,4.4,1.0
+140,8,0.0,0.0,0.0,0.0,Eye Sleeping Mask,LANEIGE,Eye cream,4.0,0.971
+140,9,0.0,0.0,0.0,0.0,MOISTURE BOUND Sleeping Recovery Mask,AMOREPACIFIC,Face Mask,4.3,0.978
+141,0,0.81,0.42,0.77,0.88,GENIUS Ultimate Anti-Aging Vitamin C+ Serum,ALGENIST,Treatment,3.9,0.721
+141,1,0.75,0.35,0.74,0.87,Retinol Fusion PM Eye Cream,PETER THOMAS ROTH,Eye cream,3.7,0.943
+141,2,0.72,0.33,0.71,0.81,100 percent Pure Argan Oil Light,JOSIE MARAN,Moisturizer,4.4,1.0
+141,3,0.61,0.26,0.68,0.76,Call It A Night Revitalizing & Nourishing UFO™ Activated Mask,FOREO,Face Mask,4.7,1.0
+141,4,0.55,0.23,0.6,0.71,Maracuja C-Brighter™ Eye Treatment,TARTE,Eye cream,4.0,1.0
+141,5,0.5,0.13,0.58,0.68,After-Sun Milk Soothing Body Lotion,MOROCCANOIL,Sun protect,4.7,1.0
+141,6,0.44,0.1,0.5,0.64,Anti-Wrinkle Miracle Worker Retinoid Eye Repair Cream,PHILOSOPHY,Eye cream,3.8,0.994
+141,7,0.39,0.04,0.45,0.64,Matcha Toner,MILK MAKEUP,Cleanser,3.7,1.0
+141,8,0.33,0.0,0.37,0.58,Peel-off Mask,SEPHORA COLLECTION,Face Mask,3.6,0.959
+141,9,0.29,0.0,0.31,0.51,Ibuki Beauty Sleeping Mask,SHISEIDO,Moisturizer,4.4,1.0
+142,0,0.22,0.86,0.06,0.5,Turmeric & Cranberry Seed Energizing Radiance Mask,KIEHL'S SINCE 1851,Face Mask,4.5,1.0
+142,1,0.19,0.77,0.0,0.46,Clarifying Treatment Toner,KATE SOMERVILLE,Cleanser,4.2,0.774
+142,2,0.16,0.74,0.0,0.45,Baggage Claim Gold Eye Masks,WANDER BEAUTY,Eye cream,4.3,1.0
+142,3,0.09,0.68,0.0,0.4,Multi-Masking™ Medley,BOSCIA,Face Mask,4.1,1.0
+142,4,0.02,0.63,0.0,0.36,The Moisturizing Soft Lotion,LA MER,Moisturizer,3.6,0.901
+142,5,0.0,0.56,0.0,0.29,Flower Fusion™ Orange Radiance-Boosting Sheet Mask,ORIGINS,Face Mask,3.8,0.884
+142,6,0.0,0.49,0.0,0.23,Sport Continuous Spray SPF 30 - Piña Colada,COOLA,Sun protect,4.5,1.0
+142,7,0.0,0.44,0.0,0.17,Water Pocket Sheet Mask Sleeping Mask (Replenishing),LANEIGE,Face Mask,4.8,1.0
+142,8,0.0,0.38,0.0,0.12,Helix AM/PM Eye Gel,VOLITION BEAUTY,Eye cream,3.9,1.0
+142,9,0.0,0.3,0.0,0.06,Hydra Zen Anti-Stress Gel Moisturizer,LANCÔME,Moisturizer,4.6,1.0
+143,0,0.22,0.3,0.06,0.95,Face Lotion SPF 30,MOROCCANOIL,Sun protect,0.0,0.148
+143,1,0.2,0.3,0.03,0.93,Premier Cru Eye Cream,CAUDALIE,Eye cream,3.3,0.948
+143,2,0.13,0.25,0.0,0.85,Lift & Plump Sheet Mask with Vegan Stem Cell Complex,LANCER,Face Mask,3.9,0.973
+143,3,0.08,0.18,0.0,0.82,Cicapair™ Tiger Grass Cream,DR. JART+,Moisturizer,4.3,1.0
+143,4,0.03,0.14,0.0,0.75,Lala Retro™ Whipped Cream,DRUNK ELEPHANT,Moisturizer,4.2,1.0
+143,5,0.0,0.06,0.0,0.72,Clear Complexion Cleanser,BOSCIA,Cleanser,4.4,1.0
+143,6,0.0,0.0,0.0,0.62,Firming & Lifting Neck Cream,ALGENIST,Moisturizer,3.9,0.836
+143,7,0.0,0.0,0.0,0.6,Ready Steady Glow Daily AHA Tonic,REN CLEAN SKINCARE,Cleanser,4.4,1.0
+143,8,0.0,0.0,0.0,0.56,Minus Serum,PRIVATE DOCTOR,Treatment,4.8,1.0
+143,9,0.0,0.0,0.0,0.49,New Day Gentle Exfoliating Grains,FARMACY,Cleanser,4.5,1.0
+144,0,0.42,0.15,0.38,0.75,BUBBLESHEET™ Oxygenating Deep Cleanse Mask,GLAMGLOW,Cleanser,4.3,1.0
+144,1,0.41,0.06,0.32,0.69,Sunscreen Multi-Protection Broad Spectrum SPF 50,CLARINS,Sun protect,3.9,0.711
+144,2,0.37,0.02,0.25,0.65,The Indigo Cream Soothing Skin Protectant,TATCHA,Moisturizer,4.2,1.0
+144,3,0.32,0.0,0.21,0.55,Resveratrol Lift Hyaluronic Acid Eye Lifting Balm,CAUDALIE,Eye cream,4.0,1.0
+144,4,0.27,0.0,0.14,0.54,Supergoop! x Milly Defense Refresh Setting Mist Broad Spectrum Sunscreen SPF 50,SUPERGOOP!,Sun protect,3.7,0.967
+144,5,0.22,0.0,0.11,0.48,The Brilliance Brightening Mask,LA MER,Face Mask,4.4,0.87
+144,6,0.18,0.0,0.08,0.43,Moisture Surge Hydrating Supercharged Concentrate,CLINIQUE,Moisturizer,4.0,0.967
+144,7,0.14,0.0,0.02,0.36,Repairwear Laser Focus,CLINIQUE,Treatment,4.1,0.918
+144,8,0.11,0.0,0.02,0.29,Time Release Acne Cleanser,MURAD,Cleanser,4.4,1.0
+144,9,0.02,0.0,0.0,0.24,Creamy Eye Treatment with Avocado,KIEHL'S SINCE 1851,Eye cream,4.3,1.0
+145,0,0.24,0.2,0.65,0.92,Original Skin™ Retexturizing Mask with Rose Clay,ORIGINS,Face Mask,4.7,1.0
+145,1,0.21,0.14,0.62,0.89,Superfood Air-Whip Hyaluronic Acid Moisture Cream,YOUTH TO THE PEOPLE,Moisturizer,4.2,0.677
+145,2,0.2,0.12,0.59,0.89,Daily Anti-Aging Moisturizer SPF 30,MDSOLARSCIENCES,Sun protect,4.1,1.0
+145,3,0.13,0.08,0.53,0.84,CoQ-10 Toner,INDIE LEE,Cleanser,4.4,1.0
+145,4,0.09,0.06,0.52,0.81,I-Waken Eye Serum,INDIE LEE,Eye cream,3.8,1.0
+145,5,0.07,0.0,0.45,0.76,Facial Treatment Mask,SK-II,Face Mask,4.4,1.0
+145,6,0.05,0.0,0.4,0.72,Overtime Mask,SUMMER FRIDAYS,Face Mask,4.5,1.0
+145,7,0.0,0.0,0.37,0.68,5 in 1 Face Cream SPF 30,FIRST AID BEAUTY,Moisturizer,3.9,0.975
+145,8,0.0,0.0,0.36,0.63,Luminizing Pink Charcoal Mask,BOSCIA,Face Mask,3.5,0.828
+145,9,0.0,0.0,0.33,0.64,Hydra Life Deep Hydration Sorbet Water Essence,DIOR,Treatment,4.6,1.0
+146,0,0.72,0.56,0.48,0.87,Black Tea Age-Delay Lotion Broad Spectrum Sunscreen SPF 20,FRESH,Sun protect,3.5,0.902
+146,1,0.66,0.51,0.43,0.83,Clinique Smart Custom-Repair Serum,CLINIQUE,Treatment,4.0,1.0
+146,2,0.64,0.48,0.35,0.78,Goodnight Glow Retin-ALT Sleeping Crème,OLEHENRIKSEN,Moisturizer,4.3,1.0
+146,3,0.58,0.43,0.3,0.73,Instant Detox Mask,CAUDALIE,Face Mask,4.4,0.97
+146,4,0.52,0.37,0.24,0.69,Double Mousse Gentle Cleansing Foam,ERBORIAN,Cleanser,4.5,0.891
+146,5,0.45,0.3,0.18,0.61,Invigorating Night Transformation™ Gel,OLEHENRIKSEN,Moisturizer,4.3,0.961
+146,6,0.39,0.27,0.14,0.54,Clean Break™ Oil-Free Moisturizer,JACK BLACK,Moisturizer,4.5,1.0
+146,7,0.36,0.24,0.05,0.51,Bright Lover Rubber Mask,DR. JART+,Face Mask,4.3,1.0
+146,8,0.28,0.21,0.0,0.44,Luminizing Pink Charcoal Mask,BOSCIA,Face Mask,3.5,0.907
+146,9,0.22,0.2,0.0,0.42,The Pearl Tinted Eye Illuminating Treatment,TATCHA,Eye cream,4.0,0.888
+147,0,0.2,0.92,0.55,0.78,Premier Cru Rich Cream,CAUDALIE,Moisturizer,4.5,1.0
+147,1,0.17,0.92,0.48,0.76,Cicapair™ Tiger Grass Nightly Re.Pair Mask,DR. JART+,Face Mask,4.3,0.999
+147,2,0.12,0.84,0.44,0.75,Time In A Bottle For Eyes 100% In-Control,PHILOSOPHY,Eye cream,3.9,0.922
+147,3,0.07,0.78,0.36,0.72,Hydra Life Pores Away Pink Clay Mask,DIOR,Face Mask,4.2,1.0
+147,4,0.02,0.76,0.33,0.66,No Makeup Concealer Broad Spectrum SPF 35,PERRICONE MD,Eye cream,3.8,0.954
+147,5,0.0,0.73,0.29,0.63,2% Retinol Complex Serum,DR. BRANDT SKINCARE,Treatment,3.8,0.987
+147,6,0.0,0.66,0.24,0.54,Peony Brightening Night Treatment Mask,FRESH,Face Mask,4.0,0.939
+147,7,0.0,0.59,0.17,0.5,+ Retinol Firming Eye Cream,KATE SOMERVILLE,Eye cream,3.7,0.855
+147,8,0.0,0.55,0.17,0.44,Ultra Facial Cream,KIEHL'S SINCE 1851,Moisturizer,4.4,1.0
+147,9,0.0,0.53,0.13,0.38,Wrinkle Warrior® Eye Gel Visible Dark Circle Eraser,KATE SOMERVILLE,Eye cream,3.0,0.829
+148,0,0.91,0.37,0.41,0.56,Invisiblur™ Perfecting Shield Broad Spectrum SPF 30 PA+++,MURAD,Treatment,3.9,0.957
+148,1,0.91,0.32,0.37,0.53,Essential Fx Acyl-Glutathione Deep Crease Serum,PERRICONE MD,Treatment,4.6,1.0
+148,2,0.84,0.28,0.31,0.47,Extra Eye Repair Cream,BOBBI BROWN,Eye cream,4.2,1.0
+148,3,0.75,0.21,0.3,0.4,Rapid Relief Acne Spot Treatment,MURAD,Treatment,4.1,0.846
+148,4,0.69,0.16,0.23,0.36,Sake Bright White Mask,BOSCIA,Face Mask,3.4,0.827
+148,5,0.65,0.13,0.2,0.32,Prep-N-Glow™ Cloths,NUFACE,Cleanser,4.7,1.0
+148,6,0.62,0.1,0.14,0.25,GenOptics Aura Essence Serum,SK-II,Moisturizer,4.1,1.0
+148,7,0.54,0.06,0.09,0.2,Advanced Night Repair Concentrated Recovery Eye Mask,ESTÉE LAUDER,Face Mask,3.3,0.898
+148,8,0.49,0.0,0.07,0.15,Water Bank Eye Gel,LANEIGE,Eye cream,4.2,1.0
+148,9,0.4,0.0,0.0,0.11,Hydrating Eye Cream,BOBBI BROWN,Eye cream,4.1,0.763
+149,0,0.5,0.65,0.68,0.26,White Lucent All Day Brightener Broad Spectrum SPF 23 Moisturizer,SHISEIDO,Moisturizer,4.6,0.557
+149,1,0.47,0.59,0.66,0.2,Toning Lotion with Camomile,CLARINS,Cleanser,4.5,0.821
+149,2,0.43,0.55,0.61,0.13,Wrinkle Release Neck & Chest Sheet Mask,SKIN LAUNDRY,Face Mask,2.7,0.677
+149,3,0.44,0.55,0.61,0.1,Advanced Génifique Sensitive Antioxidant Serum,LANCÔME,Treatment,4.6,0.822
+149,4,0.38,0.53,0.59,0.09,Facial Treatment Clear Lotion Toner,SK-II,Cleanser,4.1,1.0
+149,5,0.31,0.48,0.55,0.04,Limited Edition Dramatically Different Moisturizing Lotion+™,CLINIQUE,Moisturizer,0.0,0.063
+149,6,0.31,0.47,0.53,0.02,Honey Drop Lightweight Moisturizer with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.1,0.979
+149,7,0.24,0.4,0.46,0.0,Daily Moisture SPF 30 Concentrate,KAPLAN MD,Sun protect,4.0,0.844
+149,8,0.21,0.34,0.41,0.0,Extra-Firming Neck Anti-Wrinkle Rejuvenating Cream,CLARINS,Moisturizer,4.1,1.0
+149,9,0.18,0.3,0.35,0.0,Black Magic Set of 2 Makeup Remover Cloths,SEPHORA COLLECTION,Cleanser,4.6,0.935
+150,0,0.54,0.64,0.06,0.03,Deep Dive Cleansing Gel Rainforest of the Sea™,TARTE,Cleanser,4.4,0.859
+150,1,0.52,0.58,0.01,0.01,Brightening Infusion Hydrogel Mask,DR. JART+,Face Mask,3.8,1.0
+150,2,0.46,0.52,0.0,0.0,Tama Healing Mask,DR ROEBUCK’S,Face Mask,3.7,0.925
+150,3,0.42,0.47,0.0,0.0,Pep-Start 2-in-1 Exfoliating Cleanser,CLINIQUE,Cleanser,4.5,1.0
+150,4,0.36,0.44,0.0,0.0,Clearly Corrective™ Brightening & Exfoliating Daily Cleanser,KIEHL'S SINCE 1851,Cleanser,4.3,1.0
+150,5,0.33,0.38,0.0,0.0,Miracle Water 3-in-1 Micellar Cleanser,IT COSMETICS,Moisturizer,4.5,1.0
+150,6,0.27,0.32,0.0,0.0,Superfood Peptide Eye Cream,YOUTH TO THE PEOPLE,Eye cream,4.0,1.0
+150,7,0.21,0.28,0.0,0.0,Hope In A Jar,PHILOSOPHY,Moisturizer,4.0,0.952
+150,8,0.15,0.24,0.0,0.0,New Day Gentle Exfoliating Grains,FARMACY,Cleanser,4.5,1.0
+150,9,0.11,0.18,0.0,0.0,Photo Finish Primer Water,SMASHBOX,Moisturizer,4.1,1.0
+151,0,0.37,0.62,0.67,0.62,Time In A Bottle For Eyes 100% In-Control,PHILOSOPHY,Eye cream,3.9,1.0
+151,1,0.33,0.55,0.65,0.54,R.N.A. POWER Face Cream,SK-II,Moisturizer,4.3,0.735
+151,2,0.34,0.47,0.62,0.5,24K Gold Pure Luxury Lift & Firm Hydra-Gel Eye Patches,PETER THOMAS ROTH,Face Mask,4.1,0.95
+151,3,0.27,0.45,0.6,0.43,Wild Rose Foaming Cream Cleanser,KORRES,Cleanser,4.8,1.0
+151,4,0.21,0.39,0.54,0.35,Dew It All Total Eye Cream with Echinacea GreenEnvy™,FARMACY,Eye cream,4.1,1.0
+151,5,0.15,0.33,0.47,0.29,So Nurturing™ Cleansing Cloths,OLEHENRIKSEN,Cleanser,4.0,0.998
+151,6,0.12,0.29,0.44,0.24,Face Mask - Grape - Anti-pollution,SEPHORA COLLECTION,Face Mask,5.0,1.0
+151,7,0.05,0.23,0.39,0.17,Exfoliating Swipeys,GO-TO,Cleanser,4.9,1.0
+151,8,0.0,0.19,0.34,0.13,Transforming Walnut Scrub,OLEHENRIKSEN,Cleanser,4.7,1.0
+151,9,0.0,0.13,0.29,0.07,Repairative Moisturizer,TATA HARPER,Moisturizer,3.4,0.687
+152,0,0.67,0.81,0.91,0.11,Beauty Elixir,CAUDALIE,Moisturizer,4.3,0.744
+152,1,0.63,0.76,0.88,0.1,Mini Pore Waterclay Mask,LANEIGE,Face Mask,4.7,0.981
+152,2,0.59,0.72,0.77,0.04,Shake & Shot™ Rubber Firming Mask,DR. JART+,Face Mask,3.8,0.95
+152,3,0.56,0.67,0.73,0.01,Water Bank Moisture Cream,LANEIGE,Moisturizer,4.4,0.848
+152,4,0.54,0.6,0.71,0.0,Vitamin C Ester Brightening Eye Serum,PERRICONE MD,Eye cream,4.1,0.601
+152,5,0.49,0.55,0.66,0.0,Sleeping Mask - Coconut Water,SEPHORA COLLECTION,Face Mask,5.0,0.885
+152,6,0.45,0.51,0.59,0.0,30 Day Treatment,BIOEFFECT,Treatment,5.0,1.0
+152,7,0.47,0.45,0.52,0.0,The Revitalizing Hydrating Serum,LA MER,Treatment,4.2,1.0
+152,8,0.43,0.39,0.46,0.0,Double Serum Complete Age Control Concentrate,CLARINS,Treatment,4.1,0.978
+152,9,0.37,0.36,0.38,0.0,Tarteguard Mineral Powder Sunscreen Broad Spectrum SPF 30,TARTE,Sun protect,4.2,0.971
+153,0,0.99,0.23,0.68,0.85,Baby Pekee Bar™ + Juju Bar Travel Duo,DRUNK ELEPHANT,Cleanser,4.5,1.0
+153,1,0.98,0.17,0.65,0.82,Sport Continuous Spray SPF 50 - Guava Mango,COOLA,Sun protect,4.1,1.0
+153,2,0.95,0.12,0.6,0.77,High Potency Classics: Face Finishing & Firming Moisturizer Tint SPF 30,PERRICONE MD,Sun protect,4.3,1.0
+153,3,0.9,0.06,0.56,0.71,Honey Potion Renewing Antioxidant Hydration Mask with Echinacea GreenEnvy™,FARMACY,Face Mask,4.3,1.0
+153,4,0.85,0.03,0.53,0.66,Your Skin But Better™ CC+™ Cream with SPF 50+,IT COSMETICS,Moisturizer,4.1,0.978
+153,5,0.83,0.01,0.47,0.62,Resurfacing Mask,TATA HARPER,Face Mask,4.3,1.0
+153,6,0.79,0.0,0.4,0.52,Evercalm™ Gentle Cleansing Milk,REN CLEAN SKINCARE,Cleanser,4.3,1.0
+153,7,0.74,0.0,0.38,0.44,Greek Yoghurt Advanced Nourishing Sleeping Facial,KORRES,Face Mask,4.4,1.0
+153,8,0.71,0.0,0.34,0.39,Ultra Repair Instant Oatmeal Mask,FIRST AID BEAUTY,Face Mask,4.4,1.0
+153,9,0.66,0.0,0.3,0.36,UncompliKated SPF 50 Soft Focus Makeup Setting Spray,KATE SOMERVILLE,Sun protect,3.2,0.806
+154,0,0.43,0.78,0.57,0.86,Ultramoor Mud Mask,OMOROVICZA,Face Mask,4.5,1.0
+154,1,0.41,0.71,0.55,0.81,Checks and Balances™ Frothy Face Wash,ORIGINS,Cleanser,4.3,1.0
+154,2,0.36,0.68,0.52,0.78,Advanced Anti-Aging Repairing Oil,ALGENIST,Treatment,4.4,1.0
+154,3,0.28,0.63,0.46,0.73,Rapid Age Spot and Pigment Lightening Serum,MURAD,Treatment,3.8,0.942
+154,4,0.24,0.56,0.4,0.71,Hydra Zen Masque Anti-Stress Moisturizing Night Face Mask,LANCÔME,Face Mask,4.6,1.0
+154,5,0.19,0.49,0.38,0.67,Clean Break™ Oil-Free Moisturizer,JACK BLACK,Moisturizer,4.5,1.0
+154,6,0.16,0.43,0.32,0.66,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Soothing Face Mask,ORIGINS,Face Mask,4.5,1.0
+154,7,0.12,0.39,0.26,0.58,High Potency Classics: Firming Evening Repair,PERRICONE MD,Treatment,4.4,1.0
+154,8,0.06,0.31,0.19,0.53,100% Mineral Smooth & Poreless Matte Screen SPF 40,SUPERGOOP!,Sun protect,3.7,0.986
+154,9,0.0,0.29,0.11,0.47,Witch Hazel Herbal Extract Toner,BELIF,Cleanser,4.6,0.878
+155,0,0.9,0.56,0.03,0.93,Acne System,PETER THOMAS ROTH,Treatment,4.3,0.937
+155,1,0.88,0.51,0.0,0.92,White Lucent Anti-Dark Circles Eye Cream,SHISEIDO,Eye cream,3.6,0.676
+155,2,0.86,0.5,0.0,0.91,Pore Minimalist Black Charcoal Sheet Mask,DR. JART+,Face Mask,3.9,0.938
+155,3,0.8,0.45,0.0,0.89,Acne Solutions Cleansing Foam,CLINIQUE,Cleanser,4.2,1.0
+155,4,0.73,0.39,0.0,0.86,Purity Made Simple® Facial Cleansing Gel & Eye Makeup Remover,PHILOSOPHY,Cleanser,0.0,0.012
+155,5,0.73,0.42,0.0,0.83,Sport Continuous Spray SPF 30 - Unscented,COOLA,Sun protect,5.0,1.0
+155,6,0.69,0.37,0.0,0.77,Waterfall Glacier Water Cream,SATURDAY SKIN,Moisturizer,4.6,1.0
+155,7,0.64,0.31,0.0,0.73,Sleeping Mask - Coconut Water,SEPHORA COLLECTION,Face Mask,5.0,1.0
+155,8,0.57,0.28,0.0,0.66,Eye Duty Triple Remedy A.M. Gel Cream,FIRST AID BEAUTY,Eye cream,4.1,0.975
+155,9,0.52,0.23,0.0,0.59,Resilience Lift Firming/Sculpting Eye Creme,ESTÉE LAUDER,Eye cream,3.3,0.651
+156,0,0.39,0.9,0.33,0.76,Wild Rose 15% Vitamin C Spotless Serum,KORRES,Treatment,3.9,0.98
+156,1,0.35,0.84,0.31,0.72,Radiance Transforming Mask,EVE LOM,Face Mask,0.0,0.098
+156,2,0.37,0.83,0.3,0.7,Ibuki Beauty Sleeping Mask,SHISEIDO,Moisturizer,4.4,1.0
+156,3,0.33,0.79,0.26,0.64,Sake Brightening Bio-Cellulose Eye Masks,BOSCIA,Eye cream,1.8,0.54
+156,4,0.32,0.74,0.24,0.62,Un-Wrinkle Peel Pads,PETER THOMAS ROTH,Treatment,4.6,0.894
+156,5,0.25,0.67,0.2,0.58,Cilantro & Orange Extract Pollutant Defending Mask,KIEHL'S SINCE 1851,Face Mask,4.1,1.0
+156,6,0.21,0.61,0.14,0.51,Énergie de Vie The Smoothing & Plumping Water-Infused Cream,LANCÔME,Moisturizer,4.2,1.0
+156,7,0.11,0.55,0.08,0.51,Vine[activ] Energizing Vitamin C Eye Cream,CAUDALIE,Eye cream,3.7,0.873
+156,8,0.05,0.51,0.07,0.44,PRE:EMPT SERIES™ Skin Perfecting Serum,PERRICONE MD,Treatment,4.3,1.0
+156,9,0.01,0.46,0.02,0.38,Sheet Masks,DR. JART+,Face Mask,4.2,1.0
+157,0,0.95,0.4,0.77,0.03,Turmeric 2-in-1 Brightening & Exfoliating Mask,KORA ORGANICS,Face Mask,4.6,1.0
+157,1,0.9,0.33,0.7,0.0,Cleansing Gel Oil Enriched,BELIF,Cleanser,4.5,0.729
+157,2,0.87,0.27,0.65,0.0,Ultra Facial Cream SPF 30,KIEHL'S SINCE 1851,Moisturizer,4.2,1.0
+157,3,0.87,0.25,0.6,0.0,Hyaluronic Marine Hydrating Modeling Mask,DR. DENNIS GROSS SKINCARE,Face Mask,4.1,1.0
+157,4,0.83,0.16,0.53,0.0,+ Retinol Firming Eye Cream,KATE SOMERVILLE,Eye cream,3.7,0.98
+157,5,0.78,0.13,0.5,0.0,Retinol Youth Renewal Night Cream,MURAD,Moisturizer,4.6,1.0
+157,6,0.74,0.07,0.47,0.0,Supergoop! x Milly Defense Refresh Setting Mist Broad Spectrum Sunscreen SPF 50,SUPERGOOP!,Sun protect,3.7,0.977
+157,7,0.73,0.01,0.42,0.0,A Perfect World™ SPF 20 Age-Defense Eye Cream with White Tea,ORIGINS,Eye cream,4.0,0.945
+157,8,0.7,0.0,0.38,0.0,Daily Reviving Concentrate,KIEHL'S SINCE 1851,Moisturizer,4.7,1.0
+157,9,0.62,0.0,0.35,0.0,Rose Stem Cell Bio-Repair Gel Mask,PETER THOMAS ROTH,Face Mask,4.1,1.0
+158,0,0.8,0.71,0.08,0.15,After-Sun Milk Soothing Body Lotion,MOROCCANOIL,Sun protect,4.7,1.0
+158,1,0.73,0.65,0.03,0.13,Energy Yellow Citrus & Honey Splash Mask,BLITHE,Face Mask,4.2,1.0
+158,2,0.65,0.59,0.0,0.07,Sheer Mineral Sun Spray SPF 50,DR. DENNIS GROSS SKINCARE,Sun protect,4.1,0.896
+158,3,0.62,0.56,0.0,0.0,Renewed Hope in a Jar Skin Tint,PHILOSOPHY,Sun protect,4.1,0.985
+158,4,0.58,0.51,0.0,0.0,Glow Cycle Retin-ALT Power Serum,OLEHENRIKSEN,Treatment,4.4,1.0
+158,5,0.55,0.46,0.0,0.0,Younger® Revealing Mask Intense,LANCER,Face Mask,4.3,1.0
+158,6,0.49,0.41,0.0,0.0,GenOptics Aura Essence Serum,SK-II,Moisturizer,4.1,1.0
+158,7,0.46,0.35,0.0,0.0,Your Skin But Better™ CC+Illumination™ Cream with SPF 50+,IT COSMETICS,Moisturizer,3.9,1.0
+158,8,0.43,0.29,0.0,0.0,Hello FAB Triple Protection Skin Tint with Goji Berry SPF 30,FIRST AID BEAUTY,Sun protect,4.1,0.98
+158,9,0.36,0.22,0.0,0.0,Squalane + Antioxidant Cleansing Oil,BIOSSANCE,Moisturizer,4.4,1.0
+159,0,0.19,0.45,0.55,0.41,Essential Energy Eye Definer,SHISEIDO,Eye cream,0.0,0.295
+159,1,0.15,0.45,0.55,0.4,Ultimate Miracle Worker Fix Eye Power-Treatment,PHILOSOPHY,Eye cream,3.9,1.0
+159,2,0.09,0.37,0.47,0.33,Water Fuse Hydro Sleep Mask,DR. JART+,Face Mask,4.4,1.0
+159,3,0.04,0.34,0.43,0.29,Cicapair™ Tiger Grass Nightly Re.Pair Mask,DR. JART+,Face Mask,4.3,1.0
+159,4,0.0,0.32,0.43,0.24,Baggage Claim Gold Eye Masks,WANDER BEAUTY,Eye cream,4.3,1.0
+159,5,0.0,0.28,0.39,0.2,Honey Drop Lightweight Moisturizer with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.1,1.0
+159,6,0.0,0.22,0.34,0.15,Superberry Hydrate + Glow Oil,YOUTH TO THE PEOPLE,Moisturizer,4.8,1.0
+159,7,0.0,0.17,0.26,0.11,Capture Totale Dreamskin Advanced,DIOR,Moisturizer,4.3,1.0
+159,8,0.0,0.11,0.18,0.06,Clearly Corrective™ Dark Circle Perfector,KIEHL'S SINCE 1851,Eye cream,3.6,0.965
+159,9,0.0,0.03,0.13,0.0,Rose Deep Hydration Facial Toner,FRESH,Cleanser,4.2,0.795
+160,0,0.91,0.98,0.57,0.17,The Pearl Tinted Eye Illuminating Treatment,TATCHA,Eye cream,4.0,1.0
+160,1,0.86,0.92,0.52,0.13,Confidence in a Cream™ Transforming Moisturizing Super Cream,IT COSMETICS,Moisturizer,4.3,1.0
+160,2,0.8,0.86,0.46,0.11,Deep Cleansing Exfoliator,CAUDALIE,Cleanser,4.6,1.0
+160,3,0.72,0.81,0.45,0.05,Super Spot Remover™ Blemish Treatment Gel,ORIGINS,Treatment,4.0,0.944
+160,4,0.7,0.75,0.41,0.01,R.N.A. POWER Anti-Aging Eye Cream,SK-II,Eye cream,4.3,1.0
+160,5,0.64,0.73,0.36,0.0,Everyday Sunscreen Broad Spectrum SPF 50,SUPERGOOP!,Sun protect,4.3,1.0
+160,6,0.61,0.68,0.3,0.0,Acne Solutions Cleansing Foam,CLINIQUE,Cleanser,4.2,1.0
+160,7,0.55,0.61,0.24,0.0,Full Spectrum 360° Sun Silk Drops SPF 30,COOLA,Sun protect,4.6,1.0
+160,8,0.51,0.55,0.2,0.0,Coconut Rose Toner,KOPARI,Cleanser,4.5,1.0
+160,9,0.47,0.51,0.13,0.0,POWER Recharging Night Pressed Serum,ALGENIST,Moisturizer,4.4,1.0
+161,0,0.25,0.63,0.59,0.2,Charcoal Pore Pudding Intensive Wash-Off Treatment,BOSCIA,Face Mask,4.4,1.0
+161,1,0.18,0.57,0.51,0.15,Flower Fusion™ Rose Hydrating Sheet Mask,ORIGINS,Face Mask,3.8,0.901
+161,2,0.13,0.55,0.46,0.1,Ibuki Purifying Cleanser,SHISEIDO,Cleanser,4.3,1.0
+161,3,0.05,0.51,0.43,0.06,Vinosource Intense Moisture Rescue Cream,CAUDALIE,Moisturizer,4.2,1.0
+161,4,0.01,0.5,0.36,0.0,Alpha Beta® Medi–Spa Peel,DR. DENNIS GROSS SKINCARE,Treatment,4.5,1.0
+161,5,0.0,0.43,0.35,0.0,Renewed Hope in A Jar Refreshing & Refining Moisturizer,PHILOSOPHY,Moisturizer,4.1,0.965
+161,6,0.0,0.35,0.31,0.0,Uplifting Transformation™ Eye Crème,OLEHENRIKSEN,Eye cream,3.9,0.971
+161,7,0.0,0.31,0.29,0.0,Time In A Bottle 100% In-Control,PHILOSOPHY,Treatment,4.0,0.948
+161,8,0.0,0.26,0.24,0.0,Crème Radiance Gentle Cleansing Creamy-Foam Cleanser,LANCÔME,Cleanser,4.5,0.849
+161,9,0.0,0.2,0.18,0.0,ABSOLUE PREMIUM ßx – Absolute Replenishing Cream SPF 15 Sunscreen,LANCÔME,Moisturizer,4.5,0.931
+162,0,0.97,0.14,0.32,0.95,So Nurturing™ Cleansing Cloths,OLEHENRIKSEN,Cleanser,4.0,0.964
+162,1,0.93,0.1,0.26,0.91,EGF Day Serum,BIOEFFECT,Treatment,4.6,1.0
+162,2,0.86,0.04,0.21,0.86,Hyaluronic Marine Hydrating Modeling Mask,DR. DENNIS GROSS SKINCARE,Face Mask,4.1,1.0
+162,3,0.84,0.0,0.19,0.8,United State™ Balancing Tonic,ORIGINS,Cleanser,4.3,0.933
+162,4,0.77,0.0,0.13,0.72,Golden Krocus Ageless Saffron Elixir Serum,KORRES,Treatment,4.1,1.0
+162,5,0.76,0.0,0.06,0.71,Hydra Life Cooling Hydration Sorbet Eye Gel,DIOR,Eye cream,3.8,0.908
+162,6,0.7,0.0,0.0,0.67,Hydra Life Cooling Hydration Sorbet Eye Gel,DIOR,Eye cream,3.8,0.876
+162,7,0.65,0.0,0.0,0.64,Crème Ancienne® Ultimate Nourishing Honey Mask,FRESH,Face Mask,4.2,1.0
+162,8,0.61,0.0,0.0,0.56,Ultra Repair Instant Oatmeal Mask,FIRST AID BEAUTY,Face Mask,4.4,1.0
+162,9,0.6,0.0,0.0,0.5,Premier Cru Eye Cream,CAUDALIE,Eye cream,3.3,0.881
+163,0,0.82,0.39,0.11,0.56,"Eye Duty Triple Remedy: Brighten, Depuff and Smooth",FIRST AID BEAUTY,Eye cream,4.0,0.966
+163,1,0.75,0.31,0.05,0.51,Mineral Crème Broad Spectrum SPF 50 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,4.3,1.0
+163,2,0.72,0.24,0.0,0.44,Watermelon Glow Jelly Sheet Mask,GLOW RECIPE,Face Mask,3.6,0.892
+163,3,0.69,0.2,0.0,0.44,Professional 3% Retinoid Plus,PETER THOMAS ROTH,Treatment,4.6,1.0
+163,4,0.64,0.19,0.0,0.39,The Broad Spectrum SPF 50 UV Protecting Fluid,LA MER,Sun protect,4.7,0.88
+163,5,0.58,0.12,0.0,0.38,Resort Collection Sun Protection Mist Broad Spectrum SPF 30 Sunscreen,AMOREPACIFIC,Sun protect,3.3,0.834
+163,6,0.54,0.09,0.0,0.35,Overnight Restorative Cream,ALGENIST,Moisturizer,4.4,1.0
+163,7,0.48,0.03,0.0,0.33,Detoxifying Silt Gelee Mask,VOLITION BEAUTY,Face Mask,4.7,1.0
+163,8,0.46,0.0,0.0,0.26,Sport Continuous Spray SPF 50 - Unscented,COOLA,Sun protect,4.4,1.0
+163,9,0.39,0.0,0.0,0.21,Evercalm™ Gentle Cleansing Milk,REN CLEAN SKINCARE,Cleanser,4.3,1.0
+164,0,0.82,0.8,0.41,0.5,Bye Bye Pores Primer™ Oil-Free Poreless Skin-Perfecting Serum Primer,IT COSMETICS,Treatment,3.6,0.964
+164,1,0.8,0.76,0.36,0.46,Glycolic Peel,CAUDALIE,Treatment,4.2,0.975
+164,2,0.74,0.7,0.32,0.4,Ferulic Acid + Retinol Brightening Solution,DR. DENNIS GROSS SKINCARE,Treatment,4.1,1.0
+164,3,0.67,0.66,0.24,0.33,Clarifying Toner,MURAD,Cleanser,0.0,-0.012
+164,4,0.69,0.67,0.25,0.36,MAGNETIGHT™ Age-Defier Mask Bundle,DR. BRANDT SKINCARE,Face Mask,4.0,0.948
+164,5,0.65,0.63,0.18,0.29,The Regenerating Serum,LA MER,Treatment,3.9,0.994
+164,6,0.64,0.57,0.11,0.24,Waterproof Eye Makeup Remover,SEPHORA COLLECTION,Cleanser,4.4,0.856
+164,7,0.64,0.53,0.05,0.2,Revitalixir™ Recovery Serum,MURAD,Treatment,4.5,1.0
+164,8,0.58,0.49,0.01,0.18,EGF Eye Serum,BIOEFFECT,Eye cream,5.0,1.0
+164,9,0.57,0.48,0.0,0.14,Black Tea Firming Overnight Mask Mini,FRESH,Face Mask,4.0,0.888
+165,0,0.92,0.69,0.54,0.79,Moment of Truth™ 2-in-1 Polishing Sugar Mask,OLEHENRIKSEN,Cleanser,4.5,1.0
+165,1,0.85,0.61,0.47,0.73,Lapis Oil Balancing Facial Oil,HERBIVORE,Moisturizer,4.4,0.854
+165,2,0.82,0.56,0.44,0.74,Revitalixir™ Recovery Serum,MURAD,Treatment,4.5,1.0
+165,3,0.79,0.52,0.37,0.69,Caviar Lime Acid Peel,LANCER,Treatment,4.7,1.0
+165,4,0.77,0.49,0.31,0.65,Black Tea Age-Delay Cream,FRESH,Moisturizer,4.2,1.0
+165,5,0.72,0.46,0.24,0.61,Max Complexion Correction Pads,PETER THOMAS ROTH,Treatment,4.4,0.893
+165,6,0.7,0.43,0.18,0.58,Clearly Corrective™ Dark Spot Solution,KIEHL'S SINCE 1851,Treatment,3.5,0.867
+165,7,0.65,0.37,0.1,0.5,Clearing Mask,INDIE LEE,Face Mask,4.4,1.0
+165,8,0.62,0.32,0.03,0.46,Hello FAB Kona Eye Stick,FIRST AID BEAUTY,Eye cream,3.7,0.85
+165,9,0.57,0.28,0.0,0.4,Radiance Transforming Mask,EVE LOM,Face Mask,0.0,0.131
+166,0,0.98,0.68,0.4,0.75,Ultra Repair Hydra-Firm Sleeping Cream,FIRST AID BEAUTY,Moisturizer,4.3,1.0
+166,1,0.95,0.62,0.36,0.68,Alpha Beta® Medi–Spa Peel,DR. DENNIS GROSS SKINCARE,Treatment,4.5,1.0
+166,2,0.91,0.57,0.29,0.62,Squalane + Antioxidant Cleansing Oil,BIOSSANCE,Moisturizer,4.4,1.0
+166,3,0.82,0.52,0.27,0.63,Resveratrol Lift Firming Serum,CAUDALIE,Treatment,4.3,0.998
+166,4,0.77,0.46,0.23,0.56,Crème Ancienne®,FRESH,Moisturizer,4.4,1.0
+166,5,0.72,0.44,0.2,0.51,Adaptogen Deep Moisture Cream,YOUTH TO THE PEOPLE,Moisturizer,4.8,1.0
+166,6,0.66,0.38,0.14,0.45,Power Dose Vitamin C,DR. BRANDT SKINCARE,Treatment,4.4,1.0
+166,7,0.6,0.31,0.12,0.42,BB Tinted Treatment 12-Hour Primer Broad Spectrum SPF 30 Sunscreen,TARTE,Moisturizer,4.3,1.0
+166,8,0.55,0.27,0.06,0.36,The Microdelivery Exfoliating Facial Wash,PHILOSOPHY,Cleanser,4.6,1.0
+166,9,0.51,0.23,0.0,0.31,Face Lotion SPF 30,MOROCCANOIL,Sun protect,0.0,0.179
+167,0,0.77,0.59,0.5,0.34,Acne-Clear Invisible Dots,PETER THOMAS ROTH,Treatment,3.6,0.927
+167,1,0.69,0.58,0.46,0.28,Oil Control Blotting Paper,SHISEIDO,Cleanser,4.3,1.0
+167,2,0.65,0.52,0.39,0.21,Vine[Activ] Vitamin C Anti-Wrinkle Serum,CAUDALIE,Treatment,4.1,1.0
+167,3,0.61,0.5,0.34,0.17,Hydrating Lip Mask,SEPHORA COLLECTION,Face Mask,3.0,0.615
+167,4,0.59,0.49,0.3,0.18,Watermelon Glow Sleeping Mask Mini,GLOW RECIPE,Face Mask,3.7,0.931
+167,5,0.56,0.45,0.24,0.13,RetAsphere™ 2-in-1 Retinol Night Cream,KATE SOMERVILLE,Moisturizer,4.3,1.0
+167,6,0.53,0.37,0.18,0.07,Micellar Cleansing Water & Milk - Pomegranate,SEPHORA COLLECTION,Cleanser,4.2,1.0
+167,7,0.48,0.34,0.15,0.03,ExfoliKate Glow Moisturizer,KATE SOMERVILLE,Moisturizer,4.6,1.0
+167,8,0.43,0.26,0.1,0.0,Superfood Firm and Brighten Vitamin C Serum,YOUTH TO THE PEOPLE,Treatment,3.9,0.992
+167,9,0.42,0.2,0.08,0.0,Self Tan Express Bronzing Face Sheet Mask,ST. TROPEZ TANNING ESSENTIALS,Face Mask,3.8,0.928
+168,0,0.48,0.48,0.44,0.7,Virgin Marula Luxury Facial Oil Mini,DRUNK ELEPHANT,Moisturizer,4.5,1.0
+168,1,0.4,0.44,0.41,0.68,Vinoperfect Glycolic Brightening Essence,CAUDALIE,Treatment,4.4,1.0
+168,2,0.37,0.37,0.36,0.63,Secret Sauce Clinically Advanced Miraculous Anti-Aging Moisturizer,IT COSMETICS,Moisturizer,3.8,0.967
+168,3,0.32,0.29,0.32,0.59,Wrinkle Warrior™ 2-in-1 Plumping Moisturizer + Serum,KATE SOMERVILLE,Moisturizer,3.9,0.905
+168,4,0.27,0.22,0.27,0.57,Truth Revealed™ Brightening Broad Spectrum SPF 15 Moisturizer,OLEHENRIKSEN,Moisturizer,4.2,1.0
+168,5,0.25,0.18,0.22,0.54,Baby Pekee Bar™ + Juju Bar Travel Duo,DRUNK ELEPHANT,Cleanser,4.5,1.0
+168,6,0.2,0.17,0.18,0.51,Énergie de Vie The Illuminating & Anti-Fatigue Cooling Eye Gel,LANCÔME,Eye cream,3.5,0.939
+168,7,0.13,0.13,0.15,0.45,JuJu Bar,DRUNK ELEPHANT,Cleanser,4.6,1.0
+168,8,0.05,0.08,0.08,0.37,Wild Rose Exfoliating Cleanser,KORRES,Cleanser,4.4,1.0
+168,9,0.01,0.04,0.02,0.3,High Potency Classics: Firming Evening Repair,PERRICONE MD,Treatment,4.4,1.0
+169,0,0.17,0.16,0.56,0.96,Greek Yoghurt Foaming Cream Cleanser,KORRES,Cleanser,4.6,1.0
+169,1,0.09,0.12,0.47,0.93,Crème Ancienne Face Oil Elixir,FRESH,Treatment,3.6,0.928
+169,2,0.06,0.05,0.41,0.88,Illuminating Eye Crème,TATA HARPER,Eye cream,3.0,0.8
+169,3,0.03,0.06,0.35,0.85,Clear Improvement™ Charcoal Honey Mask to Purify and Nourish,ORIGINS,Face Mask,4.7,1.0
+169,4,0.02,0.03,0.3,0.85,Rénergie Lift Multi-Action Eye,LANCÔME,Eye cream,3.9,0.991
+169,5,0.0,0.0,0.24,0.78,Water Bank Eye Gel,LANEIGE,Eye cream,4.2,1.0
+169,6,0.0,0.0,0.18,0.78,Prep-N-Glow™ Cloths,NUFACE,Cleanser,4.7,1.0
+169,7,0.0,0.0,0.09,0.72,Tarteguard 20 Tinted Moisturizer Broad Spectrum SPF 20 Sunscreen,TARTE,Sun protect,4.0,0.929
+169,8,0.0,0.0,0.06,0.69,Hydra-Essentiel Bi-Phase Serum,CLARINS,Treatment,4.6,1.0
+169,9,0.0,0.0,0.03,0.65,Facial Treatment Essence,SK-II,Moisturizer,4.1,1.0
+170,0,0.7,0.21,0.75,0.81,Oil Free Moisturizer,KATE SOMERVILLE,Moisturizer,4.2,1.0
+170,1,0.65,0.15,0.71,0.77,Wrinkle Warrior™ 2-in-1 Plumping Moisturizer + Serum,KATE SOMERVILLE,Moisturizer,3.9,0.675
+170,2,0.62,0.11,0.67,0.74,Photo Finish Primerizer,SMASHBOX,Moisturizer,4.1,1.0
+170,3,0.6,0.01,0.57,0.67,Truth Revealed™ Brightening Broad Spectrum SPF 15 Moisturizer,OLEHENRIKSEN,Moisturizer,4.2,1.0
+170,4,0.54,0.0,0.49,0.59,Acne System,PETER THOMAS ROTH,Treatment,4.3,1.0
+170,5,0.48,0.0,0.42,0.55,Vine[activ] Energizing Vitamin C Eye Cream,CAUDALIE,Eye cream,3.7,0.927
+170,6,0.46,0.0,0.39,0.52,Ultra Facial Moisturizer SPF 30,KIEHL'S SINCE 1851,Sun protect,3.7,0.943
+170,7,0.4,0.0,0.36,0.46,Gentle Oil-Free Eye Makeup Remover,NARS,Cleanser,4.3,0.861
+170,8,0.38,0.0,0.34,0.42,Rub-A-Dub Refining Peel Gel,SATURDAY SKIN,Cleanser,4.6,1.0
+170,9,0.33,0.0,0.26,0.36,Oil-Free Face Cream Broad Spectrum SPF 30,CLINIQUE,Sun protect,3.3,0.855
+171,0,0.6,0.61,0.59,0.35,POWERMUD™ Dualcleanse Treatment,GLAMGLOW,Cleanser,3.9,0.978
+171,1,0.57,0.56,0.54,0.33,Complete Eye Renewal Balm,ALGENIST,Eye cream,4.0,1.0
+171,2,0.51,0.54,0.51,0.27,The Water Cream,TATCHA,Moisturizer,4.2,0.945
+171,3,0.42,0.51,0.44,0.22,Bio-Performance Advanced Super Restoring Cream,SHISEIDO,Moisturizer,4.3,0.956
+171,4,0.38,0.47,0.35,0.2,Face Mask - Aloe Vera - Replenishing,SEPHORA COLLECTION,Face Mask,4.7,1.0
+171,5,0.31,0.42,0.33,0.12,JuJu Bar,DRUNK ELEPHANT,Cleanser,4.6,1.0
+171,6,0.24,0.38,0.28,0.13,ER+ Radical Recovery After-Sun Lotion,COOLA,Sun protect,4.8,1.0
+171,7,0.16,0.34,0.24,0.11,Rénergie Lift Multi-Action Night,LANCÔME,Moisturizer,4.3,1.0
+171,8,0.12,0.3,0.17,0.09,Outsmart Acne Clarifying Treatment,MURAD,Treatment,4.3,1.0
+171,9,0.07,0.26,0.1,0.02,The Moisturizing Soft Cream,LA MER,Moisturizer,3.8,1.0
+172,0,0.18,0.69,0.51,0.42,Goat Milk Moisturizing Cream,KATE SOMERVILLE,Moisturizer,4.1,1.0
+172,1,0.09,0.63,0.47,0.37,Purifying Cleansing Gel,BOSCIA,Cleanser,4.5,1.0
+172,2,0.07,0.57,0.41,0.32,Good Genes All-In-One Lactic Acid Treatment,SUNDAY RILEY,Treatment,4.3,1.0
+172,3,0.03,0.53,0.36,0.26,Shake & Shot™ Rubber Firming Mask,DR. JART+,Face Mask,3.8,0.994
+172,4,0.0,0.47,0.31,0.25,Vitamin C Glow Face Mask,FRESH,Face Mask,3.9,0.883
+172,5,0.0,0.43,0.3,0.24,Baggage Claim Gold Eye Masks,WANDER BEAUTY,Eye cream,4.3,1.0
+172,6,0.0,0.4,0.28,0.18,Skintune Blur Perfecting Primer Serum,FARSÁLI,Treatment,4.2,0.836
+172,7,0.0,0.36,0.25,0.13,EradiKate® Daily Cleanser Acne Treatment,KATE SOMERVILLE,Cleanser,4.3,1.0
+172,8,0.0,0.3,0.2,0.1,Advanced Génifique Yeux Light-Pearl™ Eye Illuminator Youth Activating Concentrate,LANCÔME,Eye cream,3.6,0.972
+172,9,0.0,0.24,0.16,0.08,Evercalm™ Gentle Cleansing Milk,REN CLEAN SKINCARE,Cleanser,4.3,0.972
+173,0,0.31,0.45,0.05,0.36,GinZing™ Energy-Boosting Gel Moisturizer,ORIGINS,Moisturizer,4.4,1.0
+173,1,0.3,0.4,0.0,0.31,Energie de Vie Glow Boosting Mini Mask Trio,LANCÔME,Face Mask,5.0,1.0
+173,2,0.25,0.34,0.0,0.27,Superfood Skin Reset Antioxidant Mask,YOUTH TO THE PEOPLE,Face Mask,4.4,1.0
+173,3,0.2,0.33,0.0,0.24,Gentle Oil-Free Eye Makeup Remover,NARS,Cleanser,4.3,0.894
+173,4,0.13,0.31,0.0,0.24,Vinoperfect Glycolic Brightening Essence,CAUDALIE,Treatment,4.4,1.0
+173,5,0.06,0.28,0.0,0.18,Bright On Massage-Activated Vitamin C Mask with Echinacea GreenEnvy™,FARMACY,Face Mask,4.6,1.0
+173,6,0.0,0.23,0.0,0.1,Restorative Eye Crème,TATA HARPER,Eye cream,4.0,0.946
+173,7,0.0,0.17,0.0,0.05,Flower Fusion™ Violet Nourishing Sheet Mask,ORIGINS,Face Mask,3.6,0.969
+173,8,0.0,0.1,0.0,0.0,OMG!™ Omega The Great Supplements,HUM NUTRITION,Treatment,4.3,0.859
+173,9,0.0,0.07,0.0,0.0,Facial Treatment Mask,SK-II,Face Mask,4.4,1.0
+174,0,0.08,0.03,0.76,0.29,Daily Reviving Concentrate,KIEHL'S SINCE 1851,Moisturizer,4.7,1.0
+174,1,0.1,0.01,0.72,0.22,Instant Foaming Cleanser,CAUDALIE,Cleanser,4.3,0.72
+174,2,0.11,0.0,0.68,0.2,Pure Truth™ Youth Activating Oil,OLEHENRIKSEN,Treatment,4.0,0.986
+174,3,0.05,0.0,0.61,0.12,R.N.A. POWER Anti-Aging Essence Serum,SK-II,Treatment,4.4,0.832
+174,4,0.0,0.0,0.61,0.1,Virgin Marula Luxury Facial Oil Mini,DRUNK ELEPHANT,Moisturizer,4.5,0.814
+174,5,0.0,0.0,0.54,0.07,High Performance Continuous Moisture Eye Cream,ANTHONY,Eye cream,4.3,0.788
+174,6,0.0,0.0,0.54,0.05,Intensive Vitalizing Eye Essence,AMOREPACIFIC,Eye cream,3.9,0.94
+174,7,0.0,0.0,0.49,0.0,Honey Drop Lightweight Moisturizer with Echinacea GreenEnvy™,FARMACY,Moisturizer,4.1,1.0
+174,8,0.0,0.0,0.45,0.0,Ginger Leaf & Hibiscus Firming Mask,KIEHL'S SINCE 1851,Face Mask,4.4,0.945
+174,9,0.0,0.0,0.39,0.0,Resort Collection Sun Protection Mist Broad Spectrum SPF 30 Sunscreen,AMOREPACIFIC,Sun protect,3.3,0.847
+175,0,0.82,0.37,0.82,0.04,Flower Fusion™ Raspberry Refreshing Sheet Mask,ORIGINS,Face Mask,4.6,1.0
+175,1,0.79,0.33,0.74,0.03,Sleeping Mask - Aloe Vera,SEPHORA COLLECTION,Face Mask,5.0,0.846
+175,2,0.74,0.26,0.67,0.0,Midnight Recovery Eye,KIEHL'S SINCE 1851,Eye cream,3.9,0.676
+175,3,0.75,0.23,0.64,0.0,Wrinkle Warrior™ 2-in-1 Plumping Moisturizer + Serum,KATE SOMERVILLE,Moisturizer,3.9,0.644
+175,4,0.71,0.2,0.58,0.0,Extra Eye Repair Cream,BOBBI BROWN,Eye cream,4.2,1.0
+175,5,0.66,0.15,0.56,0.0,Even Better Clinical Dark Spot Corrector & Optimizer,CLINIQUE,Treatment,3.1,0.781
+175,6,0.61,0.12,0.53,0.0,Calendula & Aloe Soothing Hydration Mask,KIEHL'S SINCE 1851,Face Mask,4.0,0.975
+175,7,0.56,0.08,0.53,0.0,Mineral Sunscreen Stick Broad Spectrum SPF 40 UVA-UVB Sunscreen,MDSOLARSCIENCES,Sun protect,4.5,1.0
+175,8,0.52,0.0,0.45,0.0,8 HR Mattifying Moisturizer Sunscreen Broad Spectrum SPF20,SEPHORA COLLECTION,Sun protect,4.2,0.975
+175,9,0.43,0.0,0.44,0.0,Outsmart Acne Clarifying Treatment,MURAD,Treatment,4.3,1.0
+176,0,0.82,0.44,0.99,0.78,Peat Miracle Revital Serum Concentrate,BELIF,Treatment,4.5,0.708
+176,1,0.81,0.43,0.93,0.73,Magic Eye Rescue Cream,CHARLOTTE TILBURY,Eye cream,3.9,0.96
+176,2,0.76,0.39,0.89,0.66,Squalane + Vitamin C Rose Oil,BIOSSANCE,Moisturizer,4.4,1.0
+176,3,0.7,0.33,0.83,0.62,Deep Cleansing Exfoliator,CAUDALIE,Cleanser,4.6,0.737
+176,4,0.67,0.29,0.78,0.59,Sheer Vivid Tinted Moisturizer SPF 20,ILIA,Sun protect,3.7,0.98
+176,5,0.62,0.21,0.73,0.53,Alpha Beta® Pore Perfecting Cleansing Gel,DR. DENNIS GROSS SKINCARE,Cleanser,4.6,1.0
+176,6,0.56,0.17,0.7,0.52,Red Jelly Pack,J.ONE,Treatment,3.9,0.599
+176,7,0.55,0.12,0.71,0.49,POWER Recharging Night Pressed Serum,ALGENIST,Moisturizer,4.4,0.735
+176,8,0.51,0.05,0.7,0.47,Énergie de Vie The Illuminating & Anti-Fatigue Cooling Eye Gel,LANCÔME,Eye cream,3.5,0.552
+176,9,0.47,0.02,0.67,0.46,Advanced Night Repair Intensive Recovery Ampoules,ESTÉE LAUDER,Moisturizer,4.9,1.0
+177,0,0.06,0.35,0.28,0.54,Crème Ancienne®,FRESH,Moisturizer,4.4,1.0
+177,1,0.02,0.29,0.25,0.48,Baggage Claim Rose Gold Eye Masks,WANDER BEAUTY,Eye cream,4.6,1.0
+177,2,0.0,0.23,0.2,0.41,Evercalm™ Overnight Recovery Balm,REN CLEAN SKINCARE,Moisturizer,4.9,1.0
+177,3,0.0,0.19,0.17,0.33,FAB Skin Lab Resurfacing Liquid 10% AHA,FIRST AID BEAUTY,Cleanser,4.5,1.0
+177,4,0.0,0.13,0.13,0.25,Clarifying Toner,MURAD,Cleanser,0.0,-0.034
+177,5,0.0,0.13,0.13,0.25,High Potency Classics: Firming Eye Lift,PERRICONE MD,Eye cream,4.3,1.0
+177,6,0.0,0.06,0.1,0.17,Premier Cru Rich Cream,CAUDALIE,Moisturizer,4.5,1.0
+177,7,0.0,0.03,0.06,0.12,Pore Treatment Strips,PEACE OUT,Treatment,4.2,1.0
+177,8,0.0,0.01,0.0,0.08,Yoghurt Nourishing Fluid Veil Face Sunscreen Broad Spectrum SPF 30,KORRES,Sun protect,3.9,0.998
+177,9,0.0,0.0,0.0,0.02,Crème Radiance Gentle Cleansing Creamy-Foam Cleanser,LANCÔME,Cleanser,4.5,0.807
+178,0,0.92,0.99,0.87,0.13,Peony Brightening Night Treatment Mask,FRESH,Face Mask,4.0,1.0
+178,1,0.89,0.95,0.76,0.1,Invisiblur™ Perfecting Shield Broad Spectrum SPF 30 PA+++,MURAD,Treatment,3.9,0.65
+178,2,0.86,0.91,0.71,0.02,GENIUS Ultimate Anti-Aging Bi-Phase Peel,ALGENIST,Treatment,4.6,0.673
+178,3,0.79,0.89,0.66,0.01,Brightening Infusion Hydrogel Mask,DR. JART+,Face Mask,3.8,0.715
+178,4,0.74,0.84,0.62,0.0,Shea Cleansing Oil,L'OCCITANE,Cleanser,4.5,0.598
+178,5,0.71,0.77,0.6,0.0,City Block Purifying Charcoal Clay Mask + Scrub,CLINIQUE,Cleanser,4.7,1.0
+178,6,0.64,0.71,0.54,0.0,MOISTURE BOUND Rejuvenating Eye Treatment Gel,AMOREPACIFIC,Eye cream,4.3,1.0
+178,7,0.61,0.63,0.49,0.0,Advanced Night Repair Eye Serum Synchronized Complex II,ESTÉE LAUDER,Eye cream,3.5,0.916
+178,8,0.55,0.6,0.45,0.0,Sake Brightening Bio-Cellulose Eye Masks,BOSCIA,Eye cream,1.8,0.537
+178,9,0.51,0.57,0.45,0.0,FUTURE RESPONSE Age Defense Serum,AMOREPACIFIC,Treatment,4.2,1.0
+179,0,0.45,0.63,0.88,0.09,Shake & Shot™ Rubber Firming Mask,DR. JART+,Face Mask,3.8,0.912
+179,1,0.44,0.6,0.83,0.08,The Microdelivery Exfoliating Facial Wash,PHILOSOPHY,Cleanser,4.6,1.0
+179,2,0.36,0.55,0.78,0.01,EGF Eye Serum,BIOEFFECT,Eye cream,5.0,1.0
+179,3,0.32,0.51,0.7,0.0,Pep-Start Daily UV Protector Broad Spectrum SPF 50,CLINIQUE,Sun protect,4.2,1.0
+179,4,0.27,0.48,0.62,0.0,Eye Sleeping Mask,LANEIGE,Eye cream,4.0,0.695
+179,5,0.21,0.47,0.59,0.0,Overnight Miracle Mask,SK-II,Face Mask,3.8,1.0
+179,6,0.16,0.42,0.56,0.0,Watermelon Brightening Serum,MILK MAKEUP,Treatment,4.1,1.0
+179,7,0.13,0.38,0.54,0.0,Vitamin Nectar Vitamin C Brightening Powder,FRESH,Face Mask,4.2,0.859
+179,8,0.06,0.35,0.45,0.0,C+ Collagen Brighten & Firm Eye Cream,DR. DENNIS GROSS SKINCARE,Eye cream,3.5,0.834
+179,9,0.0,0.31,0.41,0.0,Peat Miracle Revital Eye Cream,BELIF,Eye cream,4.3,0.84
+180,0,0.46,0.66,0.36,0.06,Wrinkle Release Facial Sheet Mask,SKIN LAUNDRY,Face Mask,4.2,1.0
+180,1,0.38,0.66,0.32,0.0,Truth Serum - Starlight Holiday Edition,OLEHENRIKSEN,Treatment,4.0,0.919
+180,2,0.33,0.62,0.27,0.0,Green Tea Real Fresh Foam Cleanser,NEOGEN DERMALOGY,Cleanser,4.4,1.0
+180,3,0.32,0.53,0.21,0.0,Soothing & Healing Green Tea Splash Mask,BLITHE,Face Mask,4.6,1.0
+180,4,0.26,0.49,0.19,0.0,Anti-Wrinkle Miracle Worker Retinoid Eye Repair Cream,PHILOSOPHY,Eye cream,3.8,1.0
+180,5,0.17,0.44,0.16,0.01,JuJu Bar,DRUNK ELEPHANT,Cleanser,4.6,1.0
+180,6,0.14,0.4,0.12,0.0,Maracuja C-Brighter™ Eye Treatment,TARTE,Eye cream,4.0,1.0
+180,7,0.08,0.35,0.11,0.0,Advanced Night Repair Concentrated Recovery Eye Mask,ESTÉE LAUDER,Face Mask,3.3,0.817
+180,8,0.04,0.31,0.08,0.0,Pure Truth™ Youth Activating Oil,OLEHENRIKSEN,Treatment,4.0,0.997
+180,9,0.0,0.26,0.05,0.0,DermalQuench Liquid Lift™ + Retinol Advanced Resurfacing Treatment,KATE SOMERVILLE,Treatment,4.1,1.0
+181,0,0.34,0.68,0.05,0.1,Age Defense BB Cream Broad Spectrum SPF 30,CLINIQUE,Sun protect,3.9,0.774
+181,1,0.31,0.66,0.0,0.04,The Littles™,DRUNK ELEPHANT,Moisturizer,4.4,1.0
+181,2,0.27,0.63,0.0,0.0,Mini Pore Waterclay Mask,LANEIGE,Face Mask,4.7,1.0
+181,3,0.21,0.56,0.0,0.0,Revitalizing Supreme Global Anti-Aging Crème,ESTÉE LAUDER,Moisturizer,4.4,0.872
+181,4,0.17,0.52,0.0,0.0,GinZing™ Energy-Boosting Gel Moisturizer,ORIGINS,Moisturizer,4.4,1.0
+181,5,0.11,0.47,0.0,0.0,Dr. Andrew Weil For Origins™ Mega-Mushroom Relief & Resilience Advanced Face Serum,ORIGINS,Treatment,4.1,1.0
+181,6,0.07,0.44,0.0,0.0,PRE:EMPT SERIES™ Exfoliating Pore Refiner,PERRICONE MD,Cleanser,4.5,1.0
+181,7,0.03,0.39,0.0,0.0,Fresh Pressed 7-day System with Pure Vitamin C,CLINIQUE,Cleanser,4.1,1.0
+181,8,0.0,0.35,0.0,0.0,Lapis Oil Balancing Facial Oil,HERBIVORE,Moisturizer,4.4,1.0
+181,9,0.0,0.31,0.0,0.0,Epidermal Re-Texturizing Micro-Dermabrasion,KIEHL'S SINCE 1851,Cleanser,5.0,1.0
+182,0,0.65,0.16,0.93,0.27,Extra-Firming Neck Anti-Wrinkle Rejuvenating Cream,CLARINS,Moisturizer,4.1,0.834
+182,1,0.6,0.12,0.9,0.24,Face the Truth™ Gel Cleanser,OLEHENRIKSEN,Cleanser,4.5,0.719
+182,2,0.55,0.04,0.85,0.21,Moisturizing Mask,CAUDALIE,Face Mask,4.3,0.755
+182,3,0.53,0.0,0.83,0.15,Gel Mask Hydrating & Quenching,SEPHORA COLLECTION,Face Mask,4.8,0.644
+182,4,0.52,0.0,0.81,0.11,R.N.A. POWER Face Cream,SK-II,Moisturizer,4.3,0.735
+182,5,0.44,0.0,0.79,0.07,Detox Eye Roller,FIRST AID BEAUTY,Eye cream,3.4,0.903
+182,6,0.4,0.0,0.77,0.03,Wild Rose + Vitamin C Advanced Brightening Sleeping Facial,KORRES,Moisturizer,4.4,0.795
+182,7,0.36,0.0,0.74,0.0,Enhancing Eye Lift Serum,CLARINS,Eye cream,3.4,0.634
+182,8,0.35,0.0,0.72,0.0,Water Pocket Sheet Mask Sleeping Mask (Replenishing),LANEIGE,Face Mask,4.8,0.958
+182,9,0.28,0.0,0.66,0.0,"Bye Bye Under Eye Eye Cream™ Smooths, Brightens, Depuffs",IT COSMETICS,Eye cream,3.7,0.934
+183,0,0.7,0.0,0.48,0.13,Peat Miracle Revital Eye Cream,BELIF,Eye cream,4.3,1.0
+183,1,0.62,0.0,0.43,0.1,DermalQuench Liquid Lift™ Advanced Wrinkle Treatment,KATE SOMERVILLE,Treatment,3.7,0.968
+183,2,0.58,0.0,0.37,0.05,PRE:EMPT SERIES™ Exfoliating Pore Refiner,PERRICONE MD,Cleanser,4.5,1.0
+183,3,0.53,0.0,0.3,0.01,Golden Krocus Ageless Saffron Elixir Serum,KORRES,Treatment,4.1,1.0
+183,4,0.48,0.0,0.25,0.0,OIL OBSESSED™ Total Cleansing Oil,BAREMINERALS,Cleanser,4.6,1.0
+183,5,0.43,0.0,0.21,0.0,Coconut Gel Sheet Mask - Hydrating,FARMACY,Face Mask,4.5,1.0
+183,6,0.4,0.0,0.15,0.0,Auto Correct Brightening and Depuffing Eye Contour Cream,SUNDAY RILEY,Eye cream,3.3,0.93
+183,7,0.33,0.0,0.09,0.0,The Littles™,DRUNK ELEPHANT,Moisturizer,4.4,1.0
+183,8,0.25,0.0,0.0,0.0,"Black Pine 3D Sculpting, Firming & Lifting Face Serum",KORRES,Treatment,4.8,1.0
+183,9,0.2,0.0,0.0,0.0,Sleeping Mask - Coconut Water,SEPHORA COLLECTION,Face Mask,5.0,1.0
+184,0,0.73,0.1,0.31,0.88,Take The Day Off Cleansing Balm,CLINIQUE,Cleanser,4.6,1.0
+184,1,0.7,0.04,0.28,0.85,Acne-Clear Invisible Dots,PETER THOMAS ROTH,Treatment,3.6,0.864
+184,2,0.66,0.0,0.23,0.79,DERMAPROTECT Daily Defense Broad Spectrum SPF 50+,DERMAFLASH,Sun protect,0.0,0.211
+184,3,0.63,0.0,0.22,0.76,V-Facial Intensive Wrap,CLARINS,Face Mask,4.9,1.0
+184,4,0.58,0.0,0.17,0.7,Renewed Hope In A Jar Eye,PHILOSOPHY,Eye cream,3.7,0.733
+184,5,0.52,0.0,0.14,0.69,Extra-Firming Neck Anti-Wrinkle Rejuvenating Cream,CLARINS,Moisturizer,4.1,0.995
+184,6,0.47,0.0,0.09,0.63,Camera Ready CC Cream Broad Spectrum SPF 30 Dark Spot Correcting,SMASHBOX,Moisturizer,3.9,0.981
+184,7,0.4,0.0,0.05,0.56,Wrinkle Release Eye Cream with Peptides,SKIN LAUNDRY,Eye cream,3.8,0.977
+184,8,0.36,0.0,0.0,0.49,Tarteguard 30 Vegan Sunscreen Lotion Broad Spectrum SPF 30,TARTE,Sun protect,3.7,0.935
+184,9,0.32,0.0,0.0,0.42,Wide Awake Brightening Eye Cream,SATURDAY SKIN,Eye cream,4.5,1.0
+185,0,0.72,0.63,0.15,0.41,Call It A Night Revitalizing & Nourishing UFO™ Activated Mask,FOREO,Face Mask,4.7,1.0
+185,1,0.68,0.6,0.1,0.35,Hydra Zen Masque Anti-Stress Moisturizing Night Face Mask,LANCÔME,Face Mask,4.6,1.0
+185,2,0.61,0.54,0.06,0.27,Moisture Mask,EVE LOM,Face Mask,3.8,0.997
+185,3,0.52,0.46,0.01,0.22,Hydra Zen Anti-Stress Gel Moisturizer,LANCÔME,Moisturizer,4.6,1.0
+185,4,0.45,0.41,0.0,0.19,Clarifying Lotion 4,CLINIQUE,Cleanser,4.4,0.949
+185,5,0.41,0.36,0.0,0.15,Evercalm™ Overnight Recovery Balm,REN CLEAN SKINCARE,Moisturizer,4.9,1.0
+185,6,0.35,0.3,0.0,0.06,Charcoal Pore-Minimizing Bio-Cellulose Mask,BOSCIA,Face Mask,4.2,1.0
+185,7,0.32,0.27,0.0,0.0,Renewing Eye Cream,MURAD,Eye cream,4.1,0.909
+185,8,0.29,0.23,0.0,0.0,Facial Treatment Mask,SK-II,Face Mask,4.4,1.0
+185,9,0.26,0.14,0.0,0.0,Sport Continuous Spray SPF 30 - Piña Colada,COOLA,Sun protect,4.5,1.0
+186,0,0.28,0.08,0.55,0.6,Premier Cru Eye Cream,CAUDALIE,Eye cream,3.3,0.802
+186,1,0.23,0.06,0.54,0.55,IRIS™ Illuminating Eye Massager,FOREO,Eye cream,3.5,0.642
+186,2,0.18,0.0,0.51,0.5,FUTURE RESPONSE Age Defense Creme,AMOREPACIFIC,Moisturizer,4.4,1.0
+186,3,0.14,0.0,0.44,0.46,Peel-off Mask,SEPHORA COLLECTION,Face Mask,3.6,0.987
+186,4,0.08,0.0,0.36,0.39,Plantscription™ Youth-Renewing Power Night Cream,ORIGINS,Moisturizer,4.4,1.0
+186,5,0.03,0.0,0.32,0.36,Prime & Protect Mattifying Primer with Broad Spectrum SPF 50,CANE + AUSTIN,Sun protect,4.2,1.0
+186,6,0.0,0.0,0.24,0.33,Watermelon Pink Juice Moisturizer,GLOW RECIPE,Moisturizer,4.1,1.0
+186,7,0.0,0.0,0.21,0.29,Enhancing Eye Lift Serum,CLARINS,Eye cream,3.4,0.818
+186,8,0.0,0.0,0.21,0.26,Renewed Hope in A Jar Refreshing & Refining Moisturizer,PHILOSOPHY,Moisturizer,4.1,1.0
+186,9,0.0,0.0,0.16,0.18,Face Mask - Grape - Anti-pollution,SEPHORA COLLECTION,Face Mask,5.0,1.0
+187,0,0.05,0.9,0.95,0.49,Wonderfeel™ Double Cleanser,OLEHENRIKSEN,Cleanser,4.4,0.892
+187,1,0.01,0.86,0.92,0.48,Pumpkin Sleeping Pack,TOO COOL FOR SCHOOL,Face Mask,4.3,1.0
+187,2,0.0,0.79,0.87,0.43,Eye Contour Lifting Cream with Diamond Powder,LANCER,Eye cream,4.4,1.0
+187,3,0.0,0.77,0.82,0.37,Sleeping Mask - Coconut Water,SEPHORA COLLECTION,Face Mask,5.0,0.965
+187,4,0.0,0.7,0.77,0.32,Overnight Miracle Mask,SK-II,Face Mask,3.8,0.74
+187,5,0.0,0.64,0.75,0.26,Age Arrest Anti-Wrinkle Cream,KATE SOMERVILLE,Treatment,4.1,0.786
+187,6,0.0,0.59,0.72,0.2,Mega-Mushroom Relief & Resilience Soothing Treatment Lotion Limited Edition,ORIGINS,Treatment,4.5,1.0
+187,7,0.0,0.52,0.69,0.18,Evercalm™ Ultra Comforting Rescue Mask,REN CLEAN SKINCARE,Face Mask,4.5,0.744
+187,8,0.0,0.48,0.65,0.13,Clear Complexion Moisturizer,BOSCIA,Treatment,3.6,0.871
+187,9,0.0,0.42,0.61,0.09,Lightstim® for Acne,LIGHTSTIM,Treatment,4.0,1.0
+188,0,0.37,0.68,0.76,0.95,Mini Mask Musts,ORIGINS,Face Mask,4.1,0.733
+188,1,0.35,0.64,0.73,0.91,Mega-Mushroom Relief & Resilience Soothing Treatment Lotion Limited Edition,ORIGINS,Treatment,4.5,1.0
+188,2,0.34,0.6,0.68,0.87,Visionnaire Eye Cream Advanced Multi-Correcting Eye Balm,LANCÔME,Eye cream,3.9,0.686
+188,3,0.32,0.55,0.66,0.79,Zero Baggage Anti-Dark Circle Eye Cream,NATURALLY SERIOUS,Eye cream,3.3,0.79
+188,4,0.28,0.5,0.59,0.75,Cicapair™ Tiger Grass Camo Drops,DR. JART+,Treatment,4.1,0.947
+188,5,0.24,0.49,0.49,0.69,Resort Collection Sun Protection Mist Broad Spectrum SPF 30 Sunscreen,AMOREPACIFIC,Sun protect,3.3,0.81
+188,6,0.19,0.48,0.43,0.64,Dermask Micro Jet Brightening Solution™,DR. JART+,Face Mask,4.0,1.0
+188,7,0.17,0.45,0.35,0.58,Bio-Performance LiftDynamic Cream,SHISEIDO,Moisturizer,3.7,0.981
+188,8,0.12,0.4,0.31,0.51,Fresh Pressed Renewing Powder Cleanser with Pure Vitamin C,CLINIQUE,Cleanser,4.9,1.0
+188,9,0.07,0.37,0.26,0.49,Acne Solutions BB Cream Broad Spectrum SPF 40,CLINIQUE,Moisturizer,4.1,1.0
+189,0,0.42,0.7,0.08,0.54,CoQ-10 Toner,INDIE LEE,Cleanser,4.4,1.0
+189,1,0.39,0.64,0.0,0.47,Pore Cleaner Bubble Foam,BELIF,Face Mask,4.4,1.0
+189,2,0.35,0.56,0.0,0.42,Multi-Active Eye,CLARINS,Eye cream,3.4,0.884
+189,3,0.3,0.54,0.0,0.38,Crème de la Mer Mini,LA MER,Moisturizer,4.1,1.0
+189,4,0.26,0.49,0.0,0.32,Wonderfeel™ Double Cleanser,OLEHENRIKSEN,Cleanser,4.4,1.0
+189,5,0.22,0.44,0.0,0.24,Mineral Face SPF 30 - Matte Tint,COOLA,Sun protect,4.1,0.965
+189,6,0.17,0.4,0.0,0.17,Micellar Cleansing Water,CAUDALIE,Cleanser,4.0,1.0
+189,7,0.13,0.38,0.0,0.1,Makeup Setting Spray SPF 30,COOLA,Sun protect,3.4,0.929
+189,8,0.09,0.34,0.0,0.04,FIRMx™ Peeling Gel,PETER THOMAS ROTH,Treatment,4.6,1.0
+189,9,0.02,0.3,0.0,0.0,Bye Bye Lines Serum™ Advanced Anti-Aging Wrinkle-Smoothing Miracle Concentrate,IT COSMETICS,Treatment,4.1,0.974
+190,0,0.68,0.07,0.7,0.73,Bright On Massage-Activated Vitamin C Mask with Echinacea GreenEnvy™,FARMACY,Face Mask,4.6,1.0
+190,1,0.66,0.01,0.69,0.66,Super Restorative Total Eye Concentrate,CLARINS,Eye cream,4.2,0.759
+190,2,0.62,0.0,0.63,0.62,Dew It All Total Eye Cream with Echinacea GreenEnvy™,FARMACY,Eye cream,4.1,1.0
+190,3,0.59,0.0,0.58,0.56,Pep-Start Daily UV Protector Broad Spectrum SPF 50,CLINIQUE,Sun protect,4.2,1.0
+190,4,0.5,0.0,0.56,0.49,V-Facial Intensive Wrap,CLARINS,Face Mask,4.9,1.0
+190,5,0.48,0.0,0.52,0.44,The Microdelivery Exfoliating Facial Wash,PHILOSOPHY,Cleanser,4.6,1.0
+190,6,0.42,0.0,0.49,0.39,Retinol Fusion PM Eye Cream,PETER THOMAS ROTH,Eye cream,3.7,0.881
+190,7,0.36,0.0,0.44,0.36,Squalane + Vitamin C Rose Oil,BIOSSANCE,Moisturizer,4.4,1.0
+190,8,0.34,0.0,0.41,0.29,Volcanic Elixir Polynesian Beauty Oil,FARSÁLI,Moisturizer,4.5,0.954
+190,9,0.27,0.0,0.37,0.22,Visionnaire Advanced Skin Corrector Serum,LANCÔME,Treatment,4.2,0.994
+191,0,0.71,0.7,0.16,0.95,DermalQuench Liquid Lift™ + Retinol Advanced Resurfacing Treatment,KATE SOMERVILLE,Treatment,4.1,0.989
+191,1,0.63,0.63,0.11,0.87,The Method: Polish Blemish Control,LANCER,Cleanser,4.7,1.0
+191,2,0.59,0.61,0.06,0.84,Facial Treatment Clear Lotion Toner,SK-II,Cleanser,4.1,0.987
+191,3,0.56,0.55,0.0,0.82,Ultra Repair® Pure Mineral Sunscreen Moisturizer Broad Spectrum SPF 40,FIRST AID BEAUTY,Sun protect,3.6,0.963
+191,4,0.5,0.5,0.0,0.8,Crazy for Clay!,SEPHORA COLLECTION,Face Mask,4.0,0.962
+191,5,0.41,0.49,0.0,0.78,Fresh Pressed Renewing Powder Cleanser with Pure Vitamin C,CLINIQUE,Cleanser,4.9,1.0
+191,6,0.35,0.42,0.0,0.72,Bamboo Charcoal Detoxifying Soap Bar,HERBIVORE,Cleanser,4.5,1.0
+191,7,0.3,0.36,0.0,0.68,Jasmine Green Tea Balancing Toner,HERBIVORE,Moisturizer,4.2,0.994
+191,8,0.23,0.34,0.0,0.62,Line Smoother Oil-Free Moisturizer,JACK BLACK,Treatment,4.5,0.829
+191,9,0.19,0.29,0.0,0.58,White Marble Dual Phase Vitamin C Peel,ERNO LASZLO,Treatment,4.7,1.0
+192,0,0.81,0.27,0.06,0.71,Clear Skin Lover Rubber Mask,DR. JART+,Face Mask,4.2,1.0
+192,1,0.74,0.17,0.02,0.69,Cicapair™ Tiger Grass Camo Drops,DR. JART+,Treatment,4.1,1.0
+192,2,0.7,0.12,0.0,0.67,Irish Moor Mud Purifying Black Mask,PETER THOMAS ROTH,Face Mask,4.4,1.0
+192,3,0.65,0.07,0.0,0.64,White Lucent Luminizing Surge,SHISEIDO,Treatment,4.5,1.0
+192,4,0.58,0.01,0.0,0.59,All That Contours Hydrogel Expansion Stretch Mask,DR. JART+,Face Mask,3.3,0.838
+192,5,0.49,0.0,0.0,0.56,Énergie de Vie The Smoothing & Plumping Water-Infused Cream,LANCÔME,Moisturizer,4.2,1.0
+192,6,0.42,0.0,0.0,0.5,Face Mask - Grape - Anti-pollution,SEPHORA COLLECTION,Face Mask,5.0,1.0
+192,7,0.35,0.0,0.0,0.44,Dragon Fruit Brightening Superfruit Mask,ORIGINS,Face Mask,3.8,0.964
+192,8,0.32,0.0,0.0,0.37,Ibuki Beauty Sleeping Mask,SHISEIDO,Moisturizer,4.4,1.0
+192,9,0.26,0.0,0.0,0.3,Acne Clear Control 30-Day Kit,MURAD,Treatment,3.3,0.796
+193,0,0.72,0.23,0.51,0.04,BB Cream SPF 35,BOBBI BROWN,Moisturizer,3.9,0.798
+193,1,0.71,0.15,0.44,0.0,Argan Cleansing Oil,JOSIE MARAN,Moisturizer,4.1,1.0
+193,2,0.66,0.12,0.43,0.0,Micro-Blur™ Skin Perfector,KIEHL'S SINCE 1851,Treatment,4.5,1.0
+193,3,0.62,0.06,0.38,0.0,Wrinkle Release Eye Cream with Peptides,SKIN LAUNDRY,Eye cream,3.8,0.888
+193,4,0.59,0.0,0.33,0.0,Essential-C Day Moisture Broad Spectrum SPF 30 PA+++,MURAD,Moisturizer,4.0,0.967
+193,5,0.53,0.0,0.28,0.0,SUPERMASK - The Bubble Mask,SEPHORA COLLECTION,Face Mask,4.7,1.0
+193,6,0.5,0.0,0.24,0.0,Clear Improvement® Active Charcoal Mask to Clear Pores,ORIGINS,Face Mask,4.3,1.0
+193,7,0.46,0.0,0.19,0.0,Time In A Bottle For Eyes 100% In-Control,PHILOSOPHY,Eye cream,3.9,0.923
+193,8,0.42,0.0,0.15,0.0,Balancing Facial Tonic,BOSCIA,Cleanser,4.3,0.861
+193,9,0.39,0.0,0.11,0.0,Extra-Firming Neck Anti-Wrinkle Rejuvenating Cream,CLARINS,Moisturizer,4.1,1.0
+194,0,0.42,0.32,0.42,0.72,Limited Edition Dramatically Different™ Moisturizing Gel,CLINIQUE,Moisturizer,5.0,1.0
+194,1,0.31,0.2,0.37,0.69,Future Solution LX Intensive Firming Contour Serum,SHISEIDO,Treatment,4.3,1.0
+194,2,0.26,0.15,0.33,0.64,GENIUS Liquid Collagen,ALGENIST,Treatment,4.0,1.0
+194,3,0.23,0.1,0.28,0.61,Oil-Control Mattifier SPF 15 PA++,MURAD,Moisturizer,4.2,1.0
+194,4,0.18,0.04,0.21,0.57,City Block Sheer Oil-Free Daily Face Protector SPF 25,CLINIQUE,Sun protect,4.1,0.858
+194,5,0.16,0.0,0.16,0.54,Luna Sleeping Night Oil,SUNDAY RILEY,Moisturizer,4.1,1.0
+194,6,0.14,0.0,0.09,0.46,Cucumber De-Tox™ Hydra-Gel Eye Patches,PETER THOMAS ROTH,Eye cream,4.1,1.0
+194,7,0.08,0.0,0.03,0.41,Sport Continuous Spray SPF 30 - Unscented,COOLA,Sun protect,5.0,1.0
+194,8,0.04,0.0,0.0,0.38,Perfectly Clean Multi-Action Toning Lotion/Refiner,ESTÉE LAUDER,Cleanser,4.5,0.928
+194,9,0.0,0.0,0.0,0.33,Cicapair™ Tiger Grass Camo Drops,DR. JART+,Treatment,4.1,0.998
+195,0,0.47,0.28,0.84,0.33,Coconut Gel Sheet Mask - Hydrating,FARMACY,Face Mask,4.5,1.0
+195,1,0.45,0.21,0.78,0.27,Revitalixir™ Recovery Serum,MURAD,Treatment,4.5,0.773
+195,2,0.42,0.19,0.76,0.25,No Foundation Foundation Serum SPF 30,PERRICONE MD,Treatment,4.3,1.0
+195,3,0.37,0.15,0.71,0.21,A Glowing Regimen Trial Set,PHILOSOPHY,Cleanser,4.8,0.835
+195,4,0.33,0.11,0.64,0.17,Flower Fusion™ Rose Hydrating Sheet Mask,ORIGINS,Face Mask,3.8,0.97
+195,5,0.31,0.1,0.6,0.11,Ultimate Miracle Worker Multi-Rejuvenating Retinol + Superfood Oil and Pads,PHILOSOPHY,Cleanser,4.1,1.0
+195,6,0.25,0.05,0.55,0.04,Dew It All Total Eye Cream with Echinacea GreenEnvy™,FARMACY,Eye cream,4.1,0.999
+195,7,0.2,0.0,0.51,0.0,Calendula Deep Clean Foaming Face Wash,KIEHL'S SINCE 1851,Cleanser,4.7,1.0
+195,8,0.15,0.0,0.46,0.0,Pure Truth™ Youth Activating Oil,OLEHENRIKSEN,Treatment,4.0,0.994
+195,9,0.12,0.0,0.43,0.0,Vine[Activ] Vitamin C Anti-Wrinkle Serum,CAUDALIE,Treatment,4.1,1.0
+196,0,0.2,0.9,0.76,0.25,Deep Cleansing Mask,OMOROVICZA,Face Mask,4.3,0.635
+196,1,0.15,0.94,0.71,0.22,+ Retinol Firming Eye Cream,KATE SOMERVILLE,Eye cream,3.7,1.0
+196,2,0.1,0.92,0.69,0.17,Argan Daily Moisturizer SPF 47,JOSIE MARAN,Moisturizer,3.9,0.907
+196,3,0.09,0.87,0.63,0.16,Tarteguard Mineral Powder Sunscreen Broad Spectrum SPF 30,TARTE,Sun protect,4.2,1.0
+196,4,0.02,0.82,0.57,0.08,Tonique Radiance Clarifying Refining Toner,LANCÔME,Cleanser,4.1,0.832
+196,5,0.0,0.81,0.53,0.05,Martian Mattifying Melting Water-Gel Toner,SUNDAY RILEY,Cleanser,3.9,1.0
+196,6,0.0,0.8,0.46,0.0,Midnight Recovery Eye,KIEHL'S SINCE 1851,Eye cream,3.9,0.936
+196,7,0.0,0.73,0.43,0.0,Clearing Mask,INDIE LEE,Face Mask,4.4,1.0
+196,8,0.0,0.71,0.4,0.0,Professional 3% Retinoid Plus,PETER THOMAS ROTH,Treatment,4.6,1.0
+196,9,0.0,0.69,0.36,0.0,Advanced Time Zone SPF 15- Normal/Combination Skin,ESTÉE LAUDER,Sun protect,3.8,0.719
+197,0,0.73,0.1,0.53,0.24,Jet Lag Mask,SUMMER FRIDAYS,Face Mask,4.1,0.966
+197,1,0.66,0.06,0.47,0.23,Keep Young And Beautiful™ Instant Firming Beauty Shot,REN CLEAN SKINCARE,Treatment,4.1,0.966
+197,2,0.64,0.0,0.39,0.17,Intensive Vitalizing Eye Essence,AMOREPACIFIC,Eye cream,3.9,0.982
+197,3,0.55,0.0,0.32,0.16,Virgin Marula Luxury Facial Oil,DRUNK ELEPHANT,Moisturizer,4.4,0.935
+197,4,0.5,0.0,0.28,0.09,High Potency Classics: Face Finishing & Firming Moisturizer Tint SPF 30,PERRICONE MD,Sun protect,4.3,1.0
+197,5,0.45,0.0,0.25,0.03,Face Mask - Algae - Detoxifying,SEPHORA COLLECTION,Face Mask,4.3,1.0
+197,6,0.39,0.0,0.2,0.0,Vine[Activ] Vitamin C Anti-Wrinkle Serum,CAUDALIE,Treatment,4.1,0.983
+197,7,0.4,0.0,0.15,0.0,Neuropeptide Firming & Illuminating Under-Eye Cream,PERRICONE MD,Eye cream,5.0,1.0
+197,8,0.39,0.0,0.09,0.0,Lip Sleeping Mask,LANEIGE,Face Mask,4.6,0.944
+197,9,0.3,0.0,0.07,0.0,The Clean Truth™ Foaming Cleanser,OLEHENRIKSEN,Cleanser,4.4,1.0
+198,0,0.97,0.08,0.1,0.13,The Method: Polish,LANCER,Cleanser,4.6,0.822
+198,1,0.95,0.04,0.03,0.09,Watermelon Glow Sleeping Mask Mini,GLOW RECIPE,Face Mask,3.7,1.0
+198,2,0.9,0.0,0.0,0.07,UncompliKated SPF 50 Soft Focus Makeup Setting Spray,KATE SOMERVILLE,Sun protect,3.2,0.744
+198,3,0.85,0.0,0.0,0.03,Perfect Canvas Skin Finishing Serum,REN CLEAN SKINCARE,Treatment,4.5,1.0
+198,4,0.79,0.0,0.0,0.0,High-Potency Night-a-Mins™ Resurfacing Cream with Fruit-Derived AHAs,ORIGINS,Moisturizer,4.3,1.0
+198,5,0.74,0.0,0.0,0.0,Visionnaire Advanced Skin Corrector Serum,LANCÔME,Treatment,4.2,1.0
+198,6,0.67,0.0,0.0,0.0,Glow Cycle Retin-ALT Power Serum,OLEHENRIKSEN,Treatment,4.4,1.0
+198,7,0.62,0.0,0.0,0.0,Tarteguard Mineral Powder Sunscreen Broad Spectrum SPF 30,TARTE,Sun protect,4.2,1.0
+198,8,0.56,0.0,0.0,0.0,Sun Lotion 30 SPF,MOROCCANOIL,Sun protect,4.4,1.0
+198,9,0.49,0.0,0.0,0.0,H2 Elemental Energy De-Puffing Eye Gel,PERRICONE MD,Eye cream,3.5,0.9
+199,0,0.74,0.32,0.27,0.07,Pore Master Patch,DR. JART+,Face Mask,3.4,0.896
+199,1,0.69,0.27,0.26,0.03,Reviving Eye Cream,OMOROVICZA,Eye cream,3.8,0.693
+199,2,0.67,0.23,0.23,0.02,Pep-Start Double Bubble Purifying Mask,CLINIQUE,Face Mask,4.0,1.0
+199,3,0.61,0.16,0.2,0.0,Squalane + Omega Repair Cream,BIOSSANCE,Moisturizer,4.7,1.0
+199,4,0.58,0.13,0.14,0.0,Evercalm™ Anti-Redness Serum,REN CLEAN SKINCARE,Treatment,3.8,0.93
+199,5,0.53,0.06,0.11,0.0,The Cleansing Oil,LA MER,Cleanser,4.3,1.0
+199,6,0.45,0.01,0.09,0.0,Aburatorigami Japanese Blotting Papers,TATCHA,Cleanser,4.7,1.0
+199,7,0.41,0.0,0.03,0.0,Resveratrol Lift Night Infusion Cream,CAUDALIE,Moisturizer,4.1,1.0
+199,8,0.36,0.0,0.01,0.0,Crème Radiance Gentle Cleansing Creamy-Foam Cleanser,LANCÔME,Cleanser,4.5,0.826
+199,9,0.3,0.0,0.0,0.0,Shake & Shot™ Rubber Masks,DR. JART+,Face Mask,4.1,0.977
