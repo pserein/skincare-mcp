@@ -436,7 +436,13 @@ elif page == "Browse Products":
     display_df = filtered[["name", "brand", "Label", "price", "rank"]].rename(
         columns={"name": "Product", "brand": "Brand", "Label": "Category", "price": "Price ($)", "rank": "Rating"}
     ).sort_values("Rating", ascending=False)
-    st.dataframe(display_df, use_container_width=True, hide_index=True, height=400)
+    st.dataframe(display_df, use_container_width=True, hide_index=True, height=400, column_config={
+        "Product": st.column_config.TextColumn(width="large"),
+        "Brand": st.column_config.TextColumn(width="medium"),
+        "Category": st.column_config.TextColumn(width="medium"),
+        "Price ($)": st.column_config.NumberColumn(width="small", format="$%.0f"),
+        "Rating": st.column_config.NumberColumn(width="small", format="%.1f ⭐"),
+    })
 
     st.markdown("---")
     st.markdown("#### Inspect a Product")
