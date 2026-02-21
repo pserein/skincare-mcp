@@ -9,10 +9,10 @@ from thefuzz import process
 
 CSV_PATH = os.path.join(os.path.dirname(__file__), "cosmetic_p.csv")
 
-# Minimum fuzzy match score (0-100) to accept a result
+# min fuzzy match score (0-100) to accept a result
 FUZZY_THRESHOLD = 60
 
-# Known irritants for sensitive skin
+# known irritants sensitive skin
 RED_FLAGS = [
     "fragrance",
     "alcohol denat",
