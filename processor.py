@@ -32,14 +32,13 @@ RED_FLAGS = [
 def load_data() -> pd.DataFrame:
     """Load and clean the cosmetics CSV dataset."""
     try:
-        df = pd.read_csv(CSV_PATH, encoding="utf-8-sig")  # utf-8-sig strips BOM character
+        df = pd.read_csv(CSV_PATH, encoding="utf-8-sig")  
     except FileNotFoundError:
         raise FileNotFoundError(
             f"Dataset not found at {CSV_PATH}. "
             "Make sure cosmetic_p.csv is in the same folder as this file."
         )
 
-    # Clean up
     df["ingredients"] = df["ingredients"].fillna("")
     df["name"] = df["name"].fillna("Unknown")
     df["brand"] = df["brand"].fillna("Unknown")
@@ -50,7 +49,7 @@ def load_data() -> pd.DataFrame:
 
 
 def parse_ingredients(ingredients_str: str) -> set:
-    """Parse a comma-separated ingredients string into a lowercase set."""
+    """parse a comma-separated ingredients string into a lowercase set."""
     if not isinstance(ingredients_str, str):
         return set()
     return {i.strip().lower() for i in ingredients_str.split(",") if i.strip()}
@@ -58,26 +57,26 @@ def parse_ingredients(ingredients_str: str) -> set:
 
 def find_product(df: pd.DataFrame, product_name: str) -> pd.Series | None:
     """
-    Look up a product by name using a three-step strategy:
-    1. Exact match (fastest)
-    2. Partial string match
-    3. Fuzzy match via thefuzz (handles typos and accent variations)
+    look up a product by name with 3 cases:
+    1. exact match 
+    2. partial string match
+    3. fuzzy match via thefuzz (handles typos and accent variations)
 
     Returns the first matching row as a Series, or None if not found.
     """
     name_lower = product_name.lower()
 
-    # Step 1: Exact match
+    # step 1 exatch
     match = df[df["name"].str.lower() == name_lower]
     if not match.empty:
         return match.iloc[0]
 
-    # Step 2: Partial match
+    # step 2 partial match
     match = df[df["name"].str.lower().str.contains(name_lower, na=False)]
     if not match.empty:
         return match.iloc[0]
 
-    # Step 3: Fuzzy match — handles typos, missing accents, etc.
+    #  step 3: fuzzy match
     all_names = df["name"].tolist()
     result = process.extractOne(product_name, all_names, score_cutoff=FUZZY_THRESHOLD)
     if result:
