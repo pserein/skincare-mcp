@@ -1,8 +1,3 @@
-"""
-app.py
-Streamlit dashboard for the Skincare MCP recommendation engine.
-"""
-
 import os
 import numpy as np
 import pandas as pd
@@ -12,26 +7,21 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from thefuzz import process
 
-# ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Skincare Ingredient Engine",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# ── Rhode-inspired styling ─────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    /* Import font */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
-    /* Global */
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
         color: #2C2C2C !important;
     }
 
-    /* Kill all white text everywhere */
     * {
         color: inherit;
     }
@@ -40,26 +30,22 @@ st.markdown("""
         color: #2C2C2C !important;
     }
 
-    /* Background */
     .stApp {
         background-color: #F5F0EB;
         color: #2C2C2C;
     }
 
-    /* Sidebar */
     [data-testid="stSidebar"] {
         background-color: #EDE8E3;
         border-right: 1px solid #D9D3CC;
     }
 
-    /* Sidebar text */
     [data-testid="stSidebar"] .stMarkdown p {
         color: #4A4038;
         font-size: 13px;
         letter-spacing: 0.03em;
     }
 
-    /* Sidebar title */
     [data-testid="stSidebar"] h1 {
         color: #2C2C2C;
         font-weight: 500;
@@ -68,7 +54,6 @@ st.markdown("""
         text-transform: uppercase;
     }
 
-    /* Page titles */
     h1 {
         color: #2C2C2C !important;
         font-weight: 400 !important;
@@ -84,7 +69,6 @@ st.markdown("""
         letter-spacing: 0.03em !important;
     }
 
-    /* Metric cards */
     [data-testid="metric-container"] {
         background-color: #EDE8E3;
         border: 1px solid #D9D3CC;
@@ -105,7 +89,6 @@ st.markdown("""
         font-weight: 500 !important;
     }
 
-    /* Input */
     .stTextInput input {
         background-color: #EDE8E3 !important;
         border: 1px solid #C9C3BC !important;
@@ -120,7 +103,6 @@ st.markdown("""
         box-shadow: none !important;
     }
 
-    /* Buttons */
     .stButton button {
         background-color: #2C2C2C !important;
         color: #F5F0EB !important;
@@ -137,7 +119,6 @@ st.markdown("""
         background-color: #444 !important;
     }
 
-    /* Selectbox */
     .stSelectbox select, [data-testid="stSelectbox"] {
         background-color: #EDE8E3 !important;
         border: 1px solid #C9C3BC !important;
@@ -145,20 +126,17 @@ st.markdown("""
         color: #2C2C2C !important;
     }
 
-    /* Dataframe - light theme */
     [data-testid="stDataFrame"] {
         border: 1px solid #D9D3CC !important;
         border-radius: 8px !important;
         background-color: #F5F0EB !important;
     }
 
-    /* Force dataframe text to be dark */
     [data-testid="stDataFrame"] * {
         color: #2C2C2C !important;
         background-color: #F5F0EB !important;
     }
 
-    /* Success / Warning */
     .stSuccess {
         background-color: #E8F0E8 !important;
         border: 1px solid #B8D4B8 !important;
@@ -173,21 +151,19 @@ st.markdown("""
         color: #5C4A2A !important;
     }
 
-    /* Remove default padding */
     .block-container {
-        padding-top: 2rem !important;
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
+        padding-top: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 1rem !important;
         max-width: 1200px !important;
     }
 
-    /* Divider */
     hr {
         border-color: #D9D3CC !important;
         margin: 1.5rem 0 !important;
     }
 
-    /* Radio buttons */
     .stRadio label, .stRadio span, [data-testid="stRadio"] label,
     [data-testid="stRadio"] p, [data-testid="stRadio"] span {
         color: #2C2C2C !important;
@@ -195,7 +171,6 @@ st.markdown("""
         letter-spacing: 0.03em !important;
     }
 
-    /* All sidebar text force dark */
     [data-testid="stSidebar"] p,
     [data-testid="stSidebar"] span,
     [data-testid="stSidebar"] label,
@@ -205,7 +180,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ── Constants ─────────────────────────────────────────────────────────────────
 CSV_PATH = os.path.join(os.path.dirname(__file__), "cosmetic_p.csv")
 HISTORY_PATH = os.path.join(os.path.dirname(__file__), "user_history.csv")
 FUZZY_THRESHOLD = 60
@@ -220,7 +194,6 @@ RED_FLAGS = [
 ]
 SKIN_TYPE_COLS = ["Combination", "Dry", "Normal", "Oily", "Sensitive"]
 
-# ── Data loading ──────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
     df = pd.read_csv(CSV_PATH, encoding="utf-8-sig")
@@ -266,10 +239,22 @@ def star_rating(score):
     full = int(score)
     return "★" * full + "☆" * (5 - full)
 
+def style_chart(fig):
+    fig.update_layout(
+        paper_bgcolor="#F5F0EB",
+        plot_bgcolor="#F5F0EB",
+        font=dict(color="#2C2C2C", size=13, family="Inter"),
+        title_font=dict(color="#2C2C2C", size=14, family="Inter"),
+        margin=dict(l=10, r=10, t=50, b=10),
+        legend=dict(font=dict(color="#2C2C2C")),
+    )
+    fig.update_xaxes(showgrid=False, zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
+    fig.update_yaxes(showgrid=True, gridcolor="#D9D3CC", zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
+    return fig
+
 def show_product(df, vectorizer, tfidf_matrix, product):
     st.markdown("---")
 
-    # Header row
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("Product", product["name"])
     col2.metric("Brand", product["brand"])
@@ -279,7 +264,6 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Two column layout for skin type + irritant check
     left, right = st.columns(2)
 
     with left:
@@ -296,11 +280,10 @@ def show_product(df, vectorizer, tfidf_matrix, product):
         if found_flags:
             st.warning(f"**Potential irritants:** {', '.join(found_flags)}")
         else:
-            st.success("No common irritants found — suitable for sensitive skin.")
+            st.success("No common irritants found.")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Ingredient chart + similar products side by side
     left2, right2 = st.columns(2)
 
     with left2:
@@ -317,17 +300,14 @@ def show_product(df, vectorizer, tfidf_matrix, product):
                 ing_df, x="TF-IDF Score", y="Ingredient", orientation="h",
                 color="TF-IDF Score", color_continuous_scale=CHART_SCALE,
             )
+            fig = style_chart(fig)
             fig.update_layout(
-                paper_bgcolor="#F5F0EB",
-                plot_bgcolor="#F5F0EB",
                 yaxis=dict(autorange="reversed"),
                 showlegend=False,
                 margin=dict(l=10, r=10, t=20, b=10),
-                font=dict(color="#2C2C2C", size=12, family="Inter"),
                 coloraxis_showscale=False,
             )
-            fig.update_xaxes(showgrid=False, zeroline=False, tickfont=dict(color="#2C2C2C"))
-            fig.update_yaxes(showgrid=False, tickfont=dict(color="#2C2C2C"))
+            fig.update_yaxes(showgrid=False)
             st.plotly_chart(fig, use_container_width=True)
 
     with right2:
@@ -355,12 +335,10 @@ def show_product(df, vectorizer, tfidf_matrix, product):
         else:
             st.info("No similar products found.")
 
-# ── Load everything ───────────────────────────────────────────────────────────
 df = load_data()
 history_df = load_history()
 vectorizer, tfidf_matrix = build_tfidf(df)
 
-# ── Sidebar ───────────────────────────────────────────────────────────────────
 st.sidebar.title("Skincare Engine")
 st.sidebar.markdown("TF-IDF · Cosine Similarity · MCP")
 st.sidebar.markdown("---")
@@ -368,9 +346,6 @@ page = st.sidebar.radio("", ["Product Search", "Browse Products", "Data Explorer
 st.sidebar.markdown("---")
 st.sidebar.markdown(f"**{len(df):,}** products · **{df['brand'].nunique()}** brands")
 
-# ══════════════════════════════════════════════════════════════════════════════
-# PAGE 1: Product Search
-# ══════════════════════════════════════════════════════════════════════════════
 if page == "Product Search":
     st.title("Product Search")
     st.markdown("Search any product to find ingredient-based alternatives and check for irritants.")
@@ -399,9 +374,6 @@ if page == "Product Search":
         else:
             show_product(df, vectorizer, tfidf_matrix, product)
 
-# ══════════════════════════════════════════════════════════════════════════════
-# PAGE 2: Browse Products
-# ══════════════════════════════════════════════════════════════════════════════
 elif page == "Browse Products":
     st.title("Browse Products")
     st.markdown(f"Filter and explore all **{len(df):,}** products.")
@@ -442,26 +414,10 @@ elif page == "Browse Products":
             product = df[df["name"] == selected_name].iloc[0]
             show_product(df, vectorizer, tfidf_matrix, product)
 
-# ══════════════════════════════════════════════════════════════════════════════
-# PAGE 3: Data Explorer
-# ══════════════════════════════════════════════════════════════════════════════
 elif page == "Data Explorer":
     st.title("Data Explorer")
     st.markdown(f"**{len(df):,}** products · **{df['brand'].nunique()}** brands · **{df['Label'].nunique()}** categories")
     st.markdown("<br>", unsafe_allow_html=True)
-
-    def style_chart(fig):
-        fig.update_layout(
-            paper_bgcolor="#F5F0EB",
-            plot_bgcolor="#F5F0EB",
-            font=dict(color="#2C2C2C", size=13, family="Inter"),
-            title_font=dict(color="#2C2C2C", size=14, family="Inter"),
-            margin=dict(l=10, r=10, t=50, b=10),
-            legend=dict(font=dict(color="#2C2C2C")),
-        )
-        fig.update_xaxes(showgrid=False, zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
-        fig.update_yaxes(showgrid=True, gridcolor="#D9D3CC", zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
-        return fig
 
     col1, col2 = st.columns(2)
     with col1:
@@ -485,25 +441,25 @@ elif page == "Data Explorer":
         top_brands.columns = ["Brand", "Count"]
         fig4 = px.bar(top_brands, x="Count", y="Brand", orientation="h", title="Top 15 Brands",
                       color="Count", color_continuous_scale=CHART_SCALE)
-        fig4.update_layout(yaxis=dict(autorange="reversed"))
-        st.plotly_chart(style_chart(fig4), use_container_width=True)
+        fig4 = style_chart(fig4)
+        fig4.update_layout(yaxis=dict(autorange="reversed"), coloraxis_showscale=False)
+        st.plotly_chart(fig4, use_container_width=True)
 
     skin_counts = {col: int(df[col].sum()) for col in SKIN_TYPE_COLS}
-    fig5 = px.pie(values=list(skin_counts.values()), names=list(skin_counts.keys()),
-                  title="Products Per Skin Type", color_discrete_sequence=CHART_SCALE)
-    fig5.update_layout(paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#2C2C2C"))
+    skin_df = pd.DataFrame(list(skin_counts.items()), columns=["Skin Type", "Count"]).sort_values("Count", ascending=True)
+    fig5 = px.bar(skin_df, x="Count", y="Skin Type", orientation="h", title="Products Per Skin Type",
+                  color="Count", color_continuous_scale=CHART_SCALE)
+    fig5 = style_chart(fig5)
+    fig5.update_layout(yaxis=dict(autorange="reversed"), coloraxis_showscale=False)
     st.plotly_chart(fig5, use_container_width=True)
 
-# ══════════════════════════════════════════════════════════════════════════════
-# PAGE 4: User History
-# ══════════════════════════════════════════════════════════════════════════════
 elif page == "User History":
     st.title("User History")
-    st.markdown("Synthetic interaction logs for Offline Reinforcement Learning — State → Action → Reward.")
+    st.markdown("Synthetic interaction logs for Offline Reinforcement Learning.")
     st.markdown("<br>", unsafe_allow_html=True)
 
     if history_df is None:
-        st.warning("user_history.csv not found. Run `python generate_user_history.py` first.")
+        st.warning("user_history.csv not found.")
     else:
         c1, c2, c3 = st.columns(3)
         c1.metric("Total Records", f"{len(history_df):,}")
@@ -511,19 +467,6 @@ elif page == "User History":
         c3.metric("Avg Reward", round(history_df["reward"].mean(), 3))
 
         st.markdown("<br>", unsafe_allow_html=True)
-
-        def style_chart(fig):
-            fig.update_layout(
-                paper_bgcolor="#F5F0EB",
-                plot_bgcolor="#F5F0EB",
-                font=dict(color="#2C2C2C", size=13, family="Inter"),
-                title_font=dict(color="#2C2C2C", size=14, family="Inter"),
-                margin=dict(l=10, r=10, t=50, b=10),
-                legend=dict(font=dict(color="#2C2C2C")),
-            )
-            fig.update_xaxes(showgrid=False, zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
-            fig.update_yaxes(showgrid=True, gridcolor="#D9D3CC", zeroline=False, tickfont=dict(color="#2C2C2C"), title_font=dict(color="#2C2C2C"))
-            return fig
 
         col1, col2 = st.columns(2)
         with col1:
