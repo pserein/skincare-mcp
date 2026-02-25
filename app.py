@@ -182,23 +182,81 @@ def build_tfidf(_df):
     matrix = vectorizer.fit_transform(_df["ingredients"].tolist())
     return vectorizer, matrix
 
-def find_product(df, product_name):
+# ── Cached computation helpers ────────────────────────────────────────────────
+
+@st.cache_data
+def find_product_cached(product_name: str, _df_names: list) -> str | None:
+    """Returns the matched product name (string) so the result is hashable/cacheable."""
+    df = load_data()
+    # Exact match
     match = df[df["name"].str.lower() == product_name.lower()]
     if not match.empty:
-        return match.iloc[0]
+        return match.iloc[0]["name"]
+    # Partial match
     match = df[df["name"].str.lower().str.contains(product_name.lower(), na=False)]
     if not match.empty:
-        return match.iloc[0]
+        return match.iloc[0]["name"]
+    # Fuzzy match
     result = process.extractOne(product_name, df["name"].tolist(), score_cutoff=FUZZY_THRESHOLD)
     if result:
-        match = df[df["name"] == result[0]]
-        if not match.empty:
-            return match.iloc[0]
+        return result[0]
     return None
+
+
+@st.cache_data
+def get_red_flags(ingredients: str) -> list[str]:
+    """Cache irritant detection per unique ingredient string."""
+    ingredients_lower = ingredients.lower()
+    return [f.title() for f in RED_FLAGS if f in ingredients_lower]
+
+
+@st.cache_data
+def get_top_ingredients(_tfidf_matrix, feature_names: list, idx: int, top_n: int = 12) -> list[tuple]:
+    """Cache TF-IDF top ingredient weights per product index."""
+    scores = _tfidf_matrix[idx].toarray().flatten()
+    top_idx = np.argsort(scores)[::-1][:top_n]
+    return [(str(feature_names[i]), round(float(scores[i]), 4)) for i in top_idx if scores[i] > 0]
+
+
+@st.cache_data
+def get_similar_products(_tfidf_matrix, idx: int, top_n: int = 6) -> list[dict]:
+    """Cache cosine similarity results per product index — the most expensive operation."""
+    df = load_data()
+    scores = cosine_similarity(_tfidf_matrix[idx], _tfidf_matrix).flatten()
+    top_indices = np.argsort(scores)[::-1]
+    results = []
+    product_name = df.iloc[idx]["name"]
+    for i in top_indices:
+        if df.iloc[i]["name"] == product_name:
+            continue
+        score = scores[i]
+        if score < 0.1 or len(results) == top_n:
+            break
+        row = df.iloc[i]
+        results.append({
+            "Product": row["name"],
+            "Brand": row["brand"],
+            "Price": f"${row['price']}",
+            "Rating": star_rating(row["rank"]),
+            "Match": f"{round(score * 100, 1)}%",
+        })
+    return results
+
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def find_product(df, product_name):
+    """Wrapper that uses the cached lookup and returns the full DataFrame row."""
+    matched_name = find_product_cached(product_name, df["name"].tolist())
+    if matched_name is None:
+        return None
+    return df[df["name"] == matched_name].iloc[0]
+
 
 def star_rating(score):
     full = int(score)
     return "★" * full + "☆" * (5 - full)
+
 
 def show_product(df, vectorizer, tfidf_matrix, product):
     st.markdown("---")
@@ -225,8 +283,8 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     with right:
         st.markdown("#### Irritant Check")
-        ingredients_lower = product["ingredients"].lower()
-        found_flags = [f.title() for f in RED_FLAGS if f in ingredients_lower]
+        # ── CACHED: irritant detection ──
+        found_flags = get_red_flags(product["ingredients"])
         if found_flags:
             st.warning(f"**Potential irritants:** {', '.join(found_flags)}")
         else:
@@ -236,14 +294,13 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     # Ingredient chart + similar products side by side
     left2, right2 = st.columns(2)
+    idx = df[df["name"] == product["name"]].index[0]
+    feature_names = vectorizer.get_feature_names_out()
 
     with left2:
         st.markdown("#### Top Ingredients by TF-IDF Weight")
-        idx = df[df["name"] == product["name"]].index[0]
-        feature_names = vectorizer.get_feature_names_out()
-        tfidf_scores = tfidf_matrix[idx].toarray().flatten()
-        top_idx = np.argsort(tfidf_scores)[::-1][:12]
-        top_ingredients = [(feature_names[i], round(float(tfidf_scores[i]), 4)) for i in top_idx if tfidf_scores[i] > 0]
+        # ── CACHED: TF-IDF weights per product ──
+        top_ingredients = get_top_ingredients(tfidf_matrix, list(feature_names), idx)
 
         if top_ingredients:
             ing_df = pd.DataFrame(top_ingredients, columns=["Ingredient", "TF-IDF Score"])
@@ -266,28 +323,13 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     with right2:
         st.markdown("#### Similar Products")
-        idx = df[df["name"] == product["name"]].index[0]
-        scores = cosine_similarity(tfidf_matrix[idx], tfidf_matrix).flatten()
-        top_indices = np.argsort(scores)[::-1]
-        results = []
-        for i in top_indices:
-            if df.iloc[i]["name"] == product["name"]:
-                continue
-            score = scores[i]
-            if score < 0.1 or len(results) == 6:
-                break
-            row = df.iloc[i]
-            results.append({
-                "Product": row["name"],
-                "Brand": row["brand"],
-                "Price": f"${row['price']}",
-                "Rating": star_rating(row["rank"]),
-                "Match": f"{round(score * 100, 1)}%",
-            })
+        # ── CACHED: cosine similarity per product ──
+        results = get_similar_products(tfidf_matrix, idx)
         if results:
             st.dataframe(pd.DataFrame(results), use_container_width=True, hide_index=True, height=280)
         else:
             st.info("No similar products found.")
+
 
 # ── Load everything ───────────────────────────────────────────────────────────
 df = load_data()
@@ -310,13 +352,22 @@ if page == "Product Search":
     st.markdown("Search any product to find ingredient-based alternatives and check for irritants.")
     st.markdown("<br>", unsafe_allow_html=True)
 
+    # ── Autocomplete selectbox + free text search ──
+    all_product_names = [""] + sorted(df["name"].tolist())
+
     col_input, col_btn = st.columns([5, 1])
     with col_input:
-        query = st.text_input("", placeholder="e.g. Crème de la Mer, Vitamin C serum, moisturizer...", label_visibility="collapsed")
+        query = st.selectbox(
+            "",
+            options=all_product_names,
+            index=0,
+            placeholder="e.g. Crème de la Mer, Vitamin C serum, moisturizer...",
+            label_visibility="collapsed",
+        )
     with col_btn:
         if st.button("Random"):
-            query = df["name"].sample(1).iloc[0]
-            st.session_state["query"] = query
+            random_pick = df["name"].sample(1).iloc[0]
+            st.session_state["query"] = random_pick
 
     if "query" in st.session_state and not query:
         query = st.session_state["query"]

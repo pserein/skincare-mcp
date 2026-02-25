@@ -10,3 +10,4 @@ wheels/
 .venv
 cosmetic_p.csv
 user_history.csv
+.streamlit/secrets.toml
