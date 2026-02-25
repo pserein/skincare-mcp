@@ -10,7 +10,14 @@ import plotly.express as px
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from thefuzz import process
+
+from database import (
+    load_all_products,
+    get_all_product_names,
+    search_product_by_name,
+    get_product_by_exact_name,
+    get_top_rated_products,
+)
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -140,9 +147,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Constants ─────────────────────────────────────────────────────────────────
-CSV_PATH = os.path.join(os.path.dirname(__file__), "cosmetic_p.csv")
 HISTORY_PATH = os.path.join(os.path.dirname(__file__), "user_history.csv")
-FUZZY_THRESHOLD = 60
 CHART_COLOR = "#8A7D6E"
 CHART_SCALE = ["#C9BFB5", "#A89A8C", "#8A7D6E", "#6B6056", "#4A4038", "#2C2C2C", "#1A1A1A"]
 
@@ -154,17 +159,8 @@ RED_FLAGS = [
 ]
 SKIN_TYPE_COLS = ["Combination", "Dry", "Normal", "Oily", "Sensitive"]
 
-# ── Data loading ──────────────────────────────────────────────────────────────
-@st.cache_data
-def load_data():
-    df = pd.read_csv(CSV_PATH, encoding="utf-8-sig")
-    df["ingredients"] = df["ingredients"].fillna("")
-    df["name"] = df["name"].fillna("Unknown")
-    df["brand"] = df["brand"].fillna("Unknown")
-    df["price"] = pd.to_numeric(df["price"], errors="coerce").fillna(0)
-    df["rank"] = pd.to_numeric(df["rank"], errors="coerce").fillna(0)
-    return df
 
+# ── Data loading ──────────────────────────────────────────────────────────────
 @st.cache_data
 def load_history():
     if os.path.exists(HISTORY_PATH):
@@ -182,37 +178,17 @@ def build_tfidf(_df):
     matrix = vectorizer.fit_transform(_df["ingredients"].tolist())
     return vectorizer, matrix
 
+
 # ── Cached computation helpers ────────────────────────────────────────────────
 
 @st.cache_data
-def find_product_cached(product_name: str, _df_names: list) -> str | None:
-    """Returns the matched product name (string) so the result is hashable/cacheable."""
-    df = load_data()
-    # Exact match
-    match = df[df["name"].str.lower() == product_name.lower()]
-    if not match.empty:
-        return match.iloc[0]["name"]
-    # Partial match
-    match = df[df["name"].str.lower().str.contains(product_name.lower(), na=False)]
-    if not match.empty:
-        return match.iloc[0]["name"]
-    # Fuzzy match
-    result = process.extractOne(product_name, df["name"].tolist(), score_cutoff=FUZZY_THRESHOLD)
-    if result:
-        return result[0]
-    return None
-
-
-@st.cache_data
 def get_red_flags(ingredients: str) -> list[str]:
-    """Cache irritant detection per unique ingredient string."""
     ingredients_lower = ingredients.lower()
     return [f.title() for f in RED_FLAGS if f in ingredients_lower]
 
 
 @st.cache_data
 def get_top_ingredients(_tfidf_matrix, feature_names: list, idx: int, top_n: int = 12) -> list[tuple]:
-    """Cache TF-IDF top ingredient weights per product index."""
     scores = _tfidf_matrix[idx].toarray().flatten()
     top_idx = np.argsort(scores)[::-1][:top_n]
     return [(str(feature_names[i]), round(float(scores[i]), 4)) for i in top_idx if scores[i] > 0]
@@ -220,8 +196,7 @@ def get_top_ingredients(_tfidf_matrix, feature_names: list, idx: int, top_n: int
 
 @st.cache_data
 def get_similar_products(_tfidf_matrix, idx: int, top_n: int = 6) -> list[dict]:
-    """Cache cosine similarity results per product index — the most expensive operation."""
-    df = load_data()
+    df = load_all_products()
     scores = cosine_similarity(_tfidf_matrix[idx], _tfidf_matrix).flatten()
     top_indices = np.argsort(scores)[::-1]
     results = []
@@ -245,14 +220,6 @@ def get_similar_products(_tfidf_matrix, idx: int, top_n: int = 6) -> list[dict]:
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
-def find_product(df, product_name):
-    """Wrapper that uses the cached lookup and returns the full DataFrame row."""
-    matched_name = find_product_cached(product_name, df["name"].tolist())
-    if matched_name is None:
-        return None
-    return df[df["name"] == matched_name].iloc[0]
-
-
 def star_rating(score):
     full = int(score)
     return "★" * full + "☆" * (5 - full)
@@ -261,7 +228,6 @@ def star_rating(score):
 def show_product(df, vectorizer, tfidf_matrix, product):
     st.markdown("---")
 
-    # Header row
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("Product", product["name"])
     col2.metric("Brand", product["brand"])
@@ -271,7 +237,6 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Two column layout for skin type + irritant check
     left, right = st.columns(2)
 
     with left:
@@ -283,7 +248,6 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     with right:
         st.markdown("#### Irritant Check")
-        # ── CACHED: irritant detection ──
         found_flags = get_red_flags(product["ingredients"])
         if found_flags:
             st.warning(f"**Potential irritants:** {', '.join(found_flags)}")
@@ -292,16 +256,13 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Ingredient chart + similar products side by side
     left2, right2 = st.columns(2)
     idx = df[df["name"] == product["name"]].index[0]
     feature_names = vectorizer.get_feature_names_out()
 
     with left2:
         st.markdown("#### Top Ingredients by TF-IDF Weight")
-        # ── CACHED: TF-IDF weights per product ──
         top_ingredients = get_top_ingredients(tfidf_matrix, list(feature_names), idx)
-
         if top_ingredients:
             ing_df = pd.DataFrame(top_ingredients, columns=["Ingredient", "TF-IDF Score"])
             fig = px.bar(
@@ -309,10 +270,8 @@ def show_product(df, vectorizer, tfidf_matrix, product):
                 color="TF-IDF Score", color_continuous_scale=CHART_SCALE,
             )
             fig.update_layout(
-                paper_bgcolor="#F5F0EB",
-                plot_bgcolor="#F5F0EB",
-                yaxis=dict(autorange="reversed"),
-                showlegend=False,
+                paper_bgcolor="#F5F0EB", plot_bgcolor="#F5F0EB",
+                yaxis=dict(autorange="reversed"), showlegend=False,
                 margin=dict(l=10, r=10, t=20, b=10),
                 font=dict(color="#2C2C2C", size=12, family="Inter"),
                 coloraxis_showscale=False,
@@ -323,7 +282,6 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
     with right2:
         st.markdown("#### Similar Products")
-        # ── CACHED: cosine similarity per product ──
         results = get_similar_products(tfidf_matrix, idx)
         if results:
             st.dataframe(pd.DataFrame(results), use_container_width=True, hide_index=True, height=280)
@@ -332,28 +290,27 @@ def show_product(df, vectorizer, tfidf_matrix, product):
 
 
 # ── Load everything ───────────────────────────────────────────────────────────
-df = load_data()
+df = load_all_products()          # ← now from SQLite, not CSV
 history_df = load_history()
 vectorizer, tfidf_matrix = build_tfidf(df)
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 st.sidebar.title("Skincare Engine")
-st.sidebar.markdown("TF-IDF · Cosine Similarity · MCP")
+st.sidebar.markdown("TF-IDF · Cosine Similarity · MCP · SQLite")
 st.sidebar.markdown("---")
 page = st.sidebar.radio("", ["Product Search", "Browse Products", "Data Explorer", "User History"])
 st.sidebar.markdown("---")
 st.sidebar.markdown(f"**{len(df):,}** products · **{df['brand'].nunique()}** brands")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# PAGE 1: Product Search
+# PAGE 1: Product Search  (now uses SQLite lookups)
 # ══════════════════════════════════════════════════════════════════════════════
 if page == "Product Search":
     st.title("Product Search")
     st.markdown("Search any product to find ingredient-based alternatives and check for irritants.")
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # ── Autocomplete selectbox + free text search ──
-    all_product_names = [""] + sorted(df["name"].tolist())
+    all_product_names = [""] + get_all_product_names()
 
     col_input, col_btn = st.columns([5, 1])
     with col_input:
@@ -373,14 +330,12 @@ if page == "Product Search":
         query = st.session_state["query"]
 
     if query:
-        product = find_product(df, query)
+        # ── SQLite lookup ──
+        product = search_product_by_name(query)
         if product is None:
             st.error(f"No product found matching '{query}'.")
             st.markdown("**Try one of these popular products:**")
-            suggestions = df[df["rank"] >= 4.5][["name", "brand", "Label", "rank"]].sample(8).rename(
-                columns={"name": "Product", "brand": "Brand", "Label": "Category", "rank": "Rating"}
-            )
-            st.dataframe(suggestions, use_container_width=True, hide_index=True)
+            st.dataframe(get_top_rated_products(), use_container_width=True, hide_index=True)
         else:
             show_product(df, vectorizer, tfidf_matrix, product)
 
@@ -430,8 +385,9 @@ elif page == "Browse Products":
     if not filtered.empty:
         selected_name = st.selectbox("Select a product", filtered["name"].tolist())
         if selected_name:
-            product = df[df["name"] == selected_name].iloc[0]
-            show_product(df, vectorizer, tfidf_matrix, product)
+            product = get_product_by_exact_name(selected_name)
+            if product is not None:
+                show_product(df, vectorizer, tfidf_matrix, product)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 3: Data Explorer
@@ -443,8 +399,7 @@ elif page == "Data Explorer":
 
     def style_chart(fig):
         fig.update_layout(
-            paper_bgcolor="#F5F0EB",
-            plot_bgcolor="#F5F0EB",
+            paper_bgcolor="#F5F0EB", plot_bgcolor="#F5F0EB",
             font=dict(color="#2C2C2C", size=13, family="Inter"),
             title_font=dict(color="#2C2C2C", size=14, family="Inter"),
             margin=dict(l=10, r=10, t=50, b=10),
@@ -505,8 +460,7 @@ elif page == "User History":
 
         def style_chart(fig):
             fig.update_layout(
-                paper_bgcolor="#F5F0EB",
-                plot_bgcolor="#F5F0EB",
+                paper_bgcolor="#F5F0EB", plot_bgcolor="#F5F0EB",
                 font=dict(color="#2C2C2C", size=13, family="Inter"),
                 title_font=dict(color="#2C2C2C", size=14, family="Inter"),
                 margin=dict(l=10, r=10, t=50, b=10),
