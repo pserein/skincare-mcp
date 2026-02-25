@@ -11,6 +11,12 @@ import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+
+from build_db import build as build_database
+import os as _os
+if not _os.path.exists(_os.path.join(_os.path.dirname(__file__), "skincare.db")):
+    build_database()
+
 from database import (
     load_all_products,
     get_all_product_names,
