@@ -11,12 +11,6 @@ import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-
-from build_db import build as build_database
-import os as _os
-if not _os.path.exists(_os.path.join(_os.path.dirname(__file__), "skincare.db")):
-    build_database()
-
 from database import (
     load_all_products,
     get_all_product_names,
@@ -24,6 +18,12 @@ from database import (
     get_product_by_exact_name,
     get_top_rated_products,
 )
+from live_api import search_live_products
+from build_db import build as build_database
+
+# ── Auto-build DB if missing (e.g. on Streamlit Cloud first boot) ─────────────
+if not os.path.exists(os.path.join(os.path.dirname(__file__), "skincare.db")):
+    build_database()
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -339,11 +339,44 @@ if page == "Product Search":
         # ── SQLite lookup ──
         product = search_product_by_name(query)
         if product is None:
-            st.error(f"No product found matching '{query}'.")
+            st.error(f"No product found matching '{query}' in local database.")
             st.markdown("**Try one of these popular products:**")
             st.dataframe(get_top_rated_products(), use_container_width=True, hide_index=True)
         else:
             show_product(df, vectorizer, tfidf_matrix, product)
+
+        # ── Live results from Open Beauty Facts ──
+        st.markdown("<br>", unsafe_allow_html=True)
+        with st.expander("🌐 Live Results from Open Beauty Facts", expanded=False):
+            with st.spinner("Fetching live data..."):
+                live_results = search_live_products(query)
+
+            if not live_results:
+                st.info("No live results found or API unavailable.")
+            else:
+                st.markdown(f"Found **{len(live_results)}** live results for **{query}**")
+                st.markdown("<br>", unsafe_allow_html=True)
+                for i, p in enumerate(live_results):
+                    col_img, col_info = st.columns([1, 4])
+                    with col_img:
+                        if p["image_url"]:
+                            st.image(p["image_url"], width=80)
+                        else:
+                            st.markdown("🧴")
+                    with col_info:
+                        st.markdown(f"**{p['name']}** — {p['brand']}")
+                        if p["ingredients"] != "Not available":
+                            # Show first 200 chars of ingredients
+                            ing_preview = p["ingredients"][:200]
+                            if len(p["ingredients"]) > 200:
+                                ing_preview += "..."
+                            st.caption(f"Ingredients: {ing_preview}")
+                        else:
+                            st.caption("Ingredients: Not available")
+                        if p["url"]:
+                            st.markdown(f"[View on Open Beauty Facts]({p['url']})")
+                    if i < len(live_results) - 1:
+                        st.markdown("---")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 2: Browse Products
