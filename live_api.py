@@ -8,10 +8,10 @@ import requests
 import streamlit as st
 
 BASE_URL = "https://world.openbeautyfacts.org/cgi/search.pl"
-HEADERS = {"User-Agent": "SkincareMCP/1.0 (educational project)"}
+HEADERS = {"User-Agent": "SkincareMCP/1.0 (educational project - contact: skincaremcp@gmail.com)"}
 
 
-@st.cache_data(ttl=3600)  # Cache for 1 hour
+@st.cache_data(ttl=3600)
 def search_live_products(query: str, page_size: int = 6) -> list[dict]:
     """
     Search Open Beauty Facts for products matching the query.
@@ -25,9 +25,14 @@ def search_live_products(query: str, page_size: int = 6) -> list[dict]:
             "action": "process",
             "json": 1,
             "page_size": page_size,
-            "fields": "product_name,brands,ingredients_text,image_front_url,url,categories_tags",
+            "fields": "product_name,brands,ingredients_text,image_front_url,url",
         }
-        response = requests.get(BASE_URL, params=params, headers=HEADERS, timeout=8)
+        response = requests.get(
+            BASE_URL,
+            params=params,
+            headers=HEADERS,
+            timeout=15,
+        )
         response.raise_for_status()
         data = response.json()
 
@@ -39,7 +44,6 @@ def search_live_products(query: str, page_size: int = 6) -> list[dict]:
             image_url = p.get("image_front_url", "")
             product_url = p.get("url", "")
 
-            # Skip entries with no name
             if not name:
                 continue
 
@@ -54,22 +58,11 @@ def search_live_products(query: str, page_size: int = 6) -> list[dict]:
         return products
 
     except requests.exceptions.Timeout:
+        st.warning("Live API timed out. Try again in a moment.")
         return []
-    except requests.exceptions.RequestException:
+    except requests.exceptions.ConnectionError:
+        st.warning("Could not connect to Open Beauty Facts. Check your connection.")
         return []
-    except Exception:
+    except Exception as e:
+        st.warning(f"Live API error: {str(e)}")
         return []
-
-
-@st.cache_data(ttl=3600)
-def get_live_product_detail(product_name: str, brand: str) -> dict | None:
-    """
-    Fetch a specific product by name and brand.
-    Used when user clicks into a live result.
-    """
-    query = f"{product_name} {brand}".strip()
-    results = search_live_products(query, page_size=3)
-    for r in results:
-        if r["name"].lower() == product_name.lower():
-            return r
-    return results[0] if results else None
