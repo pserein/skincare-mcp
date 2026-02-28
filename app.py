@@ -1,5 +1,5 @@
 """
-app.py
+app.py  
 Streamlit dashboard for the Skincare MCP recommendation engine.
 """
 
@@ -32,130 +32,214 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ── Rhode-inspired styling ─────────────────────────────────────────────────────
+# ── Soft minimalist styling ────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+    /* ── Tokens ── */
+    :root {
+        --bg-primary: #F9F8F6;
+        --bg-surface: #FFFFFF;
+        --text-primary: #222222;
+        --text-secondary: #7A7571;
+        --btn-primary: #1A1A1A;
+        --btn-text: #FFFFFF;
+        --border-subtle: #ECEAE4;
+        --space-sm: 12px;
+        --space-md: 24px;
+        --space-lg: 48px;
+        --space-xl: 80px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
     html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-        color: #2C2C2C !important;
+        font-family: 'DM Sans', sans-serif;
+        color: var(--text-primary) !important;
+        background-color: var(--bg-primary) !important;
     }
+
+    /* ── App background ── */
     .stApp {
-        background-color: #F5F0EB;
-        color: #2C2C2C;
+        background-color: var(--bg-primary);
     }
+
+    /* ── Sidebar ── */
     [data-testid="stSidebar"] {
-        background-color: #EDE8E3;
-        border-right: 1px solid #D9D3CC;
+        background-color: var(--bg-surface) !important;
+        border-right: 1px solid var(--border-subtle) !important;
     }
     [data-testid="stSidebar"] p,
     [data-testid="stSidebar"] span,
     [data-testid="stSidebar"] label,
     [data-testid="stSidebar"] div {
-        color: #4A4038 !important;
-    }
-    [data-testid="stSidebar"] h1 {
-        color: #2C2C2C !important;
-        font-weight: 500 !important;
-        font-size: 16px !important;
-        letter-spacing: 0.08em !important;
-        text-transform: uppercase !important;
-    }
-    h1 {
-        color: #2C2C2C !important;
-        font-weight: 400 !important;
-        letter-spacing: 0.05em !important;
-        text-transform: uppercase !important;
-        font-size: 28px !important;
-        margin-bottom: 4px !important;
-    }
-    h2, h3, h4 {
-        color: #2C2C2C !important;
-        font-weight: 500 !important;
+        color: var(--text-secondary) !important;
+        font-size: 13px !important;
         letter-spacing: 0.03em !important;
     }
-    [data-testid="metric-container"] {
-        background-color: #EDE8E3;
-        border: 1px solid #D9D3CC;
-        border-radius: 8px;
-        padding: 16px !important;
-    }
-    [data-testid="metric-container"] label {
-        color: #8A8480 !important;
-        font-size: 11px !important;
-        letter-spacing: 0.08em !important;
+    [data-testid="stSidebar"] h1 {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+        font-size: 13px !important;
+        letter-spacing: 0.12em !important;
         text-transform: uppercase !important;
     }
-    [data-testid="metric-container"] [data-testid="stMetricValue"] {
-        color: #2C2C2C !important;
-        font-size: 16px !important;
-        font-weight: 500 !important;
-    }
-    [data-baseweb="input"] input {
-        background-color: #EDE8E3 !important;
-        color: #2C2C2C !important;
-    }
-    [data-baseweb="base-input"] {
-        border: 1px solid #C9C3BC !important;
-        border-radius: 6px !important;
-    }
-    .stButton button {
-        background-color: #2C2C2C !important;
-        color: #F5F0EB !important;
-        border: none !important;
-        border-radius: 6px !important;
-        font-size: 12px !important;
-        letter-spacing: 0.08em !important;
-        text-transform: uppercase !important;
-        padding: 12px 20px !important;
-        font-weight: 500 !important;
-    }
-    .stButton button p, .stButton button span {
-        color: #F5F0EB !important;
-    }
-    .stButton button:hover {
-        background-color: #444 !important;
-    }
-    [data-baseweb="select"] div {
-        background-color: #EDE8E3 !important;
-        color: #2C2C2C !important;
-    }
-    .stSuccess {
-        background-color: #E8F0E8 !important;
-        border: 1px solid #B8D4B8 !important;
-        border-radius: 6px !important;
-        color: #2C4A2C !important;
-    }
-    .stWarning {
-        background-color: #F5EDDF !important;
-        border: 1px solid #E0CEAA !important;
-        border-radius: 6px !important;
-        color: #5C4A2A !important;
-    }
-    .block-container {
-        padding-top: 2rem !important;
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-        max-width: 1200px !important;
-    }
-    hr {
-        border-color: #D9D3CC !important;
-        margin: 1.5rem 0 !important;
-    }
+
+    /* ── Radio nav ── */
     [data-testid="stRadio"] label,
     [data-testid="stRadio"] p,
     [data-testid="stRadio"] span {
-        color: #2C2C2C !important;
+        color: var(--text-secondary) !important;
         font-size: 13px !important;
         letter-spacing: 0.03em !important;
+        font-weight: 500 !important;
+    }
+    [data-testid="stRadio"] [aria-checked="true"] span {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+    }
+
+    /* ── Typography ── */
+    h1 {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.02em !important;
+        text-transform: uppercase !important;
+        font-size: 48px !important;
+        line-height: 1.05 !important;
+        margin-bottom: var(--space-md) !important;
+    }
+    h2 {
+        color: var(--text-primary) !important;
+        font-weight: 600 !important;
+        letter-spacing: -0.01em !important;
+        font-size: 28px !important;
+    }
+    h3, h4 {
+        color: var(--text-primary) !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.03em !important;
+        font-size: 13px !important;
+    }
+
+    /* ── Metrics ── */
+    [data-testid="metric-container"] {
+        background-color: var(--bg-surface) !important;
+        border: 1px solid var(--border-subtle) !important;
+        border-radius: 12px !important;
+        padding: var(--space-md) !important;
+    }
+    [data-testid="metric-container"] label {
+        color: var(--text-secondary) !important;
+        font-size: 11px !important;
+        letter-spacing: 0.06em !important;
+        text-transform: uppercase !important;
+        font-weight: 500 !important;
+    }
+    [data-testid="metric-container"] [data-testid="stMetricValue"] {
+        color: var(--text-primary) !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+    }
+
+    /* ── Inputs ── */
+    [data-baseweb="input"] input {
+        background-color: var(--bg-surface) !important;
+        color: var(--text-primary) !important;
+        font-size: 15px !important;
+        border-radius: 12px !important;
+    }
+    [data-baseweb="base-input"] {
+        border: 1px solid var(--border-subtle) !important;
+        border-radius: 12px !important;
+        background-color: var(--bg-surface) !important;
+    }
+    [data-baseweb="select"] div {
+        background-color: var(--bg-surface) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border-subtle) !important;
+        border-radius: 12px !important;
+    }
+
+    /* ── Buttons ── */
+    .stButton button {
+        background-color: var(--btn-primary) !important;
+        color: var(--btn-text) !important;
+        border: none !important;
+        border-radius: 999px !important;
+        font-size: 13px !important;
+        letter-spacing: 0.05em !important;
+        text-transform: uppercase !important;
+        padding: 14px 24px !important;
+        font-weight: 600 !important;
+        width: 100% !important;
+    }
+    .stButton button p, .stButton button span {
+        color: var(--btn-text) !important;
+    }
+    .stButton button:hover {
+        background-color: #333333 !important;
+    }
+
+    /* ── Alerts ── */
+    .stSuccess {
+        background-color: var(--bg-surface) !important;
+        border: 1px solid var(--border-subtle) !important;
+        border-radius: 12px !important;
+        color: var(--text-primary) !important;
+    }
+    .stWarning {
+        background-color: var(--bg-surface) !important;
+        border: 1px solid var(--border-subtle) !important;
+        border-radius: 12px !important;
+        color: var(--text-primary) !important;
+    }
+
+    /* ── Layout ── */
+    .block-container {
+        padding-top: var(--space-xl) !important;
+        padding-left: var(--space-xl) !important;
+        padding-right: var(--space-xl) !important;
+        max-width: 1440px !important;
+    }
+    hr {
+        border-color: var(--border-subtle) !important;
+        margin: var(--space-lg) 0 !important;
+    }
+
+    /* ── Tabs ── */
+    [data-baseweb="tab-list"] {
+        border-bottom: 1px solid var(--border-subtle) !important;
+        gap: var(--space-lg) !important;
+        background: transparent !important;
+    }
+    [data-baseweb="tab"] {
+        font-size: 12px !important;
+        letter-spacing: 0.05em !important;
+        text-transform: uppercase !important;
+        font-weight: 600 !important;
+        color: var(--text-secondary) !important;
+        padding: var(--space-sm) 0 !important;
+        border-bottom: 2px solid transparent !important;
+        background: transparent !important;
+    }
+    [aria-selected="true"][data-baseweb="tab"] {
+        color: var(--text-primary) !important;
+        border-bottom: 2px solid var(--text-primary) !important;
+    }
+
+    /* ── Dataframe ── */
+    [data-testid="stDataFrame"] {
+        border: 1px solid var(--border-subtle) !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
     }
 </style>
 """, unsafe_allow_html=True)
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 HISTORY_PATH = os.path.join(os.path.dirname(__file__), "user_history.csv")
-CHART_COLOR = "#8A7D6E"
-CHART_SCALE = ["#C9BFB5", "#A89A8C", "#8A7D6E", "#6B6056", "#4A4038", "#2C2C2C", "#1A1A1A"]
+CHART_COLOR = "#1A1A1A"
+CHART_SCALE = ["#F9F8F6", "#E8E5DF", "#D6A87C", "#7A7571", "#6A8068", "#1A1A1A"]
 
 RED_FLAGS = [
     "fragrance", "alcohol denat", "sodium lauryl sulfate",
