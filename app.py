@@ -313,48 +313,63 @@ st.sidebar.markdown(f"**{len(df):,}** products · **{df['brand'].nunique()}** br
 # ══════════════════════════════════════════════════════════════════════════════
 if page == "Product Search":
     st.title("Product Search")
-    st.markdown("Search any product to find ingredient-based alternatives and check for irritants.")
+    st.markdown("Search your local database or search live from Open Beauty Facts.")
     st.markdown("<br>", unsafe_allow_html=True)
 
-    all_product_names = [""] + get_all_product_names()
+    # ── Two tabs: Local vs Live ──
+    tab_local, tab_live = st.tabs(["📦 Local Database", "🌐 Live Search"])
 
-    col_input, col_btn = st.columns([5, 1])
-    with col_input:
-        query = st.selectbox(
-            "",
-            options=all_product_names,
-            index=0,
-            placeholder="e.g. Crème de la Mer, Vitamin C serum, moisturizer...",
-            label_visibility="collapsed",
-        )
-    with col_btn:
-        if st.button("Random"):
-            random_pick = df["name"].sample(1).iloc[0]
-            st.session_state["query"] = random_pick
-
-    if "query" in st.session_state and not query:
-        query = st.session_state["query"]
-
-    if query:
-        # ── SQLite lookup ──
-        product = search_product_by_name(query)
-        if product is None:
-            st.error(f"No product found matching '{query}' in local database.")
-            st.markdown("**Try one of these popular products:**")
-            st.dataframe(get_top_rated_products(), use_container_width=True, hide_index=True)
-        else:
-            show_product(df, vectorizer, tfidf_matrix, product)
-
-        # ── Live results from Open Beauty Facts ──
+    # ── TAB 1: Local Database (autocomplete dropdown) ──
+    with tab_local:
         st.markdown("<br>", unsafe_allow_html=True)
-        with st.expander("🌐 Live Results from Open Beauty Facts", expanded=False):
-            with st.spinner("Fetching live data..."):
-                live_results = search_live_products(query)
+        all_product_names = [""] + get_all_product_names()
+
+        col_input, col_btn = st.columns([5, 1])
+        with col_input:
+            query = st.selectbox(
+                "",
+                options=all_product_names,
+                index=0,
+                placeholder="e.g. Crème de la Mer, Vitamin C serum, moisturizer...",
+                label_visibility="collapsed",
+            )
+        with col_btn:
+            if st.button("Random"):
+                random_pick = df["name"].sample(1).iloc[0]
+                st.session_state["query"] = random_pick
+
+        if "query" in st.session_state and not query:
+            query = st.session_state["query"]
+
+        if query:
+            product = search_product_by_name(query)
+            if product is None:
+                st.error(f"No product found matching '{query}' in local database.")
+                st.markdown("**Try one of these popular products:**")
+                st.dataframe(get_top_rated_products(), use_container_width=True, hide_index=True)
+            else:
+                show_product(df, vectorizer, tfidf_matrix, product)
+
+    # ── TAB 2: Live Search (free text → Open Beauty Facts) ──
+    with tab_live:
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown("Search any product — including ones not in the local database like CeraVe, La Roche-Posay, etc.")
+
+        live_query = st.text_input(
+            "",
+            placeholder="e.g. CeraVe moisturizer, La Roche-Posay serum...",
+            label_visibility="collapsed",
+            key="live_search_input",
+        )
+
+        if live_query:
+            with st.spinner("Fetching live data from Open Beauty Facts..."):
+                live_results = search_live_products(live_query)
 
             if not live_results:
-                st.info("No live results found or API unavailable.")
+                st.warning("No live results found. The API may be unavailable — try again in a moment.")
             else:
-                st.markdown(f"Found **{len(live_results)}** live results for **{query}**")
+                st.markdown(f"Found **{len(live_results)}** results for **{live_query}**")
                 st.markdown("<br>", unsafe_allow_html=True)
                 for i, p in enumerate(live_results):
                     col_img, col_info = st.columns([1, 4])
@@ -366,7 +381,6 @@ if page == "Product Search":
                     with col_info:
                         st.markdown(f"**{p['name']}** — {p['brand']}")
                         if p["ingredients"] != "Not available":
-                            # Show first 200 chars of ingredients
                             ing_preview = p["ingredients"][:200]
                             if len(p["ingredients"]) > 200:
                                 ing_preview += "..."
